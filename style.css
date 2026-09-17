@@ -1553,6 +1553,110 @@ img, svg {
   transform: translateY(-50%) translateX(-4px);
 }
 
+/* --- FLOATING TBH STRATEGY REFERRAL BANNER --- */
+.tbh-banner {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  z-index: 985;
+  max-width: 420px;
+  background: rgba(17, 17, 17, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid #c2703d;
+  border-radius: var(--radius-lg);
+  padding: 1.1rem 1.25rem;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.7), 0 0 24px rgba(194, 112, 61, 0.15);
+  opacity: 0;
+  transform: translateY(24px);
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1), transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.45s;
+}
+
+.tbh-banner.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.tbh-banner.is-closing {
+  opacity: 0;
+  transform: translateY(16px);
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 0.35s ease, transform 0.35s ease, visibility 0.35s;
+}
+
+.tbh-banner-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.tbh-banner-tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #c2703d;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.tbh-banner-close {
+  background: transparent;
+  border: none;
+  color: #888888;
+  cursor: pointer;
+  padding: 0.25rem;
+  margin: -0.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  line-height: 1;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.tbh-banner-close:hover {
+  color: #ffffff;
+  transform: scale(1.12);
+}
+
+.tbh-banner-close:focus-visible {
+  outline: 1px solid #c2703d;
+}
+
+.tbh-banner-text {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: #d8d8d8;
+  margin: 0;
+}
+
+.tbh-highlight {
+  font-weight: 700;
+  color: #c2703d;
+}
+
+@media (max-width: 640px) {
+  .tbh-banner {
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    max-width: none;
+    padding: 1rem 1.1rem;
+  }
+
+  .tbh-banner.is-visible ~ .whatsapp-float-container {
+    bottom: 8.5rem;
+  }
+}
 
 /* --- SITE FOOTER --- */
 .site-footer {

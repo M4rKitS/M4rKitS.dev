@@ -572,5 +572,42 @@ document.addEventListener('DOMContentLoaded', () => {
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
   }
+
+  // --- 10. TBH STRATEGY REFERRAL BANNER ---
+  const tbhBanner = document.getElementById('tbh-banner');
+  if (tbhBanner) {
+    let isDismissed = false;
+    try {
+      isDismissed = localStorage.getItem('tbh_banner_dismissed') === 'true';
+    } catch (e) {
+      // LocalStorage might be disabled in private/sandboxed modes
+    }
+
+    if (isDismissed) {
+      tbhBanner.remove();
+    } else {
+      // Small timeout for smooth entry animation on load
+      setTimeout(() => {
+        tbhBanner.classList.add('is-visible');
+      }, 400);
+
+      const closeBtn = document.getElementById('tbh-banner-close');
+      if (closeBtn) {
+        closeBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          tbhBanner.classList.remove('is-visible');
+          tbhBanner.classList.add('is-closing');
+          try {
+            localStorage.setItem('tbh_banner_dismissed', 'true');
+          } catch (err) {}
+
+          tbhBanner.addEventListener('transitionend', () => {
+            tbhBanner.remove();
+          }, { once: true });
+        });
+      }
+    }
+  }
 });
 
