@@ -40,12 +40,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Update Page Title and Meta Description
-    if (TRANSLATIONS[lang]['meta.title']) {
+    const isThanksPage = window.location.pathname.includes('gracias');
+    if (isThanksPage && TRANSLATIONS[lang]['thanks.meta_title']) {
+      document.title = TRANSLATIONS[lang]['thanks.meta_title'];
+    } else if (TRANSLATIONS[lang]['meta.title']) {
       document.title = TRANSLATIONS[lang]['meta.title'];
     }
+
     const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc && TRANSLATIONS[lang]['meta.description']) {
-      metaDesc.setAttribute('content', TRANSLATIONS[lang]['meta.description']);
+    if (metaDesc) {
+      if (isThanksPage && TRANSLATIONS[lang]['thanks.meta_desc']) {
+        metaDesc.setAttribute('content', TRANSLATIONS[lang]['thanks.meta_desc']);
+      } else if (TRANSLATIONS[lang]['meta.description']) {
+        metaDesc.setAttribute('content', TRANSLATIONS[lang]['meta.description']);
+      }
     }
 
     // Update Active Language Switcher Buttons
@@ -402,6 +410,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .then(() => {
         showFeedback('form.status_success', 'success');
         contactForm.reset();
+        window.location.href = "/gracias.html";
       })
       .catch((error) => {
         console.error('EmailJS Error:', error);

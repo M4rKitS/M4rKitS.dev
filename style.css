@@ -1914,3 +1914,105 @@ img, svg {
     width: 260px;
   }
 }
+
+/* =============================================
+   THANK YOU PAGE (gracias.html)
+   ============================================= */
+.thankyou-section {
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--header-height) + 2.5rem) 1.5rem 4.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.thankyou-container {
+  max-width: 660px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.thankyou-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+}
+
+.thankyou-content {
+  padding: 3rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.thankyou-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--accent-green);
+  background: rgba(194, 112, 61, 0.1);
+  border: 1px solid rgba(194, 112, 61, 0.3);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  margin-bottom: 1.5rem;
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--accent-green);
+  box-shadow: 0 0 10px var(--accent-green);
+}
+
+.thankyou-heading {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 7vw, 4.25rem);
+  line-height: 1;
+  letter-spacing: 0.03em;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.thankyou-lead {
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  max-width: 520px;
+  margin-bottom: 2.25rem;
+}
+
+.thankyou-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.thankyou-actions .btn {
+  flex: 1 1 200px;
+  max-width: 250px;
+}
+
+@media (max-width: 600px) {
+  .thankyou-content {
+    padding: 2rem 1.25rem;
+  }
+  .thankyou-actions .btn {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+

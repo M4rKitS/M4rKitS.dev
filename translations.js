@@ -162,6 +162,15 @@ const TRANSLATIONS = {
     "whatsapp.tooltip": "Chat on WhatsApp (Draggable)",
 
 
+    // Thank You Page (gracias.html)
+    "thanks.badge": "MESSAGE SENT SUCCESSFULLY",
+    "thanks.title": "THANK YOU FOR REACHING OUT!",
+    "thanks.desc": "I have received your message successfully. I will review your inquiry and get back to you as soon as possible.",
+    "thanks.btn_home": "RETURN TO HOME",
+    "thanks.btn_wa": "DIRECT WHATSAPP",
+    "thanks.meta_title": "Message Sent! | M4rKitS.dev",
+    "thanks.meta_desc": "Message sent successfully. Marcos Rodríguez will get back to you shortly.",
+
     // Footer
     "footer.tagline": "Building the web your business needs.",
     "footer.copy": "M4rKitS.dev | All rights reserved."
@@ -319,6 +328,15 @@ const TRANSLATIONS = {
     // WhatsApp Floating Button
     "whatsapp.tooltip": "Contactar por WhatsApp (Arrastrable)",
 
+
+    // Thank You Page (gracias.html)
+    "thanks.badge": "MENSAJE ENVIADO CON ÉXITO",
+    "thanks.title": "¡GRACIAS POR CONTACTAR!",
+    "thanks.desc": "He recibido tu mensaje correctamente a través del formulario. Me pondré en contacto contigo lo antes posible para revisar tu consulta o proyecto.",
+    "thanks.btn_home": "VOLVER AL INICIO",
+    "thanks.btn_wa": "WHATSAPP DIRECTO",
+    "thanks.meta_title": "¡Mensaje Enviado con Éxito! | M4rKitS.dev",
+    "thanks.meta_desc": "Mensaje enviado con éxito. Marcos Rodríguez se pondrá en contacto contigo lo antes posible.",
 
     // Footer
     "footer.tagline": "Construyendo la web que tu negocio necesita.",
@@ -478,6 +496,15 @@ const TRANSLATIONS = {
     // WhatsApp Floating Button
     "whatsapp.tooltip": "Keskustele WhatsAppissa (Vedettävä)",
 
+
+    // Thank You Page (gracias.html)
+    "thanks.badge": "VIESTI LÄHETETTY ONNISTUNEESTI",
+    "thanks.title": "KIITOS YHTEYDENOTOSTASI!",
+    "thanks.desc": "Olen vastaanottanut viestisi onnistuneesti lomakkeen kautta. Käsittelen yhteydenottosi ja palaan asiaan mahdollisimman pian.",
+    "thanks.btn_home": "PALAA ETUSIVULLE",
+    "thanks.btn_wa": "SUORA WHATSAPP",
+    "thanks.meta_title": "Viesti Lähetetty! | M4rKitS.dev",
+    "thanks.meta_desc": "Viesti lähetetty onnistuneesti. Marcos Rodríguez palaa asiaan mahdollisimman pian.",
 
     // Footer
     "footer.tagline": "Rakennan yrityksesi tarvitsemat verkkoratkaisut.",
