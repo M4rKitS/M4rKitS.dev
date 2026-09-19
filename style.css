@@ -592,8 +592,26 @@ img, svg {
   background: radial-gradient(ellipse 80% 60% at 50% 0%, #1a1410 0%, #050505 65%);
   border: 1px solid #1f1f1f;
   border-radius: 18px;
-  overflow: visible;
+  overflow: hidden;
   position: relative;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card + .project-card {
+  margin-top: 24px;
+}
+
+.project-card.project-accordion {
+  cursor: pointer;
+}
+
+.project-card.project-accordion:hover {
+  border-color: #333333;
+}
+
+.project-card.project-accordion.is-expanded {
+  border-color: rgba(194, 112, 61, 0.4);
+  box-shadow: 0 12px 36px -10px rgba(0, 0, 0, 0.7), 0 0 30px -10px var(--accent-green-glow);
 }
 
 .phone-stage {
@@ -607,6 +625,7 @@ img, svg {
   background: radial-gradient(ellipse 80% 60% at 50% 0%, #1a1410 0%, #050505 65%);
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  cursor: default;
 }
 
 .phone-frame {
@@ -621,7 +640,7 @@ img, svg {
 }
 .phone-frame:hover {
   transform: translateY(-8px);
-  box-shadow: 0 38px 75px -12px rgba(0,0,0,0.8), 0 0 25px rgba(16, 185, 129, 0.15), inset 0 0 0 1px #3a3a3a;
+  box-shadow: 0 38px 75px -12px rgba(0,0,0,0.8), 0 0 25px var(--accent-green-glow), inset 0 0 0 1px #3a3a3a;
 }
 
 .phone-screen {
@@ -701,9 +720,16 @@ img, svg {
 .project-top {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: 12px;
   margin-bottom: 14px;
+}
+
+.project-title-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 .project-title {
@@ -722,11 +748,83 @@ img, svg {
   white-space: nowrap;
 }
 
+.project-accordion-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #111113;
+  border: 1px solid #262626;
+  color: var(--text-secondary, #8a8a8a);
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+  transition: color 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.project-card.project-accordion:hover .project-accordion-toggle,
+.project-accordion-toggle:hover {
+  color: var(--accent-green);
+  border-color: var(--accent-green);
+  background: var(--accent-green-glow);
+}
+
+.project-card.is-expanded .project-accordion-toggle,
+.project-accordion-toggle[aria-expanded="true"] {
+  color: var(--accent-green);
+  border-color: var(--accent-green);
+  background: var(--accent-green-glow);
+}
+
+.project-accordion-toggle:focus-visible {
+  outline: 2px solid var(--accent-green);
+  outline-offset: 2px;
+}
+
+.project-chevron {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-origin: center;
+}
+
+.project-card.is-expanded .project-chevron,
+.project-accordion-toggle[aria-expanded="true"] .project-chevron {
+  transform: rotate(180deg);
+  color: var(--accent-green);
+}
+
 .project-desc {
   font-size: 1rem;
   color: #c5c5c5;
   line-height: 1.65;
   margin-bottom: 18px;
+}
+
+.project-collapsible {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.4s ease;
+  visibility: hidden;
+}
+
+.project-card.is-expanded .project-collapsible {
+  grid-template-rows: 1fr;
+  visibility: visible;
+}
+
+.project-collapsible-inner {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.project-collapsible-inner > * {
+  opacity: 0;
+  transition: opacity 0.3s ease 0.05s;
+}
+
+.project-card.is-expanded .project-collapsible-inner > * {
+  opacity: 1;
 }
 
 .project-tags {

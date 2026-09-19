@@ -31,7 +31,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'; this.onload=null;" />
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" /></noscript>
 
-  <link rel="stylesheet" href="style.css?v=2.6" />
+  <link rel="stylesheet" href="style.css?v=2.7" />
   
   <!-- EmailJS SDK -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
@@ -192,29 +192,38 @@
             </p>
           </div>
 
-          <article class="project-card">
+          <article class="project-card project-accordion" data-project-accordion>
             <div class="project-card-body">
               <div class="project-top">
-                <div>
+                <div class="project-title-group">
                   <h3 class="project-title">M4rKcal</h3>
+                  <span class="project-badge" data-i18n="projects.m4rkcal_badge">Uso personal</span>
                 </div>
-                <span class="project-badge" data-i18n="projects.m4rkcal_badge">Uso personal</span>
+                <button type="button" class="project-accordion-toggle" aria-expanded="false" aria-controls="m4rkcalCollapse" aria-label="Desplegar proyecto M4rKcal">
+                  <svg class="project-chevron" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
               </div>
               <p class="project-desc" data-i18n="projects.m4rkcal_desc">
                 App nativa de iOS para seguimiento de calorías y proteína, con anillos de progreso animados, integración con Apple Watch vía HealthKit, escaneo de código de barras y sincronización de entrenamientos con Hevy. Construida con SwiftUI y SwiftData, arquitectura MVVM.
               </p>
-              <div class="phone-stage" id="m4rkcalStage">
-                <div class="phone-frame" data-full="dash">
-                  <div class="phone-screen"><div class="status-bar"><div class="notch"></div></div><div class="screen-image"><img src="/assets/projects/m4rkcal-01-dashboard.jpg" alt="M4rKcal — Dashboard" loading="lazy" width="480" height="988"></div></div>
-                </div>
-                <div class="phone-frame" data-full="watch">
-                  <div class="phone-screen"><div class="status-bar"><div class="notch"></div></div><div class="screen-image"><img src="/assets/projects/m4rkcal-02-watch.jpg" alt="M4rKcal — Apple Watch y Hevy" loading="lazy" width="480" height="988"></div></div>
-                </div>
-                <div class="phone-frame" data-full="hist">
-                  <div class="phone-screen"><div class="status-bar"><div class="notch"></div></div><div class="screen-image"><img src="/assets/projects/m4rkcal-03-historial.jpg" alt="M4rKcal — Historial" loading="lazy" width="480" height="988"></div></div>
-                </div>
-                <div class="phone-frame" data-full="food">
-                  <div class="phone-screen"><div class="status-bar"><div class="notch"></div></div><div class="screen-image"><img src="/assets/projects/m4rkcal-04-registro.jpg" alt="M4rKcal — Registro de comida" loading="lazy" width="480" height="988"></div></div>
+              <div class="project-collapsible" id="m4rkcalCollapse" aria-hidden="true">
+                <div class="project-collapsible-inner">
+                  <div class="phone-stage" id="m4rkcalStage">
+                    <div class="phone-frame" data-full="dash">
+                      <div class="phone-screen"><div class="status-bar"><div class="notch"></div></div><div class="screen-image"><img src="/assets/projects/m4rkcal-01-dashboard.jpg" alt="M4rKcal — Dashboard" loading="lazy" width="480" height="988"></div></div>
+                    </div>
+                    <div class="phone-frame" data-full="watch">
+                      <div class="phone-screen"><div class="status-bar"><div class="notch"></div></div><div class="screen-image"><img src="/assets/projects/m4rkcal-02-watch.jpg" alt="M4rKcal — Apple Watch y Hevy" loading="lazy" width="480" height="988"></div></div>
+                    </div>
+                    <div class="phone-frame" data-full="hist">
+                      <div class="phone-screen"><div class="status-bar"><div class="notch"></div></div><div class="screen-image"><img src="/assets/projects/m4rkcal-03-historial.jpg" alt="M4rKcal — Historial" loading="lazy" width="480" height="988"></div></div>
+                    </div>
+                    <div class="phone-frame" data-full="food">
+                      <div class="phone-screen"><div class="status-bar"><div class="notch"></div></div><div class="screen-image"><img src="/assets/projects/m4rkcal-04-registro.jpg" alt="M4rKcal — Registro de comida" loading="lazy" width="480" height="988"></div></div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="project-tags">
@@ -738,7 +747,7 @@
   </div>
 
   <!-- Scripts -->
-  <script src="translations.js?v=2.6"></script>
-  <script src="script.js?v=2.6"></script>
+  <script src="translations.js?v=2.7"></script>
+  <script src="script.js?v=2.7"></script>
 </body>
 </html>

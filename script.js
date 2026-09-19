@@ -286,7 +286,67 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  // --- 3.5 PROJECT PHONE STAGE WITH LIGHTBOX ---
+  // --- 3.5 PROJECT ACCORDIONS (EXPANDABLE CARDS) ---
+  const projectCards = document.querySelectorAll('.project-card.project-accordion, .project-card[data-project-accordion]');
+
+  projectCards.forEach(card => {
+    const toggleBtn = card.querySelector('.project-accordion-toggle');
+    const collapseId = toggleBtn ? toggleBtn.getAttribute('aria-controls') : null;
+    const collapsible = collapseId ? document.getElementById(collapseId) : card.querySelector('.project-collapsible');
+
+    if (!toggleBtn || !collapsible) return;
+
+    function setCardState(isExpanded) {
+      card.classList.toggle('is-expanded', isExpanded);
+      toggleBtn.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
+      collapsible.setAttribute('aria-hidden', isExpanded ? 'false' : 'true');
+    }
+
+    function toggleCard() {
+      const willExpand = !card.classList.contains('is-expanded');
+
+      // Accordion behavior: close other open project cards
+      if (willExpand) {
+        projectCards.forEach(otherCard => {
+          if (otherCard !== card && otherCard.classList.contains('is-expanded')) {
+            const otherBtn = otherCard.querySelector('.project-accordion-toggle');
+            const otherId = otherBtn ? otherBtn.getAttribute('aria-controls') : null;
+            const otherCollapsible = otherId ? document.getElementById(otherId) : otherCard.querySelector('.project-collapsible');
+            otherCard.classList.remove('is-expanded');
+            if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+            if (otherCollapsible) otherCollapsible.setAttribute('aria-hidden', 'true');
+          }
+        });
+      }
+
+      setCardState(willExpand);
+    }
+
+    // Toggle on chevron button click
+    toggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleCard();
+    });
+
+    // Toggle on card click (excluding interactive elements: links, buttons, collapsible content, lightbox, text selection)
+    card.addEventListener('click', (e) => {
+      if (
+        e.target.closest('a') ||
+        e.target.closest('button') ||
+        e.target.closest('.project-collapsible') ||
+        e.target.closest('.lightbox')
+      ) {
+        return;
+      }
+      if (window.getSelection && window.getSelection().toString().trim().length > 0) {
+        return;
+      }
+      toggleCard();
+    });
+  });
+
+
+  // --- 3.6 PROJECT PHONE STAGE WITH LIGHTBOX ---
   const m4rkcalStage = document.getElementById('m4rkcalStage');
   const m4rkcalLightbox = document.getElementById('m4rkcalLightbox');
   const m4rkcalLightboxImg = document.getElementById('m4rkcalLightboxImg');
