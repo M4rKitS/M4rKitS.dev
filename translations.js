@@ -94,7 +94,7 @@ const TRANSLATIONS = {
 
     "exp.date4": "Sep 2014 — Jun 2016",
     "exp.title4": "Vocational Diploma — IT Systems & Networks",
-    "exp.desc4": "Hardware installation and maintenance, local network configuration, operating system administration, and technical troubleshooting — the foundational knowledge I continue to apply nearly twenty years later.",
+    "exp.desc4": "Hardware installation and maintenance, local network configuration, operating system administration, and technical troubleshooting: the foundational knowledge I continue to apply nearly twenty years later.",
 
     "exp.certs_title": "CERTIFICATIONS & CREDENTIALS",
     "certs.verified_tag": "[VERIFIED CREDENTIALS & TRAINING]",
@@ -270,7 +270,7 @@ const TRANSLATIONS = {
 
     "exp.date4": "Sep 2014 — Jun 2016",
     "exp.title4": "Técnico en Sistemas Microinformáticos y Redes",
-    "exp.desc4": "Instalación y mantenimiento de equipos, configuración de redes locales, administración de sistemas operativos y resolución de incidencias — la base técnica que sigo aplicando casi veinte años después.",
+    "exp.desc4": "Instalación y mantenimiento de equipos, configuración de redes locales, administración de sistemas operativos y resolución de incidencias: la base técnica que sigo aplicando casi veinte años después.",
 
     "exp.certs_title": "CERTIFICACIONES Y CREDENCIALES",
     "certs.verified_tag": "[CREDENCIALES Y FORMACIÓN]",
@@ -447,7 +447,7 @@ const TRANSLATIONS = {
     "exp.date4": "Syys 2014 — Kesä 2016",
     "exp.title4": "Tieto- ja viestintätekniikan ammattitutkinto",
     "exp.company4": "Instituto Navarro Santafé",
-    "exp.desc4": "Laitteistojen asennus ja ylläpito, lähiverkkojen määritys, käyttöjärjestelmien hallinta ja tekninen vianmääritys — vankka tekninen perusta, jota sovellan edelleen lähes kaksikymmentä vuotta myöhemmin.",
+    "exp.desc4": "Laitteistojen asennus ja ylläpito, lähiverkkojen määritys, käyttöjärjestelmien hallinta ja tekninen vianmääritys: vankka tekninen perusta, jota sovellan edelleen lähes kaksikymmentä vuotta myöhemmin.",
 
     "exp.certs_title": "SERTIFIKAATIT JA PÄTEVYYDET",
     "certs.verified_tag": "[VAHVISTETUT PÄTEVYYDET]",
