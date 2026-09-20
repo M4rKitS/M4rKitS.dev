@@ -169,7 +169,6 @@ img, svg {
 .section-lead {
   font-size: 1.0625rem;
   color: var(--text-secondary);
-  max-width: 640px;
   line-height: 1.65;
 }
 
@@ -585,7 +584,7 @@ img, svg {
 .project-sublead {
   font-size: 1.0625rem;
   color: var(--text-secondary, #8a8a8a);
-  max-width: 640px;
+  line-height: 1.65;
 }
 
 .project-card {
