@@ -1,8 +1,10 @@
 # M4rKitS.dev
 
-Personal portfolio & freelance brand site — built, optimized, and deployed from scratch.
+> Personal portfolio & freelance brand site — built, optimized, and deployed from scratch.
 
-Live site: [m4rkits.dev](https://m4rkits.dev/)
+![M4rKitS.dev screenshot](./assets/readme-screenshot.png)
+
+**Live site:** [m4rkits.dev](https://m4rkits.dev/)
 
 ## About
 
