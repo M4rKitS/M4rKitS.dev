@@ -21,6 +21,14 @@ No framework, no build step, no dependencies to install. Just clean HTML, CSS, a
 - **Working contact form** — EmailJS-powered, with a dedicated thank-you page so submissions are measurable as real conversions in Cloudflare Web Analytics
 - **Dark, terminal-inspired UI** — custom design system (Bebas Neue / Inter / JetBrains Mono), not a generic template
 
+## 🚀 Featured Projects
+
+| Project | Description | Stack |
+|---|---|---|
+| **[M4rkcal](https://github.com/M4rKitS/M4rKcal)** | Native iOS calorie & protein tracker with Apple Watch integration | SwiftUI · SwiftData · HealthKit |
+| **[M4rKitS.dev](https://m4rkits.dev)** | My personal freelance brand website | HTML · CSS · JS · Cloudflare Pages · EmailJS |
+| **[TBH Strategy](https://www.tbhstrategy.com)** | Client website for a social media consultancy in Ireland | HTML · CSS · JS · Cloudflare Workers · EmailJS · Google Analytics |
+
 ## Tech stack
 
 | Layer | Technology |
