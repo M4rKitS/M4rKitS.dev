@@ -801,6 +801,10 @@ img, svg {
   margin-bottom: 18px;
 }
 
+.project-desc:last-of-type {
+  margin-bottom: 20px;
+}
+
 .project-collapsible {
   display: grid;
   grid-template-rows: 0fr;
