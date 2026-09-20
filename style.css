@@ -1107,6 +1107,10 @@ img, svg {
   margin-bottom: 0.25rem;
 }
 
+.log-title + .log-desc {
+  margin-top: 0.5rem;
+}
+
 .log-org {
   font-size: 0.875rem;
   color: var(--text-secondary);

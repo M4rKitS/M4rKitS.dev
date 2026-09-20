@@ -90,10 +90,11 @@ const TRANSLATIONS = {
     "exp.date1": "Sep 2024 — In Progress",
     "exp.title1": "Master Full Stack Developer",
     "exp.company1": "ConquerBlocks Academy",
-    "exp.desc1": "Comprehensive software engineering program focused on modern web fundamentals, development workflows, algorithms, and practical applications.",
+    "exp.desc1": "100% hands-on program divided into three phases: programming logic from scratch, comprehensive full-stack development (frontend, backend, and databases) with real-world projects, and targeted job market preparation. Taught by active industry mentors with experience at companies like Inditex and Indra, in a hybrid format of recorded classes and live sessions.",
 
     "exp.date4": "Sep 2014 — Jun 2016",
     "exp.title4": "Vocational Diploma — IT Systems & Networks",
+    "exp.desc4": "Hardware installation and maintenance, local network configuration, operating system administration, and technical troubleshooting — the foundational knowledge I continue to apply nearly twenty years later.",
 
     "exp.certs_title": "CERTIFICATIONS & CREDENTIALS",
     "certs.verified_tag": "[VERIFIED CREDENTIALS & TRAINING]",
@@ -265,10 +266,11 @@ const TRANSLATIONS = {
     "exp.date1": "Sep 2024 — En curso",
     "exp.title1": "Máster Full Stack Developer",
     "exp.company1": "ConquerBlocks Academy",
-    "exp.desc1": "Programa intensivo de ingeniería de software enfocado en tecnologías web modernas, programación práctica y arquitectura de aplicaciones.",
+    "exp.desc1": "Programa 100% práctico dividido en tres fases: lógica de programación desde cero, desarrollo full-stack completo (frontend, backend y bases de datos) con proyectos reales, y preparación específica para el mercado laboral. Impartido por mentores en activo del sector, con experiencia en empresas como Inditex o Indra, en formato híbrido de clases grabadas y sesiones en directo.",
 
     "exp.date4": "Sep 2014 — Jun 2016",
     "exp.title4": "Técnico en Sistemas Microinformáticos y Redes",
+    "exp.desc4": "Instalación y mantenimiento de equipos, configuración de redes locales, administración de sistemas operativos y resolución de incidencias — la base técnica que sigo aplicando casi veinte años después.",
 
     "exp.certs_title": "CERTIFICACIONES Y CREDENCIALES",
     "certs.verified_tag": "[CREDENCIALES Y FORMACIÓN]",
@@ -440,11 +442,12 @@ const TRANSLATIONS = {
     "exp.date1": "Syys 2024 — Meneillään",
     "exp.title1": "Master Full Stack Developer",
     "exp.company1": "ConquerBlocks Academy",
-    "exp.desc1": "Kattava ohjelmistokehitysohjelma, joka keskittyy moderneihin verkkoteknologioihin, käytännön koodaukseen ja sovellusarkkitehtuuriin.",
+    "exp.desc1": "100 % käytännönläheinen ohjelma jaettuna kolmeen vaiheeseen: ohjelmointilogiikka alusta alkaen, kattava full-stack-kehitys (frontend, backend ja tietokannat) aidoilla projekteilla sekä kohdennettu valmistautuminen työmarkkinoille. Alan aktiivisten mentorien opettama, joilla on kokemusta yrityksistä kuten Inditex tai Indra, yhdistäen tallennettuja oppitunteja ja suoria live-sessioita.",
 
     "exp.date4": "Syys 2014 — Kesä 2016",
     "exp.title4": "Tieto- ja viestintätekniikan ammattitutkinto",
     "exp.company4": "Instituto Navarro Santafé",
+    "exp.desc4": "Laitteistojen asennus ja ylläpito, lähiverkkojen määritys, käyttöjärjestelmien hallinta ja tekninen vianmääritys — vankka tekninen perusta, jota sovellan edelleen lähes kaksikymmentä vuotta myöhemmin.",
 
     "exp.certs_title": "SERTIFIKAATIT JA PÄTEVYYDET",
     "certs.verified_tag": "[VAHVISTETUT PÄTEVYYDET]",
