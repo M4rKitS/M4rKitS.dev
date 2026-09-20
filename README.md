@@ -56,8 +56,8 @@ Built using an AI-agent-assisted development workflow (Google Antigravity + Clau
 No build step required. Clone the repo and serve it with any static file server:
 
 ```bash
-git clone https://github.com/M4rKitS/web-personal-cloudfare.git
-cd web-personal-cloudfare
+git clone https://github.com/M4rKitS/M4rKitS.dev.git
+cd M4rKitS.dev
 python3 -m http.server 8080
 ```
 
