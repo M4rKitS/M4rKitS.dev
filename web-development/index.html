@@ -131,7 +131,13 @@ document.querySelectorAll('[data-up]').forEach(function(a){a.addEventListener('c
 (function(){
 var hdr=document.querySelector('.hdr'),spyFn=null;
 var mq=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)');
-function hb(){return hdr?hdr.getBoundingClientRect().bottom:0}
+var hbc=0;
+function measureHb(){if(hdr&&!hdr.classList.contains('open')){hbc=hdr.getBoundingClientRect().bottom}}
+function hb(){return hbc||(hdr?hdr.getBoundingClientRect().bottom:0)}
+measureHb();
+window.addEventListener('resize',measureHb);
+window.addEventListener('load',measureHb);
+if(hdr){hdr.addEventListener('transitionend',function(){measureHb()})}
 function maxY(){return Math.max(0,document.documentElement.scrollHeight-innerHeight)}
 function target(el){
 var main=document.querySelector('main');
@@ -160,6 +166,11 @@ try{history.replaceState(null,'','#'+id)}catch(x){}
 var moved=false;
 ['wheel','touchstart','keydown','mousedown'].forEach(function(ev){window.addEventListener(ev,function(){moved=true},{passive:true,once:true})});
 function fromHash(){if(moved)return;var id=decodeURIComponent((location.hash||'').slice(1));if(id&&document.getElementById(id)){go(id,false)}}
+function hold(){var t0=Date.now();(function tick(){if(moved||Date.now()-t0>2600){return}
+var id=decodeURIComponent((location.hash||'').slice(1)),el=id&&document.getElementById(id);
+if(el){var y=target(el);if(Math.abs(window.scrollY-y)>2){var de=document.documentElement,o=de.style.scrollBehavior;de.style.scrollBehavior='auto';window.scrollTo(0,y);de.style.scrollBehavior=o}}
+requestAnimationFrame(tick)})()}
+if((location.hash||'').length>1){hold()}
 window.addEventListener('load',function(){fromHash();setTimeout(fromHash,350);setTimeout(fromHash,1000);if(document.fonts&&document.fonts.ready){document.fonts.ready.then(fromHash)}});
 if(hdr){
 var hm=hdr.querySelector('.hm'),openY=0;
