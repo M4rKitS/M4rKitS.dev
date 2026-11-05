@@ -1,770 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Marcos Rodríguez Hernández — Aspiring Full Stack Developer (ConquerBlocks Master), IT Systems Technician & 8+ Years Operations Professional living in Finland." />
-  <!-- Open Graph Meta Tags (LinkedIn, WhatsApp, Facebook) -->
-  <meta property="og:title" content="Marcos Rodríguez — Web Developer" />
-  <meta property="og:description" content="Full Stack Developer — modern and agile web development, powered by AI tools, for small businesses and entrepreneurs looking to stand out online." />
-  <meta property="og:image" content="https://m4rkits.dev/og-image.png" />
-
-  <meta property="og:type" content="website" />
-
-  <!-- Twitter Card Meta Tags (X/Twitter) -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Marcos Rodríguez — Web Developer" />
-  <meta name="twitter:description" content="Full Stack Developer — modern and agile web development, powered by AI tools, for small businesses and entrepreneurs looking to stand out online." />
-  <meta name="twitter:image" content="https://m4rkits.dev/og-image.png" />
-  <link rel="canonical" href="https://m4rkits.dev/" />
-  <title>M4rKitS.dev | Web Developer</title>
-
-  <!-- Favicon (Cache Busted & Inline Data URI to overwrite previous P icon) -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23050505'/%3E%3Crect x='2' y='2' width='60' height='60' rx='12' fill='none' stroke='%23222222' stroke-width='2'/%3E%3Cpath d='M16 46V18h6.5l9.5 16 9.5-16H48v28h-6V29.5L33.5 44h-3L22 29.5V46H16z' fill='%23FFFFFF'/%3E%3Ccircle cx='51' cy='43.5' r='3.5' fill='%2310b981'/%3E%3C/svg%3E" />
-  <link rel="alternate icon" type="image/svg+xml" href="favicon.svg?v=2" />
-  <link rel="apple-touch-icon" href="favicon.svg?v=2" />
-
-  <!-- Google Fonts: Bebas Neue (Display), JetBrains Mono (Tech/Mono), Inter (Body) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'; this.onload=null;" />
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" /></noscript>
-
-  <link rel="stylesheet" href="style.css?v=3.3" />
-  
-  <!-- EmailJS SDK -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
-
-  <!-- Schema.org Person Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Marcos Rodríguez",
-    "alternateName": "M4rKitS",
-    "url": "https://m4rkits.dev",
-    "image": "https://m4rkits.dev/profile.jpg",
-    "jobTitle": "Full Stack Developer",
-    "description": "Full Stack Developer building modern, AI-powered websites for small businesses and entrepreneurs.",
-    "email": "contact@m4rkits.dev",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "FI"
-    },
-    "sameAs": [
-      "https://github.com/M4rKitS",
-      "https://www.linkedin.com/in/mrodriguezhdz"
-    ],
-    "knowsAbout": [
-      "Web Development",
-      "Swift",
-      "SwiftUI",
-      "JavaScript",
-      "Cloudflare Workers",
-      "Google Antigravity"
-    ]
-  }
-  </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marcos Rodríguez | Desarrollador de software Full Stack</title>
+<meta name="description" content="Portfolio de Marcos Rodríguez, desarrollador de software Full Stack en formación: lo que he aprendido en el máster, mis certificados y mis proyectos.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://m4rkits.dev/">
+<link rel="alternate" hreflang="es" href="https://m4rkits.dev/">
+<link rel="alternate" hreflang="en" href="https://m4rkits.dev/en/">
+<link rel="alternate" hreflang="x-default" href="https://m4rkits.dev/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="M4rKitS.dev">
+<meta property="og:title" content="Marcos Rodríguez | Desarrollador de software Full Stack">
+<meta property="og:description" content="Portfolio de Marcos Rodríguez, desarrollador de software Full Stack en formación: lo que he aprendido en el máster, mis certificados y mis proyectos.">
+<meta property="og:url" content="https://m4rkits.dev/">
+<meta property="og:image" content="https://m4rkits.dev/img/og-portfolio.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Marcos Rodríguez, desarrollador de software Full Stack">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Marcos Rodríguez | Desarrollador de software Full Stack">
+<meta name="twitter:description" content="Portfolio de Marcos Rodríguez, desarrollador de software Full Stack en formación: lo que he aprendido en el máster, mis certificados y mis proyectos.">
+<meta name="twitter:image" content="https://m4rkits.dev/img/og-portfolio.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","url":"https://m4rkits.dev/","inLanguage":"es","mainEntity":{"@type":"Person","name":"Marcos Rodríguez","alternateName":"M4rKitS","jobTitle":"Desarrollador de software Full Stack en formación","url":"https://m4rkits.dev/","email":"contact@m4rkits.dev","address":{"@type":"PostalAddress","addressLocality":"Vantaa","addressCountry":"FI"},"knowsLanguage":["es","en"],"knowsAbout":["Python","SQL","Git","GitHub","Linux","Web development","AI agents and automation"],"sameAs":["https://github.com/M4rKitS","https://www.linkedin.com/in/mrodriguezhdz","https://www.instagram.com/m4rkits.dev/"]}}</script>
+<link rel="icon" href="/img/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="48x48" href="/img/favicon-48.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/img/icon-192.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<meta name="theme-color" content="#DAE1EB">
+<script>try{if(localStorage.getItem('prop_theme')==='dark'){document.documentElement.setAttribute('data-theme','dark')}}catch(e){}</script>
+<link rel="preload" href="/fonts/barlow-normal-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/barlow-normal-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/site.9bd8f3d5.css">
 </head>
-<body class="dark-theme">
+<body>
+<div class="frame"><header class="hdr"><div class="hw"><a class="logo" href="#portfolio"><img class="lh logo-l" src="/img/logo-horizontal-claro.webp" alt="M4rKitS.dev, Full Stack Developer" width="792" height="166"><img class="lh logo-d" src="/img/logo-horizontal-oscuro.webp" alt="" width="792" height="166" aria-hidden="true"></a><nav class="hn" id="hn" aria-label="Principal"><a class="on" href="#portfolio"><span data-t="n_home">Inicio</span></a><a href="#master"><span data-t="n_master">Máster</span></a><a href="#certificados"><span data-t="n_certs">Certificados</span></a><a href="/web-development/"><span data-t="n_web">Desarrollo web</span></a><div class="lang lang-m" role="group" aria-label="Idioma"><button type="button" data-l="es" data-href="/" aria-pressed="true" aria-label="ES, Español"><img src="/img/flags/es.svg" alt="" width="20" height="15"><span>ES</span></button><button type="button" data-l="en" data-href="/en/" aria-pressed="false" aria-label="EN, English"><img src="/img/flags/gb.svg" alt="" width="20" height="15"><span>EN</span></button><button type="button" class="th th-m" aria-pressed="false" aria-label="Activar modo oscuro"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><span class="th-t">Modo oscuro</span></button></div></nav><div class="hr"><div class="soc"><a href="https://github.com/M4rKitS" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a><a href="https://www.instagram.com/m4rkits.dev/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram @m4rkits.dev"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a><a href="https://www.linkedin.com/in/mrodriguezhdz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a><a href="https://wa.me/358413193036" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></a><a href="mailto:contact@m4rkits.dev" aria-label="Email" title="Email"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/><path d="m3 7 9 6 9-6"/></svg></a></div><div class="lang" role="group" aria-label="Idioma"><button type="button" data-l="es" data-href="/" aria-pressed="true" aria-label="ES, Español"><img src="/img/flags/es.svg" alt="" width="20" height="15"><span>ES</span></button><button type="button" data-l="en" data-href="/en/" aria-pressed="false" aria-label="EN, English"><img src="/img/flags/gb.svg" alt="" width="20" height="15"><span>EN</span></button></div><button type="button" class="th" aria-pressed="false" aria-label="Activar modo oscuro" title="Activar modo oscuro"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button><a class="gb sm" href="/web-development/#contacto"><span data-t="cta_talk">Hablemos</span></a></div><button type="button" class="hm" aria-expanded="false" aria-controls="hn" aria-label="Abrir menú"><span></span><span></span></button></div></header><main>
+<section class="hero" id="portfolio"><div class="wrap">
+<span class="pl"><span data-t="h_eyebrow">Desarrollador de software Full&nbsp;Stack en formación</span></span>
+<h1 class="h1"><span data-t="h1">¡Hola! Soy <em>Marcos Rodríguez</em></span></h1>
+<p class="lead"><span data-t="h_lead">Voy avanzando hasta convertirme en desarrollador de software Full&nbsp;Stack y, por el camino, doy vida a ideas en forma de proyectos digitales.</span></p>
+<div class="cta"><a class="gb" href="#master"><span data-t="btn_master">Esta es mi formación</span></a><a class="og" href="/web-development/"><span data-t="btn_web">Desarrollo web</span></a></div>
+</div></section>
+<div class="wrap" style="position:relative"><div class="bento">
+<div class="tb"><a href="https://github.com/M4rKitS" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a><a href="https://www.instagram.com/m4rkits.dev/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram @m4rkits.dev"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a><a href="https://www.linkedin.com/in/mrodriguezhdz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a><a href="https://wa.me/358413193036" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></a><a href="mailto:contact@m4rkits.dev" aria-label="Email" title="Email"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/><path d="m3 7 9 6 9-6"/></svg></a></div>
+<div class="b1"><img fetchpriority="high" decoding="async" src="/img/foto-1-1024.webp" srcset="/img/foto-1-640.webp 640w, /img/foto-1-1024.webp 1024w" sizes="(max-width:700px) 90vw, 420px" alt="Marcos Rodríguez sentado ante su portátil en su escritorio" width="1024" height="1536"></div>
+<div class="b2"><img loading="lazy" decoding="async" src="/img/helsinki-1600.webp" srcset="/img/helsinki-800.webp 800w, /img/helsinki-1600.webp 1600w" sizes="(max-width:700px) 90vw, 700px" alt="Catedral de Helsinki" width="1600" height="740"><span class="chip"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Helsinki <small>· <span data-t="chip_fi">Finlandia</span></small></span></span></div>
+<a class="b3" href="/web-development/"><div class="mock-bar" aria-hidden="true"><i></i><i></i><i></i><span>m4rkits.dev/web-development</span></div><img class="cap-es" src="/img/web-development-captura.webp" alt="" width="920" height="500"><img class="cap-en" src="/img/web-development-captura-en.webp" alt="" width="920" height="500"><span class="go"><span><span data-t="btn_web">Desarrollo web</span></span><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a>
+<div class="b4" aria-hidden="true"><div class="ed-bar"><i></i><i></i><i></i><span>marcos.js</span></div><pre><span class="l"><span class="k">const</span> <span class="p">marcos</span> <span class="o">=</span> {</span><span class="l">  city: <span class="s">"Vantaa"</span>,</span><span class="l">  langs: [<span class="s">"es"</span>, <span class="s">"en"</span>],</span><span class="l">  path: <span class="s">"full stack"</span>,</span><span class="l">  status: <span class="s">"learning"</span>,</span><span class="l">  next: <span class="s">"your project"</span><span class="cur"></span></span><span class="l">};</span></pre></div>
+</div></div>
 
-  <!-- 3D Generative Particle Topographic Mesh Canvas (Global Fixed Background) -->
-  <canvas id="particle-canvas" class="global-particle-canvas" aria-hidden="true"></canvas>
+<section class="sec" id="master"><div class="wrap center"><span class="pl"><span data-t="m_kicker">Máster Full Stack en <a class="cb" href="https://www.conquerblocks.com/" target="_blank" rel="noopener noreferrer">Conquer Blocks</a></span></span><h2 class="h2"><span data-t="mq_title">Todo lo que cubre el máster, <em>de un vistazo</em></span></h2>
+<p class="one"><span data-t="mq_intro">Lenguajes, frameworks y herramientas.</span></p></div>
+<div class="mqs" aria-label="Tecnologías"><div class="mq"><div class="mq-t"><div class="mq-s"><i title="Python"><img src="/img/icons/python.svg" alt="" width="128" height="128"></i><i title="Claude Code"><img src="/img/icons/claudecode.svg" alt="" width="128" height="128"></i><i title="ChatGPT"><img src="/img/icons/chatgpt.svg" alt="" width="128" height="128"></i><i title="Google Antigravity"><img src="/img/icons/antigravity.svg" alt="" width="128" height="128"></i><i title="SQL"><img src="/img/icons/sql.png" alt="" width="256" height="256"></i><i title="Linux"><img src="/img/icons/linux.svg" alt="" width="128" height="128"></i><i title="VS Code"><img src="/img/icons/vscode.svg" alt="" width="128" height="128"></i><i title="GitHub"><img src="/img/icons/github.svg" alt="" width="128" height="128"></i><i title="Git"><img src="/img/icons/git.svg" alt="" width="128" height="128"></i><i title="HTML5"><img src="/img/icons/html5.svg" alt="" width="128" height="128"></i><i title="CSS"><img src="/img/icons/css3.svg" alt="" width="128" height="128"></i><i title="JavaScript"><img src="/img/icons/javascript.svg" alt="" width="128" height="128"></i></div><div class="mq-s" aria-hidden="true"><i title="Python"><img src="/img/icons/python.svg" alt="" width="128" height="128"></i><i title="Claude Code"><img src="/img/icons/claudecode.svg" alt="" width="128" height="128"></i><i title="ChatGPT"><img src="/img/icons/chatgpt.svg" alt="" width="128" height="128"></i><i title="Google Antigravity"><img src="/img/icons/antigravity.svg" alt="" width="128" height="128"></i><i title="SQL"><img src="/img/icons/sql.png" alt="" width="256" height="256"></i><i title="Linux"><img src="/img/icons/linux.svg" alt="" width="128" height="128"></i><i title="VS Code"><img src="/img/icons/vscode.svg" alt="" width="128" height="128"></i><i title="GitHub"><img src="/img/icons/github.svg" alt="" width="128" height="128"></i><i title="Git"><img src="/img/icons/git.svg" alt="" width="128" height="128"></i><i title="HTML5"><img src="/img/icons/html5.svg" alt="" width="128" height="128"></i><i title="CSS"><img src="/img/icons/css3.svg" alt="" width="128" height="128"></i><i title="JavaScript"><img src="/img/icons/javascript.svg" alt="" width="128" height="128"></i></div><div class="mq-s" aria-hidden="true"><i title="Python"><img src="/img/icons/python.svg" alt="" width="128" height="128"></i><i title="Claude Code"><img src="/img/icons/claudecode.svg" alt="" width="128" height="128"></i><i title="ChatGPT"><img src="/img/icons/chatgpt.svg" alt="" width="128" height="128"></i><i title="Google Antigravity"><img src="/img/icons/antigravity.svg" alt="" width="128" height="128"></i><i title="SQL"><img src="/img/icons/sql.png" alt="" width="256" height="256"></i><i title="Linux"><img src="/img/icons/linux.svg" alt="" width="128" height="128"></i><i title="VS Code"><img src="/img/icons/vscode.svg" alt="" width="128" height="128"></i><i title="GitHub"><img src="/img/icons/github.svg" alt="" width="128" height="128"></i><i title="Git"><img src="/img/icons/git.svg" alt="" width="128" height="128"></i><i title="HTML5"><img src="/img/icons/html5.svg" alt="" width="128" height="128"></i><i title="CSS"><img src="/img/icons/css3.svg" alt="" width="128" height="128"></i><i title="JavaScript"><img src="/img/icons/javascript.svg" alt="" width="128" height="128"></i></div></div></div><div class="mq rev"><div class="mq-t"><div class="mq-s"><i title="React"><img src="/img/icons/react.svg" alt="" width="128" height="128"></i><i title="Django"><img src="/img/icons/django.svg" alt="" width="128" height="128"></i><i title="n8n"><img src="/img/icons/n8n.svg" alt="" width="128" height="128"></i><i title="WordPress"><img src="/img/icons/wordpress.svg" alt="" width="128" height="128"></i><i title="Streamlit"><img src="/img/icons/streamlit.svg" alt="" width="128" height="128"></i><i title="Java"><img src="/img/icons/java.svg" alt="" width="128" height="128"></i><i title="Node.js"><img src="/img/icons/nodejs.svg" alt="" width="128" height="128"></i><i title="Rust"><img src="/img/icons/rust.svg" alt="" width="128" height="128"></i><i title="Go"><img src="/img/icons/go.svg" alt="" width="128" height="128"></i><i title="Astro"><img src="/img/icons/astro.svg" alt="" width="128" height="128"></i><i title="Angular"><img src="/img/icons/angular.svg" alt="" width="128" height="128"></i><i title="Vue.js"><img src="/img/icons/vuejs.svg" alt="" width="128" height="128"></i></div><div class="mq-s" aria-hidden="true"><i title="React"><img src="/img/icons/react.svg" alt="" width="128" height="128"></i><i title="Django"><img src="/img/icons/django.svg" alt="" width="128" height="128"></i><i title="n8n"><img src="/img/icons/n8n.svg" alt="" width="128" height="128"></i><i title="WordPress"><img src="/img/icons/wordpress.svg" alt="" width="128" height="128"></i><i title="Streamlit"><img src="/img/icons/streamlit.svg" alt="" width="128" height="128"></i><i title="Java"><img src="/img/icons/java.svg" alt="" width="128" height="128"></i><i title="Node.js"><img src="/img/icons/nodejs.svg" alt="" width="128" height="128"></i><i title="Rust"><img src="/img/icons/rust.svg" alt="" width="128" height="128"></i><i title="Go"><img src="/img/icons/go.svg" alt="" width="128" height="128"></i><i title="Astro"><img src="/img/icons/astro.svg" alt="" width="128" height="128"></i><i title="Angular"><img src="/img/icons/angular.svg" alt="" width="128" height="128"></i><i title="Vue.js"><img src="/img/icons/vuejs.svg" alt="" width="128" height="128"></i></div><div class="mq-s" aria-hidden="true"><i title="React"><img src="/img/icons/react.svg" alt="" width="128" height="128"></i><i title="Django"><img src="/img/icons/django.svg" alt="" width="128" height="128"></i><i title="n8n"><img src="/img/icons/n8n.svg" alt="" width="128" height="128"></i><i title="WordPress"><img src="/img/icons/wordpress.svg" alt="" width="128" height="128"></i><i title="Streamlit"><img src="/img/icons/streamlit.svg" alt="" width="128" height="128"></i><i title="Java"><img src="/img/icons/java.svg" alt="" width="128" height="128"></i><i title="Node.js"><img src="/img/icons/nodejs.svg" alt="" width="128" height="128"></i><i title="Rust"><img src="/img/icons/rust.svg" alt="" width="128" height="128"></i><i title="Go"><img src="/img/icons/go.svg" alt="" width="128" height="128"></i><i title="Astro"><img src="/img/icons/astro.svg" alt="" width="128" height="128"></i><i title="Angular"><img src="/img/icons/angular.svg" alt="" width="128" height="128"></i><i title="Vue.js"><img src="/img/icons/vuejs.svg" alt="" width="128" height="128"></i></div></div></div></div></section>
 
-  <!-- ===== HEADER & NAVBAR ===== -->
-  <header class="site-header" id="header">
-    <div class="nav-container">
-      <a href="#hero" class="nav-brand" aria-label="M4rKitS Home">
-        <span class="brand-text">M4rKitS</span><span class="brand-accent">.dev</span>
-      </a>
+<section class="sec" id="conocimientos"><div class="wrap center"><span class="pl"><span data-t="k_kicker">Conocimientos técnicos y herramientas</span></span><h2 class="h2"><span data-t="k_title">Lo que he visto, <em>por áreas</em></span></h2>
+<p class="one"><span data-t="k_intro">De la terminal a la publicación.</span></p></div>
+<div class="wrap"><div class="wb" data-wb><div class="wb-bar" aria-hidden="true"><i></i><i></i><i></i><span><span data-t="wb_title">conocimientos</span></span></div><div class="wb-body"><div class="wb-tabs" role="tablist" aria-orientation="vertical"><button type="button" role="tab" id="wbt0" aria-controls="wbp0" aria-selected="true" tabindex="0"><small>01</small><b><span data-t="w0_tab">Entorno</span></b><span class="ext">.sh</span></button><button type="button" role="tab" id="wbt1" aria-controls="wbp1" aria-selected="false" tabindex="-1"><small>02</small><b><span data-t="w1_tab">Versiones</span></b><span class="ext">.git</span></button><button type="button" role="tab" id="wbt2" aria-controls="wbp2" aria-selected="false" tabindex="-1"><small>03</small><b><span data-t="w2_tab">Código</span></b><span class="ext">.py</span></button><button type="button" role="tab" id="wbt3" aria-controls="wbp3" aria-selected="false" tabindex="-1"><small>04</small><b><span data-t="w3_tab">Datos</span></b><span class="ext">.sql</span></button><button type="button" role="tab" id="wbt4" aria-controls="wbp4" aria-selected="false" tabindex="-1"><small>05</small><b><span data-t="w4_tab">IA</span></b><span class="ext">.md</span></button><button type="button" role="tab" id="wbt5" aria-controls="wbp5" aria-selected="false" tabindex="-1"><small>06</small><b><span data-t="w5_tab">Publicar</span></b><span class="ext">.yml</span></button></div><div class="wb-panels"><section role="tabpanel" id="wbp0" aria-labelledby="wbt0"><header><h3><span data-t="w0_t">Entorno de trabajo</span></h3><p class="wbs"><span data-t="w0_d">Dónde se trabaja: el sistema, la terminal y el editor.</span></p><p class="wbp"><span data-t="w0_lead">Todo proyecto empieza en un entorno bien montado. Aquí entran el sistema Linux, la terminal con su shell y el editor donde se escribe y se revisa el código: la base sobre la que se apoya el resto del trabajo.</span></p></header><div><h4 class="wbh"><span data-t="wb_learn">Lo que he podido aprender</span></h4><ul class="wbk"><li style="--i:0"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.6 12.6l3 3 5.8-6.2"/></svg><span><span data-t="w0l0">Moverme por carpetas y archivos desde la línea de comandos.</span></span></li><li style="--i:1"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.6 12.6l3 3 5.8-6.2"/></svg><span><span data-t="w0l1">Lanzar y encadenar comandos sin depender del ratón.</span></span></li><li style="--i:2"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.6 12.6l3 3 5.8-6.2"/></svg><span><span data-t="w0l2">Dejar el editor preparado para escribir y revisar código con comodidad.</span></span></li></ul></div><div><h4 class="wbh"><span data-t="wb_tools">Herramientas</span></h4><ul class="wbl"><li><i><img src="/img/icons/linux.svg" alt="" width="128" height="128" loading="lazy"></i><div><b><span data-t="w0i0_t">Linux y terminal</span></b><span><span data-t="w0i0_d">Moverse por el sistema y lanzar tareas desde la línea de comandos.</span></span></div></li><li><i><img src="/img/icons/zsh.svg" alt="" width="128" height="128" loading="lazy"></i><div><b><span data-t="w0i1_t">Zsh</span></b><span><span data-t="w0i1_d">Intérprete de comandos para trabajar cómodo en la terminal.</span></span></div></li><li><i><img src="/img/icons/vscode.svg" alt="" width="128" height="128" loading="lazy"></i><div><b><span data-t="w0i2_t">VS Code</span></b><span><span data-t="w0i2_d">Editor donde se escribe, se prueba y se revisa el código.</span></span></div></li></ul></div><div class="wbc" aria-hidden="true"><code>$ cd mi-proyecto &amp;&amp; code .</code><u></u></div></section><section role="tabpanel" id="wbp1" aria-labelledby="wbt1" hidden><header><h3><span data-t="w1_t">Control de versiones</span></h3><p class="wbs"><span data-t="w1_d">Guardar la historia del código y trabajar sin miedo a perder nada.</span></p><p class="wbp"><span data-t="w1_lead">El control de versiones guarda cada cambio con su historia, permite probar ideas sin riesgo y volver atrás cuando algo falla. Git hace ese trabajo en local y GitHub lo lleva a la nube para compartirlo.</span></p></header><div><h4 class="wbh"><span data-t="wb_learn">Lo que he podido aprender</span></h4><ul class="wbk"><li style="--i:0"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.6 12.6l3 3 5.8-6.2"/></svg><span><span data-t="w1l0">Registrar cambios en un repositorio de forma ordenada.</span></span></li><li style="--i:1"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.6 12.6l3 3 5.8-6.2"/></svg><span><span data-t="w1l1">Trabajar con ramas y recuperar una versión anterior.</span></span></li><li style="--i:2"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.6 12.6l3 3 5.8-6.2"/></svg><span><span data-t="w1l2">Subir y sincronizar un proyecto con GitHub.</span></span></li></ul></div><div><h4 class="wbh"><span data-t="wb_tools">Herramientas</span></h4><ul class="wbl"><li><i><img src="/img/icons/git.svg" alt="" width="128" height="128" loading="lazy"></i><div><b><span data-t="w1i0_t">Git</span></b><span><span data-t="w1i0_d">Registrar cambios y volver atrás cuando haga falta.</span></span></div></li><li><i><img src="/img/icons/github.svg" alt="" width="128" height="128" loading="lazy"></i><div><b><span data-t="w1i1_t">GitHub</span></b><span><span data-t="w1i1_d">Alojar repositorios y dejar el código disponible en la nube.</span></span></div></li><li><i><img src="/img/icons/github.svg" alt="" width="128" height="128" loading="lazy"></i><div><b><span data-t="w1i2_t">GitHub desde Antigravity</span></b><span><span data-t="w1i2_d">Manejar el repositorio sin salir del editor con IA.</span></span></div></li></ul></div><div class="wbc" aria-hidden="true"><code>$ git commit -m "avance"</code><u></u></div></section><section role="tabpanel" id="wbp2" aria-labelledby="wbt2" hidden><header><h3><span data-t="w2_t">Código y lógica</span></h3><p class="wbs"><span data-t="w2_d">Pensar la solución y escribirla en código.</span></p><p class="wbp"><span data-t="w2_lead">Antes de escribir una línea hay que saber qué pasos resuelven el problema. De ahí se pasa a un lenguaje, Python, a organizar el código con objetos y a dar forma a una página con HTML y CSS.</span></p></header><div><h4 class="wbh"><span data-t="wb_learn">Lo que he podido aprender</span></h4><ul class="wbk"><li style="--i:0"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.6 12.6l3 3 5.8-6.2"/></svg><span><span data-t="w2l0">Descomponer un problema en pasos con pseudocódigo.</span></span></li><li style="--i:1"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.6 12.6l3 3 5.8-6.2"/></svg><span><span data-t="w2l1">Escribir programas en Python con condiciones, bucles y funciones.</span></span></li><li style="--i:2"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.6 12.6l3 3 5.8-6.2"/></svg><span><span data-t="w2l2">Organizar el código en clases y objetos.</span></span></li><li style="--i:3"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.6 12.6l3 3 5.8-6.2"/></svg><span><span data-t="w2l3">Maquetar una página con HTML y darle estilo con CSS.</span></span></li></ul></div><div><h4 class="wbh"><span data-t="wb_tools">Herramientas</span></h4><ul class="wbl"><li><i><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="5" rx="1.2"/><path d="M12 8v4M5.5 12h13M5.5 12v4M18.5 12v4"/><rect x="2.5" y="16" width="6" height="5" rx="1.2"/><rect x="15.5" y="16" width="6" height="5" rx="1.2"/></svg></i><div><b><span data-t="w2i0_t">Lógica y pseudocódigo</span></b><span><span data-t="w2i0_d">Plantear los pasos de un problema antes de programarlos.</span></span></div></li><li><i><img src="/img/icons/python.svg" alt="" width="128" height="128" loading="lazy"></i><div><b><span data-t="w2i1_t">Python</span></b><span><span data-t="w2i1_d">Lenguaje para escribir programas y automatizar tareas.</span></span></div></li><li><i><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2.5"/><path d="M4 9h16M4 15h16"/></svg></i><div><b><span data-t="w2i2_t">Programación orientada a objetos</span></b><span><span data-t="w2i2_d">Organizar el código en clases y objetos reutilizables.</span></span></div></li><li><i><img src="/img/icons/html5.svg" alt="" width="128" height="128" loading="lazy"></i><div><b><span data-t="w2i3_t">HTML</span></b><span><span data-t="w2i3_d">La estructura y el contenido de una página web.</span></span></div></li><li><i><img src="/img/icons/css3.svg" alt="" width="128" height="128" loading="lazy"></i><div><b><span data-t="w2i4_t">CSS</span></b><span><span data-t="w2i4_d">El aspecto de la web: color, tipografía y distribución.</span></span></div></li></ul></div><div class="wbc" aria-hidden="true"><code>def hola(): print("Hola")</code><u></u></div></section><section role="tabpanel" id="wbp3" aria-labelledby="wbt3" hidden><header><h3><span data-t="w3_t">Datos</span></h3><p class="wbs"><span data-t="w3_d">Guardar la información, consultarla y relacionarla.</span></p><p class="wbp"><span data-t="w3_lead">Casi toda aplicación necesita guardar información y recuperarla. Esta área recorre cómo se diseñan las tablas y sus relaciones, cómo se piden los datos con SQL y cómo se manejan desde Python con un ORM.</span></p></header><div><h4 class="wbh"><span data-t="wb_learn">Lo que he podido aprender</span></h4><ul class="wbk"><li style="--i:0"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.6 12.6l3 3 5.8-6.2"/></svg><span><span data-t="w3l0">Crear tablas y relacionarlas entre sí.</span></span></li><li style="--i:1"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.6 12.6l3 3 5.8-6.2"/></svg><span><span data-t="w3l1">Consultar datos con SELECT, JOIN y subconsultas.</span></span></li><li style="--i:2"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.6 12.6l3 3 5.8-6.2"/></svg><span><span data-t="w3l2">Conectar la base de datos con Python mediante SQLAlchemy.</span></span></li></ul></div><div><h4 class="wbh"><span data-t="wb_tools">Herramientas</span></h4><ul class="wbl"><li><i><img src="/img/icons/sql.png" alt="" width="256" height="256" loading="lazy"></i><div><b><span data-t="w3i0_t">SQL</span></b><span><span data-t="w3i0_d">Lenguaje para pedir y modificar datos.</span></span></div></li><li><i><img src="/img/icons/mysql.svg" alt="" width="128" height="128" loading="lazy"></i><div><b><span data-t="w3i1_t">MySQL</span></b><span><span data-t="w3i1_d">Sistema de bases de datos que guarda la información en tablas.</span></span></div></li><li><i><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="12" r="5.5"/><circle cx="15" cy="12" r="5.5"/></svg></i><div><b><span data-t="w3i2_t">Consultas con JOIN y subconsultas</span></b><span><span data-t="w3i2_d">Combinar tablas y filtrar con consultas anidadas.</span></span></div></li><li><i><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3A4 4 0 0 0 11 18.7l1-1"/></svg></i><div><b><span data-t="w3i3_t">Relaciones entre tablas</span></b><span><span data-t="w3i3_d">Diseñar cómo se conectan los datos entre sí.</span></span></div></li><li><i><img src="/img/icons/sqlalchemy.svg" alt="" width="128" height="128" loading="lazy"></i><div><b><span data-t="w3i4_t">SQLAlchemy y ORM</span></b><span><span data-t="w3i4_d">Trabajar con la base de datos desde Python usando objetos.</span></span></div></li></ul></div><div class="wbc" aria-hidden="true"><code>SELECT nombre FROM alumnos;</code><u></u></div></section><section role="tabpanel" id="wbp4" aria-labelledby="wbt4" hidden><header><h3><span data-t="w4_t">Inteligencia artificial</span></h3><p class="wbs"><span data-t="w4_d">Módulo de IA con Antigravity: asistentes, agentes y herramientas conectadas.</span></p><p class="wbp"><span data-t="w4_lead">El módulo de IA con Antigravity enseña a trabajar acompañado de asistentes y agentes, a automatizar tareas repetitivas y a conectar herramientas externas con los modelos.</span></p></header><div><h4 class="wbh"><span data-t="wb_learn">Lo que he podido aprender</span></h4><ul class="wbk"><li style="--i:0"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.6 12.6l3 3 5.8-6.2"/></svg><span><span data-t="w4l0">Usar un editor con asistente de IA para montar proyectos.</span></span></li><li style="--i:1"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.6 12.6l3 3 5.8-6.2"/></svg><span><span data-t="w4l1">Configurar agentes y coordinarlos entre sí.</span></span></li><li style="--i:2"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.6 12.6l3 3 5.8-6.2"/></svg><span><span data-t="w4l2">Automatizar procesos y conectar herramientas con MCP.</span></span></li><li style="--i:3"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.6 12.6l3 3 5.8-6.2"/></svg><span><span data-t="w4l3">Explorar los modelos y las herramientas de OpenAI.</span></span></li></ul></div><div><h4 class="wbh"><span data-t="wb_tools">Herramientas</span></h4><ul class="wbl many"><li><i><img src="/img/icons/antigravity.svg" alt="" width="128" height="128" loading="lazy"></i><div><b><span data-t="w4i0_t">Google Antigravity</span></b><span><span data-t="w4i0_d">Editor con asistente de IA integrado para montar y revisar proyectos web.</span></span></div></li><li><i><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7"/><path d="M19 3v4M17 5h4"/></svg></i><div><b><span data-t="w4i1_t">Agentes de IA</span></b><span><span data-t="w4i1_d">Preparar y ajustar agentes que se encargan de tareas de desarrollo.</span></span></div></li><li><i><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a3 3 0 0 1 3-3h15"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v2a3 3 0 0 1-3 3H3"/></svg></i><div><b><span data-t="w4i2_t">Procesos automatizados</span></b><span><span data-t="w4i2_d">Encadenar pasos repetitivos en flujos que se ejecutan solos.</span></span></div></li><li><i><img src="/img/icons/notebooklm.svg" alt="" width="128" height="128" loading="lazy"></i><div><b><span data-t="w4i3_t">NotebookLM</span></b><span><span data-t="w4i3_d">Ordenar documentación y consultarla con ayuda de IA.</span></span></div></li><li><i><img src="/img/icons/mcp.svg" alt="" width="128" height="128" loading="lazy"></i><div><b><span data-t="w4i4_t">Model Context Protocol</span></b><span><span data-t="w4i4_d">Enchufar herramientas externas a los modelos de IA.</span></span></div></li><li><i><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l4-1L19 8l-3-3L5 16z"/><path d="M14 6l3 3"/></svg></i><div><b><span data-t="w4i5_t">Google Stitch</span></b><span><span data-t="w4i5_d">Generar propuestas de interfaz y diseño a partir de una idea.</span></span></div></li><li><i><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h8M18 6h2M4 12h2M12 12h8M4 18h10M20 18h0"/><circle cx="15" cy="6" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="17" cy="18" r="2"/></svg></i><div><b><span data-t="w4i6_t">Open Agent Manager</span></b><span><span data-t="w4i6_d">Seguir y coordinar varios agentes desde un mismo sitio.</span></span></div></li><li><i><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18"/><path d="M12 11.5l.9 2.1 2.1.9-2.1.9-.9 2.1-.9-2.1-2.1-.9 2.1-.9z"/></svg></i><div><b><span data-t="w4i7_t">Apps y webs con IA integrada</span></b><span><span data-t="w4i7_d">Dar a una web o una app funciones que usan IA.</span></span></div></li><li><i><img src="/img/icons/chatgpt.svg" alt="" width="128" height="128" loading="lazy"></i><div><b><span data-t="w4i8_t">OpenAI</span></b><span><span data-t="w4i8_d">Probar sus modelos y herramientas en distintas tareas.</span></span></div></li></ul></div><div class="wbc" aria-hidden="true"><code>&gt; resume esta documentación</code><u></u></div></section><section role="tabpanel" id="wbp5" aria-labelledby="wbt5" hidden><header><h3><span data-t="w5_t">Publicar en internet</span></h3><p class="wbs"><span data-t="w5_d">Sacar un sitio web a internet y mantenerlo en marcha.</span></p><p class="wbp"><span data-t="w5_lead">Un sitio no existe hasta que está en internet. Cloudflare Pages publica una web estática desde su repositorio de GitHub, Wrangler permite hacerlo desde la terminal y el alojamiento mantiene la web propia en línea.</span></p></header><div><h4 class="wbh"><span data-t="wb_learn">Lo que he podido aprender</span></h4><ul class="wbk"><li style="--i:0"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.6 12.6l3 3 5.8-6.2"/></svg><span><span data-t="w5l0">Conectar un repositorio con Cloudflare Pages y publicar un sitio estático.</span></span></li><li style="--i:1"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.6 12.6l3 3 5.8-6.2"/></svg><span><span data-t="w5l1">Usar Wrangler para desplegar y gestionar proyectos desde la terminal.</span></span></li><li style="--i:2"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.6 12.6l3 3 5.8-6.2"/></svg><span><span data-t="w5l2">Alojar una web propia y mantenerla en línea y actualizada.</span></span></li><li style="--i:3"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.6 12.6l3 3 5.8-6.2"/></svg><span><span data-t="w5l3">Manejar lo básico del panel de Cloudflare.</span></span></li></ul></div><div><h4 class="wbh"><span data-t="wb_tools">Herramientas</span></h4><ul class="wbl"><li><i><img src="/img/icons/cloudflare.svg" alt="" width="128" height="128" loading="lazy"></i><div><b><span data-t="w5i0_t">Cloudflare</span></b><span><span data-t="w5i0_d">Manejar lo básico de un proyecto y sus servicios desde el panel.</span></span></div></li><li><i><img src="/img/icons/cloudflarepages.svg" alt="" width="128" height="128" loading="lazy"></i><div><b><span data-t="w5i1_t">Cloudflare Pages</span></b><span><span data-t="w5i1_d">Publicar sitios estáticos enlazados a un repositorio de GitHub.</span></span></div></li><li><i><img src="/img/icons/wrangler.svg" alt="" width="128" height="128" loading="lazy"></i><div><b><span data-t="w5i2_t">Wrangler</span></b><span><span data-t="w5i2_d">Gestionar y publicar proyectos de Cloudflare desde la línea de comandos.</span></span></div></li><li><i><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7h.01M7 17h.01"/></svg></i><div><b><span data-t="w5i3_t">Alojamiento web</span></b><span><span data-t="w5i3_d">Tener una web propia alojada, en línea y al día.</span></span></div></li></ul></div><div class="wbc" aria-hidden="true"><code>$ wrangler pages deploy</code><u></u></div></section></div></div></div></div></section>
 
-      <!-- Navigation Links -->
-      <nav class="nav-menu" id="nav-menu" role="navigation" aria-label="Main Navigation">
-        <ul class="nav-list">
-          <li><a href="#hero" class="nav-link active" data-i18n="nav.home">01//INICIO</a></li>
-          <li><a href="#projects" class="nav-link" data-i18n="nav.projects">02//PROYECTOS</a></li>
-          <li><a href="#experience" class="nav-link" data-i18n="nav.experience">03//EXPERIENCIA</a></li>
-          <li><a href="#about" class="nav-link" data-i18n="nav.about">04//SOBRE MÍ</a></li>
-          <li><a href="#contact" class="nav-link" data-i18n="nav.contact">05//CONTACTO</a></li>
-        </ul>
-        <div class="mobile-nav-social">
-          <a href="https://github.com/M4rKitS" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub" title="GitHub">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-          </a>
-          <a href="https://www.linkedin.com/in/mrodriguezhdz" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn" title="LinkedIn">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </a>
-          <a href="mailto:contact@m4rkits.dev" class="social-link" aria-label="Email" title="contact@m4rkits.dev">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          </a>
-          <a href="https://wa.me/358413193036" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp" title="WhatsApp (+358 413 193 036)">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="21" height="21"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-          </a>
-        </div>
-      </nav>
+<section class="sec"><div class="gh"><h2 class="h2"><span data-t="g_title">Hacia dónde <em>voy</em></span></h2></div>
+<div class="goal"><div class="ph"><img src="/img/foto-3-1024.webp" srcset="/img/foto-3-640.webp 640w, /img/foto-3-1024.webp 1024w" sizes="(max-width:700px) 90vw, 520px" alt="Retrato de Marcos Rodríguez sonriendo" width="1024" height="1536" loading="lazy"></div><div class="gc"><h3><span data-t="g_card">Construyo mientras llego</span></h3><p><span data-t="g_text">Sigo mi camino hacia ser desarrollador de software Full&nbsp;Stack y, mientras tanto, he decidido crear mi propia marca, M4rKitS.dev, y poner lo que voy aprendiendo al servicio de empresas que necesitan soluciones digitales.</span></p><p><span data-t="g_text2">Mi meta sigue intacta: trabajar algún día en una big tech. Cada proyecto que saco adelante me acerca un paso más.</span></p><span class="sg"><img class="logo-l" src="/img/logo-horizontal-claro.webp" alt="M4rKitS.dev, Full Stack Developer" width="792" height="166" loading="lazy"><img class="logo-d" src="/img/logo-horizontal-oscuro.webp" alt="" width="792" height="166" loading="lazy" aria-hidden="true"></span></div></div></section>
 
-      <!-- Right Actions: Language Selector & Social Icons -->
-      <div class="nav-actions">
-        <div class="lang-switch" role="group" aria-label="Language Selector">
-          <button class="lang-btn active" data-lang="en" aria-label="English">EN</button>
-          <button class="lang-btn" data-lang="es" aria-label="Español">ES</button>
-          <button class="lang-btn" data-lang="fi" aria-label="Suomi">FI</button>
-        </div>
+<section class="sec center" id="certificados"><div class="wrap"><h2 class="h2" style="margin-top:0"><span data-t="c_title">Lo que ya tengo <em>en papel</em></span></h2><p><span data-t="c_sub">Nueve certificados, cada uno de un módulo o curso que he terminado.</span></p></div><div class="certs"><div class="cc"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.8 12.4l3 3 5.5-6"/></svg><b><span data-t="c1">AWS Educate · Generative AI</span></b></div><div class="cc"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.8 12.4l3 3 5.5-6"/></svg><b><span data-t="c2">IA y Logística</span></b></div><div class="cc"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.8 12.4l3 3 5.5-6"/></svg><b><span data-t="c3">Pseudocódigo</span></b></div><div class="cc"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.8 12.4l3 3 5.5-6"/></svg><b><span data-t="c4">Linux y la Terminal</span></b></div><div class="cc"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.8 12.4l3 3 5.5-6"/></svg><b><span data-t="c5">Git y GitHub</span></b></div><div class="cc"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.8 12.4l3 3 5.5-6"/></svg><b><span data-t="c6">Python</span></b></div><div class="cc"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.8 12.4l3 3 5.5-6"/></svg><b><span data-t="c7">Python Avanzado</span></b></div><div class="cc"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.8 12.4l3 3 5.5-6"/></svg><b><span data-t="c8">SQL</span></b></div><div class="cc"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.8 12.4l3 3 5.5-6"/></svg><b><span data-t="c9">SOLID y Bases de datos</span></b></div></div></section>
+</main><footer class="ft"><div class="ft-box"><div class="ft-top"><a class="ft-logo" href="#portfolio"><img src="/img/logo-horizontal-oscuro.webp" alt="M4rKitS.dev, Full Stack Developer" width="792" height="166" loading="lazy"></a><a class="up" href="#" data-up><span><span data-t="f_top">Volver arriba</span></span><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a></div><div class="ft-mid"><p class="ft-msg"><span data-t="f_thanks">Gracias por llegar hasta aquí.</span></p><p class="ft-sub"><span class="ft-prompt" aria-hidden="true">&gt;</span> <span data-t="h_eyebrow">Desarrollador de software Full&nbsp;Stack en formación</span></p></div><div class="ft-bot"><div class="fs ft-fs"><a href="https://github.com/M4rKitS" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a><a href="https://www.instagram.com/m4rkits.dev/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram @m4rkits.dev"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a><a href="https://www.linkedin.com/in/mrodriguezhdz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a><a href="https://wa.me/358413193036" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></a><a href="mailto:contact@m4rkits.dev" aria-label="Email" title="Email"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/><path d="m3 7 9 6 9-6"/></svg></a></div><p class="ft-cp">&copy; M4rKitS.dev &middot; <span data-t="f_rights">Todos los derechos reservados</span></p><nav class="ft-lg" aria-label="Legal"><a href="/aviso-legal/"><span data-t="f_aviso">Aviso legal</span></a><a href="/privacidad/"><span data-t="f_priv">Privacidad</span></a><a href="/cookies/"><span data-t="f_cook">Cookies</span></a></nav></div></div></footer></div>
+<script>(function(){var D={"es":{"n_home":"Inicio","n_master":"Máster","n_certs":"Certificados","n_web":"Desarrollo web","n_plans":"Soluciones","n_projects":"Proyectos","n_contact":"Contacto","n_portfolio":"Portfolio","cta_talk":"Hablemos","cta_write":"Escríbeme","h_eyebrow":"Desarrollador de software Full&nbsp;Stack en formación","h_hello":"¡Hola! Soy Marcos Rodríguez","h1":"¡Hola! Soy <em>Marcos Rodríguez</em>","h_lead":"Voy avanzando hasta convertirme en desarrollador de software Full&nbsp;Stack y, por el camino, doy vida a ideas en forma de proyectos digitales.","h_short":"Estudio el máster Full Stack de <a class=\"cb\" href=\"https://www.conquerblocks.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Conquer Blocks</a> y cuento cada módulo con mis palabras.","role_a":"Full stack","role_b":"en formación","role_c":"Developer","btn_master":"Esta es mi formación","btn_web":"Desarrollo web","chip_loc":"Vantaa, Finlandia","chip_fi":"Finlandia","chip_lang":"Español e inglés","follow":"Sígueme","hire":"ESCRÍBEME · ESCRÍBEME · ","st_certs":"Certificados","st_mods":"Módulos","st_langs":"Idiomas","st_plans":"Planes","k_kicker":"Conocimientos técnicos y herramientas","k_title":"Lo que he visto, <em>por áreas</em>","k_intro":"De la terminal a la publicación.","a1_t":"Lógica y programación","a1_d":"Plantear un problema, resolverlo con código y darle forma en una página web.","a2_t":"Datos","a2_d":"Guardar la información, consultarla y relacionarla entre tablas.","a3_t":"Herramientas de trabajo","a3_d":"El entorno de cada día para escribir, versionar y ordenar el código.","a4_t":"Inteligencia artificial","a4_d":"Módulo de IA con Antigravity: trabajar con asistentes, agentes y herramientas conectadas.","a5_t":"Publicación en la nube","a5_d":"Sacar un sitio web a internet a partir de su repositorio.","k_logic":"Lógica y pseudocódigo","k_oop":"Programación orientada a objetos","k_joins":"Consultas con JOIN y subconsultas","k_rel":"Relaciones entre tablas","k_orm":"SQLAlchemy y ORM","k_linux":"Linux y terminal","k_gha":"GitHub desde Antigravity","ai1_t":"Google Antigravity","ai1_d":"Editor con asistente de IA integrado para montar y revisar proyectos web.","ai2_t":"Agentes de IA","ai2_d":"Preparar y ajustar agentes que se encargan de tareas de desarrollo.","ai3_t":"Procesos automatizados","ai3_d":"Encadenar pasos repetitivos en flujos que se ejecutan solos.","ai4_t":"NotebookLM","ai4_d":"Ordenar documentación y consultarla con ayuda de IA.","ai5_t":"Model Context Protocol","ai5_d":"Enchufar herramientas externas a los modelos de IA.","ai6_t":"Google Stitch","ai6_d":"Generar propuestas de interfaz y diseño a partir de una idea.","ai7_t":"Open Agent Manager","ai7_d":"Seguir y coordinar varios agentes desde un mismo sitio.","ai8_t":"Apps y webs con IA integrada","ai8_d":"Dar a una web o una app funciones que usan IA.","ai9_t":"OpenAI","ai9_d":"Probar sus modelos y herramientas en distintas tareas.","cl1_t":"Cloudflare","cl1_d":"Manejar lo básico de un proyecto y sus servicios desde el panel.","cl2_t":"Cloudflare Pages","cl2_d":"Publicar sitios estáticos enlazados a un repositorio de GitHub.","m_kicker":"Máster Full Stack en <a class=\"cb\" href=\"https://www.conquerblocks.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Conquer Blocks</a>","mq_title":"Todo lo que cubre el máster, <em>de un vistazo</em>","mq_intro":"Lenguajes, frameworks y herramientas.","m_title":"Módulo a módulo, <em>con mis palabras</em>","m_intro":"De cada módulo cuento tres cosas: qué era, qué he aprendido y cómo lo uso hoy.","m_what":"Qué era","m_learn":"Qué aprendí","m_use":"Cómo lo uso hoy","m_pending":"Pendiente: lo escribo con el índice del módulo.","m_view":"Ver módulos","tag_cert":"Con certificado","mod1":"Pseudocódigo","mod2":"Linux y la Terminal","mod3":"Python, básico y avanzado","mod4":"Git y GitHub","mod5":"SQL","mod6":"IA","mod7":"Agentes de IA y automatizaciones","g_kicker":"Hacia dónde voy","g_title":"Hacia dónde <em>voy</em>","g_text":"Sigo mi camino hacia ser desarrollador de software Full&nbsp;Stack y, mientras tanto, he decidido crear mi propia marca, M4rKitS.dev, y poner lo que voy aprendiendo al servicio de empresas que necesitan soluciones digitales.","g_pending":"Un destino claro y proyectos propios por el camino.","c_kicker":"Certificados","c_title":"Lo que ya tengo <em>en papel</em>","c_sub":"Nueve certificados, cada uno de un módulo o curso que he terminado.","c1":"AWS Educate · Generative AI","c2":"IA y Logística","c3":"Pseudocódigo","c4":"Linux y la Terminal","c5":"Git y GitHub","c6":"Python","c7":"Python Avanzado","c8":"SQL","w_eyebrow":"Disponible para nuevos proyectos","w_h1":"Webs claras para <em>pequeños negocios</em>","w_lead":"Diseño y desarrollo web mientras sigo estudiando. Hablamos de lo que necesitas, te paso un presupuesto claro y recibes una web lista para compartir.","w_btn1":"Ver planes","w_btn2":"Escríbeme","w_chip1":"Español e inglés","w_chip2":"Horario de España","p_kicker":"Soluciones","p_title":"Una web a tu <em>medida</em>","p_note":"Cada proyecto es distinto: hablamos de lo que necesitas, lo ajustamos y entonces te doy un presupuesto concreto.","p_from":"Desde","pl_cta":"Pedir presupuesto","pl1_n":"Para empezar","pl1_d":"Diseño y textos de una web de una página, lista para compartir.","pl1_p":"700 €","pl1_m":"pago único","pl1_f1":"Diseño de una página","pl1_f2":"Textos incluidos","pl1_f3":"Lista para compartir","pl2_n":"Para crecer","pl2_d":"La landing, más cambios de contenido, actualizaciones técnicas y copias de seguridad cada mes.","pl2_p":"700 €","pl2_m":"y desde 30 €/mes","pl2_f1":"Landing completa","pl2_f2":"Cambios de contenido","pl2_f3":"Actualizaciones técnicas","pl2_f4":"Copias de seguridad","pl3_n":"A medida","pl3_d":"Una web de varias páginas con SEO y mantenimiento mensual. También tiendas online o apps.","pl3_p":"A medida","pl3_m":"Presupuesto tras hablar","pl3_f1":"Web de varias páginas","pl3_f2":"SEO incluido","pl3_f3":"Mantenimiento mensual","pl3_f4":"Tiendas online o apps","ex_title":"Extras sueltos","ex1":"SEO técnica","ex1p":"desde 150 €","ex2":"Contenido optimizado","ex2p":"desde 150 €","ex3":"Seguimiento SEO","ex3p":"desde 60 €/mes","ex4":"Mantenimiento + SEO","ex4p":"desde 80 €/mes","pr_kicker":"Proyectos","pr_title":"Proyectos y <em>trabajo real</em>","tbh_badge":"Cliente real","tbh_desc":"Rediseño completo de la web de TBH Strategy, la consultora de redes sociales de Tamara en Tralee: identidad en verde salvia, blog para posicionar en Google, formulario de contacto y migración de dominio sin perder el correo ni la analítica.","tag1":"Migración de dominio","tag2":"SEO / Blog","tag3":"Google Analytics","tbh_cta":"Visitar tbhstrategy.com","ly_sub":"Gestión de redes sociales","ly_badge":"Próximamente","own_t":"Esta web y su repositorio","own_badge":"Proyecto propio","own_d":"El código de esta web está en GitHub, abierto para que lo veas.","own_cta":"Ver repositorio","who_kicker":"Quién lo hace","who_title":"Hola, soy <em>Marcos</em>","who_text":"Soy un español que reside en Vantaa, Finlandia, junto con mi familia. Desde aquí sigo mi camino hacia ser desarrollador de software Full&nbsp;Stack. Actualmente estoy estudiando el máster Full Stack en <a class=\"cb\" href=\"https://www.conquerblocks.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Conquer Blocks</a>, donde cada módulo me enseña a entender y mantener lo que hay detrás de una web: Python, SQL, Git, agentes de IA y automatizaciones.","who_link":"Conoce mi portfolio","cta_title":"¿Hablamos de <em>tu web</em>?","cta_text":"Cuéntame qué necesitas y buscamos juntos la mejor solución.","f_loc":"Vantaa, Finlandia","f_rights":"Todos los derechos reservados","f_nav":"Navegación","f_contact":"Contacto","f_top":"Volver arriba","f_thanks":"Gracias por llegar hasta aquí.","w0_tab":"Entorno","w0_t":"Entorno de trabajo","w0_d":"Dónde se trabaja: el sistema, la terminal y el editor.","w0_lead":"Todo proyecto empieza en un entorno bien montado. Aquí entran el sistema Linux, la terminal con su shell y el editor donde se escribe y se revisa el código: la base sobre la que se apoya el resto del trabajo.","w0l0":"Moverme por carpetas y archivos desde la línea de comandos.","w0l1":"Lanzar y encadenar comandos sin depender del ratón.","w0l2":"Dejar el editor preparado para escribir y revisar código con comodidad.","w0i0_t":"Linux y terminal","w0i0_d":"Moverse por el sistema y lanzar tareas desde la línea de comandos.","w0i1_t":"Zsh","w0i1_d":"Intérprete de comandos para trabajar cómodo en la terminal.","w0i2_t":"VS Code","w0i2_d":"Editor donde se escribe, se prueba y se revisa el código.","w1_tab":"Versiones","w1_t":"Control de versiones","w1_d":"Guardar la historia del código y trabajar sin miedo a perder nada.","w1_lead":"El control de versiones guarda cada cambio con su historia, permite probar ideas sin riesgo y volver atrás cuando algo falla. Git hace ese trabajo en local y GitHub lo lleva a la nube para compartirlo.","w1l0":"Registrar cambios en un repositorio de forma ordenada.","w1l1":"Trabajar con ramas y recuperar una versión anterior.","w1l2":"Subir y sincronizar un proyecto con GitHub.","w1i0_t":"Git","w1i0_d":"Registrar cambios y volver atrás cuando haga falta.","w1i1_t":"GitHub","w1i1_d":"Alojar repositorios y dejar el código disponible en la nube.","w1i2_t":"GitHub desde Antigravity","w1i2_d":"Manejar el repositorio sin salir del editor con IA.","w2_tab":"Código","w2_t":"Código y lógica","w2_d":"Pensar la solución y escribirla en código.","w2_lead":"Antes de escribir una línea hay que saber qué pasos resuelven el problema. De ahí se pasa a un lenguaje, Python, a organizar el código con objetos y a dar forma a una página con HTML y CSS.","w2l0":"Descomponer un problema en pasos con pseudocódigo.","w2l1":"Escribir programas en Python con condiciones, bucles y funciones.","w2l2":"Organizar el código en clases y objetos.","w2l3":"Maquetar una página con HTML y darle estilo con CSS.","w2i0_t":"Lógica y pseudocódigo","w2i0_d":"Plantear los pasos de un problema antes de programarlos.","w2i1_t":"Python","w2i1_d":"Lenguaje para escribir programas y automatizar tareas.","w2i2_t":"Programación orientada a objetos","w2i2_d":"Organizar el código en clases y objetos reutilizables.","w2i3_t":"HTML","w2i3_d":"La estructura y el contenido de una página web.","w2i4_t":"CSS","w2i4_d":"El aspecto de la web: color, tipografía y distribución.","w3_tab":"Datos","w3_t":"Datos","w3_d":"Guardar la información, consultarla y relacionarla.","w3_lead":"Casi toda aplicación necesita guardar información y recuperarla. Esta área recorre cómo se diseñan las tablas y sus relaciones, cómo se piden los datos con SQL y cómo se manejan desde Python con un ORM.","w3l0":"Crear tablas y relacionarlas entre sí.","w3l1":"Consultar datos con SELECT, JOIN y subconsultas.","w3l2":"Conectar la base de datos con Python mediante SQLAlchemy.","w3i0_t":"SQL","w3i0_d":"Lenguaje para pedir y modificar datos.","w3i1_t":"MySQL","w3i1_d":"Sistema de bases de datos que guarda la información en tablas.","w3i2_t":"Consultas con JOIN y subconsultas","w3i2_d":"Combinar tablas y filtrar con consultas anidadas.","w3i3_t":"Relaciones entre tablas","w3i3_d":"Diseñar cómo se conectan los datos entre sí.","w3i4_t":"SQLAlchemy y ORM","w3i4_d":"Trabajar con la base de datos desde Python usando objetos.","w4_tab":"IA","w4_t":"Inteligencia artificial","w4_d":"Módulo de IA con Antigravity: asistentes, agentes y herramientas conectadas.","w4_lead":"El módulo de IA con Antigravity enseña a trabajar acompañado de asistentes y agentes, a automatizar tareas repetitivas y a conectar herramientas externas con los modelos.","w4l0":"Usar un editor con asistente de IA para montar proyectos.","w4l1":"Configurar agentes y coordinarlos entre sí.","w4l2":"Automatizar procesos y conectar herramientas con MCP.","w4l3":"Explorar los modelos y las herramientas de OpenAI.","w4i0_t":"Google Antigravity","w4i0_d":"Editor con asistente de IA integrado para montar y revisar proyectos web.","w4i1_t":"Agentes de IA","w4i1_d":"Preparar y ajustar agentes que se encargan de tareas de desarrollo.","w4i2_t":"Procesos automatizados","w4i2_d":"Encadenar pasos repetitivos en flujos que se ejecutan solos.","w4i3_t":"NotebookLM","w4i3_d":"Ordenar documentación y consultarla con ayuda de IA.","w4i4_t":"Model Context Protocol","w4i4_d":"Enchufar herramientas externas a los modelos de IA.","w4i5_t":"Google Stitch","w4i5_d":"Generar propuestas de interfaz y diseño a partir de una idea.","w4i6_t":"Open Agent Manager","w4i6_d":"Seguir y coordinar varios agentes desde un mismo sitio.","w4i7_t":"Apps y webs con IA integrada","w4i7_d":"Dar a una web o una app funciones que usan IA.","w4i8_t":"OpenAI","w4i8_d":"Probar sus modelos y herramientas en distintas tareas.","w5_tab":"Publicar","w5_t":"Publicar en internet","w5_d":"Sacar un sitio web a internet y mantenerlo en marcha.","w5_lead":"Un sitio no existe hasta que está en internet. Cloudflare Pages publica una web estática desde su repositorio de GitHub, Wrangler permite hacerlo desde la terminal y el alojamiento mantiene la web propia en línea.","w5l0":"Conectar un repositorio con Cloudflare Pages y publicar un sitio estático.","w5l1":"Usar Wrangler para desplegar y gestionar proyectos desde la terminal.","w5l2":"Alojar una web propia y mantenerla en línea y actualizada.","w5l3":"Manejar lo básico del panel de Cloudflare.","w5i0_t":"Cloudflare","w5i0_d":"Manejar lo básico de un proyecto y sus servicios desde el panel.","w5i1_t":"Cloudflare Pages","w5i1_d":"Publicar sitios estáticos enlazados a un repositorio de GitHub.","w5i2_t":"Wrangler","w5i2_d":"Gestionar y publicar proyectos de Cloudflare desde la línea de comandos.","w5i3_t":"Alojamiento web","w5i3_d":"Tener una web propia alojada, en línea y al día.","wb_title":"conocimientos","wb_learn":"Lo que he podido aprender","wb_tools":"Herramientas","c9":"SOLID y Bases de datos","pl_badge":"Más completo","p_extras":"Y, si lo necesitas, se puede sumar:","pl1_t":"Landing sencilla","pl2_t":"Landing + mantenimiento","pl3_t":"Web completa con SEO y mantenimiento","g_card":"Construyo mientras llego","cf_name":"Nombre","cf_email":"Correo electrónico","cf_msg":"Mensaje","cf_ph_name":"Tu nombre","cf_ph_email":"tu@correo.com","cf_ph_msg":"Cuéntame a qué te dedicas, qué web imaginas y para cuándo la necesitas…","cf_send":"Enviar mensaje","cf_sending":"Enviando…","cf_ok":"¡Mensaje enviado! Te respondo muy pronto.","cf_e_name":"Escribe tu nombre.","cf_e_email":"Escribe un correo válido para poder responderte.","cf_e_msg":"Cuéntame un poco qué necesitas.","cf_e_send":"No se ha podido enviar. Inténtalo de nuevo o escríbeme a contact@m4rkits.dev.","cf_priv":"Solo usaré tus datos para responderte.","cf_plan":"¿Qué tipo de servicio te interesa?","cf_idk":"Aún no lo sé","cf_biz":"Tu negocio o web actual","cf_opt":"opcional","cf_ph_biz":"Nombre del negocio o enlace","cf_consent":"Acepto que uses estos datos solo para responder a mi mensaje. <a class=\"cf-pv\" href=\"/privacidad/\" target=\"_blank\" rel=\"noopener\">Política de privacidad</a>","cf_re_subj":"He recibido tu mensaje | M4rKitS.dev","cf_re_msg":"Hola {name}, gracias por escribirme. He recibido tu mensaje y te responderé lo antes posible. Usaré tus datos solo para responderte; puedes leer cómo los trato en {priv}. Un saludo, Marcos Rodríguez (M4rKitS.dev)","cf_e_consent":"Marca la casilla para poder enviar el mensaje.","cf_wa":"Contactar por WhatsApp","cf_wa_text":"Hola Marcos, vengo de tu web y me gustaría hablar de un proyecto.","cf_wa_plan":"Me interesa «{n}».","w_explore":"Explorar","w_r1":"Web de consultoría de redes sociales","w_r2":"Portfolio y captación de clientes","w_open":"Abrir en pestaña nueva","w_close":"Cerrar ventana","w_loading":"Cargando…","w_gate_t":"Vas a ver un sitio externo","w_gate_p":"Se cargará {h} dentro de esta ventana. Es una web de un tercero: puede usar sus propias cookies y verá tu visita. Yo no guardo nada de lo que hagas en ella.","w_gate_go":"Cargar el sitio","w_gate_ext":"Abrir en pestaña nueva","w_noload":"¿No carga? Ábrela en una pestaña nueva","mt_home":"Marcos Rodríguez | Desarrollador de software Full Stack","md_home":"Portfolio de Marcos Rodríguez, desarrollador de software Full Stack en formación: lo que he aprendido en el máster, mis certificados y mis proyectos.","mt_web":"Desarrollo web para pequeños negocios | M4rKitS.dev","md_web":"Diseño y desarrollo web para pequeños negocios: webs claras, rápidas y bien cuidadas, en español e inglés. Cuéntame tu proyecto y buscamos la solución.","m_open":"Abrir menú","m_close":"Cerrar menú","th_dark":"Activar modo oscuro","th_light":"Activar modo claro","th_l_dark":"Modo oscuro","th_l_light":"Modo claro","f_aviso":"Aviso legal","f_priv":"Privacidad","f_cook":"Cookies","mt_aviso":"Aviso legal | M4rKitS.dev","md_aviso":"Aviso legal de m4rkits.dev: titular del sitio, condiciones de uso y ley aplicable.","mt_priv":"Política de privacidad | M4rKitS.dev","md_priv":"Política de privacidad de m4rkits.dev: qué datos recojo con el formulario, para qué, con quién los comparto y qué derechos tienes.","mt_cook":"Política de cookies | M4rKitS.dev","md_cook":"Política de cookies de m4rkits.dev: qué se guarda en tu navegador y por qué no hace falta banner.","mt_gracias":"Mensaje enviado | M4rKitS.dev","md_gracias":"Gracias por escribirme. He recibido tu mensaje.","lg_upd":"Última actualización","who_text2":"Mi meta es seguir creciendo cada día sin ponerme límites.","g_text2":"Mi meta sigue intacta: trabajar algún día en una big tech. Cada proyecto que saco adelante me acerca un paso más."}},lang="es";window.PROP_D=D;window.PROP_L=lang;var al=document.querySelectorAll('.lang button');al.forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-l')===lang?'true':'false');b.addEventListener('click',function(){var h=b.getAttribute('data-href');if(b.getAttribute('data-l')!==lang&&h){location.href=h+location.hash}})});})();
 
-        <div class="nav-social">
-          <a href="https://github.com/M4rKitS" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub" title="GitHub">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-          </a>
-          <a href="https://www.linkedin.com/in/mrodriguezhdz" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn" title="LinkedIn">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </a>
-          <a href="mailto:contact@m4rkits.dev" class="social-link" aria-label="Email" title="contact@m4rkits.dev">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          </a>
-          <a href="https://wa.me/358413193036" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp" title="WhatsApp (+358 413 193 036)">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="19" height="19"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-          </a>
-        </div>
+(function(){
+if(!('IntersectionObserver' in window)){return}
+var io=new IntersectionObserver(function(list){
+list.forEach(function(e){
+var t=e.target;
+if(e.isIntersecting){t.classList.remove('shine');void t.offsetWidth;t.classList.add('shine')}
+else{t.classList.remove('shine')}
+})},{threshold:.6});
+function init(){io.disconnect();document.querySelectorAll('em').forEach(function(e){io.observe(e)})}
+init();
+document.addEventListener('click',function(ev){if(ev.target.closest&&ev.target.closest('.lang button')){setTimeout(init,60)}});
+})();
 
-        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </header>
+(function(){
+var wb=document.querySelector('[data-wb]');if(!wb){return}
+var tabs=[].slice.call(wb.querySelectorAll('[role=tab]')),panels=[].slice.call(wb.querySelectorAll('[role=tabpanel]'));
+var DUR=8000,cur=0,timer=null,user=false,vis=false,reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+wb.style.setProperty('--dur',DUR+'ms');
+var pbox=wb.querySelector('.wb-panels');
+function fit(){if(window.innerWidth<900){pbox.style.height='';return}var p=panels[cur];pbox.style.height=p.offsetHeight+'px'}
+function show(i,focus){cur=i;tabs.forEach(function(t,k){var on=k===i;t.setAttribute('aria-selected',on?'true':'false');t.tabIndex=on?0:-1;if(on){panels[k].removeAttribute('hidden')}else{panels[k].setAttribute('hidden','')}});
+fit();
+if(focus){tabs[i].focus()}
+var t=tabs[i],st=wb.querySelector('.wb-tabs');if(st.scrollWidth>st.clientWidth+2){var dx=t.getBoundingClientRect().left-st.getBoundingClientRect().left-16;st.scrollTo({left:Math.max(0,st.scrollLeft+dx),behavior:'smooth'})}
+restart()}
+function stop(){clearTimeout(timer);wb.classList.remove('auto')}
+function restart(){stop();if(user||reduce||!vis){return}void wb.offsetWidth;wb.classList.add('auto');timer=setTimeout(function(){show((cur+1)%tabs.length)},DUR)}
+tabs.forEach(function(t,k){
+t.addEventListener('click',function(){user=true;show(k)});
+t.addEventListener('keydown',function(e){var n=null,L=tabs.length;
+if(e.key==='ArrowDown'||e.key==='ArrowRight'){n=(k+1)%L}else if(e.key==='ArrowUp'||e.key==='ArrowLeft'){n=(k-1+L)%L}else if(e.key==='Home'){n=0}else if(e.key==='End'){n=L-1}
+if(n!==null){e.preventDefault();user=true;show(n,true)}})});
+window.addEventListener('resize',fit);window.addEventListener('load',fit);document.addEventListener('click',function(ev){if(ev.target.closest&&ev.target.closest('.lang button')){setTimeout(fit,80)}});
+fit();
+if('ResizeObserver' in window){var ro=new ResizeObserver(function(){fit()});panels.forEach(function(p){ro.observe(p)})}
+wb.addEventListener('mouseenter',function(){wb.classList.add('paused');clearTimeout(timer)});
+wb.addEventListener('mouseleave',function(){wb.classList.remove('paused');restart()});
+if('IntersectionObserver' in window){new IntersectionObserver(function(l){vis=l[0].isIntersecting;if(vis){restart()}else{stop()}},{threshold:.35}).observe(wb)}else{vis=true;restart()}
+})();
 
-  <main>
-    <!-- ===== 01 // HERO SECTION ===== -->
-    <section class="hero-section" id="hero" aria-label="Hero Section">
-      <div class="hero-grid-overlay" aria-hidden="true"></div>
+(function(){
+var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+document.querySelectorAll('[data-up]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();window.scrollTo({top:0,behavior:reduce?'auto':'smooth'})})});
+})();
 
-      <div class="hero-container">
-        <!-- Giant Condensed Brutalist Headline -->
-        <div class="hero-headline-group">
-          <h1 class="hero-title">
-            <span class="headline-primary" data-i18n="hero.line1">WEB</span>
-            <div class="headline-secondary-row">
-              <span class="headline-indicator" aria-hidden="true"></span>
-              <span class="headline-secondary" data-i18n="hero.line2">DEVELOPER</span>
-            </div>
-          </h1>
-          <p class="hero-role" data-i18n-html="hero.role">Marcos Rodríguez <br /> Full Stack Developer — desarrollo web moderno y ágil, potenciado por herramientas de IA, para pequeños negocios y emprendedores que quieren destacar online.</p>
-        </div>
+(function(){
+var hdr=document.querySelector('.hdr'),spyFn=null;
+var mq=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)');
+function hb(){return hdr?hdr.getBoundingClientRect().bottom:0}
+function maxY(){return Math.max(0,document.documentElement.scrollHeight-innerHeight)}
+function target(el){
+var main=document.querySelector('main');
+if(main&&main.firstElementChild===el){return 0}
+var first=el.firstElementChild||el;
+var r=first.getBoundingClientRect(),er=el.getBoundingClientRect();
+var top=r.top+scrollY,h=er.bottom+scrollY-top;
+var gap=40,pv=el.previousElementSibling;
+if(pv&&pv.lastElementChild){gap=top-(pv.lastElementChild.getBoundingClientRect().bottom+scrollY)}
+var h0=hb(),vis=innerHeight-h0-28;
+var lo=h0+20,hi=Math.max(lo,h0-12+gap);
+var centered=h0+14+Math.max(0,(vis-h)/2);
+var T=h>vis?Math.max(lo,Math.min(hi,h0+28)):Math.max(lo,Math.min(centered,hi));
+return Math.max(0,Math.min(maxY(),Math.round(top-T)))
+}
+function go(id,smooth){var el=document.getElementById(id);if(!el)return;
+var y=target(el);
+if(smooth&&!(mq&&mq.matches)){window.scrollTo({top:y,behavior:'smooth'})}
+else{var de=document.documentElement,old=de.style.scrollBehavior;de.style.scrollBehavior='auto';window.scrollTo(0,y);de.style.scrollBehavior=old;if(spyFn)spyFn()}}
+document.addEventListener('click',function(e){
+var a=e.target.closest?e.target.closest('a[href^="#"]'):null;if(!a)return;
+var id=a.getAttribute('href').slice(1);if(!id||!document.getElementById(id))return;
+e.preventDefault();go(id,true);
+try{history.replaceState(null,'','#'+id)}catch(x){}
+});
+var moved=false;
+['wheel','touchstart','keydown','mousedown'].forEach(function(ev){window.addEventListener(ev,function(){moved=true},{passive:true,once:true})});
+function fromHash(){if(moved)return;var id=decodeURIComponent((location.hash||'').slice(1));if(id&&document.getElementById(id)){go(id,false)}}
+window.addEventListener('load',function(){fromHash();setTimeout(fromHash,350);setTimeout(fromHash,1000);if(document.fonts&&document.fonts.ready){document.fonts.ready.then(fromHash)}});
+if(hdr){
+var hm=hdr.querySelector('.hm'),openY=0;
+function tx(k){var D=window.PROP_D||{},l=window.PROP_L||'es';return (D[l]&&D[l][k])||''}
+function setOpen(o){hdr.classList.toggle('open',o);if(hm){hm.setAttribute('aria-expanded',o?'true':'false');hm.setAttribute('aria-label',tx(o?'m_close':'m_open')||(o?'Cerrar menú':'Abrir menú'))}if(o){openY=window.scrollY}}
+if(hm){
+setOpen(false);
+hm.addEventListener('click',function(e){e.stopPropagation();setOpen(!hdr.classList.contains('open'))});
+document.addEventListener('click',function(e){if(hdr.classList.contains('open')&&!hdr.contains(e.target)){setOpen(false)}});
+hdr.querySelectorAll('.hn a').forEach(function(a){a.addEventListener('click',function(){setOpen(false)})});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&hdr.classList.contains('open')){setOpen(false);hm.focus()}});
+window.addEventListener('scroll',function(){if(hdr.classList.contains('open')&&Math.abs(window.scrollY-openY)>40){setOpen(false)}},{passive:true});
+window.addEventListener('resize',function(){if(window.innerWidth>=960&&hdr.classList.contains('open')){setOpen(false)}});
+document.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('.lang button')){setTimeout(function(){hm.setAttribute('aria-label',tx(hdr.classList.contains('open')?'m_close':'m_open'))},80)}});
+}
+var items=[].slice.call(hdr.querySelectorAll('.hn a[href^="#"]')).map(function(a){return {a:a,el:document.getElementById(a.getAttribute('href').slice(1))}}).filter(function(x){return x.el});
+var tick=false;
+function spy(){tick=false;if(!items.length)return;
+var probe=hb()+(innerHeight-hb())*0.4,cur=null;
+items.forEach(function(it){if(it.el.getBoundingClientRect().top<=probe){cur=it}});
+if(scrollY>=maxY()-4){cur=items[items.length-1]}
+var hn=hdr.querySelector('.hn'),prevCur=null;
+function edge(){if(hn){hn.classList.toggle('at-end',hn.scrollLeft+hn.clientWidth>=hn.scrollWidth-4)}}
+items.forEach(function(it){var on=it===cur;it.a.classList.toggle('on',on);if(on){it.a.setAttribute('aria-current','true')}else{it.a.removeAttribute('aria-current')}});
+if(hn&&cur&&cur!==prevCur&&hn.scrollWidth>hn.clientWidth+4){prevCur=cur;hn.scrollTo({left:Math.max(0,cur.a.offsetLeft-hn.clientWidth/2+cur.a.offsetWidth/2),behavior:'smooth'})}
+edge()}
+if(hdr.querySelector('.hn')){hdr.querySelector('.hn').addEventListener('scroll',function(){var h=hdr.querySelector('.hn');h.classList.toggle('at-end',h.scrollLeft+h.clientWidth>=h.scrollWidth-4)},{passive:true})}
+window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(spy)}},{passive:true});
+window.addEventListener('resize',spy);spyFn=spy;spy();
+}
+})();
 
-        <!-- Bottom Informational Grid -->
-        <div class="hero-bottom-grid">
-          <div class="hero-bottom-left">
-            <p class="hero-tagline" data-i18n="hero.tagline">// Construyo la web que tu negocio necesita.</p>
-            <a href="#projects" class="hero-explore-btn" data-i18n="hero.explore">EXPLORAR MI TRABAJO ↓</a>
-          </div>
+(function(){
+var cards=[].slice.call(document.querySelectorAll('.cc'));if(!cards.length)return;
+if(!(window.matchMedia&&matchMedia('(hover:none)').matches))return;
+var tick=false;
+function update(){tick=false;
+var mid=window.innerHeight/2,best=null,bd=1e9;
+cards.forEach(function(c){var r=c.getBoundingClientRect();var d=Math.abs((r.top+r.bottom)/2-mid);if(d<bd){bd=d;best=r.top}});
+var on=bd<window.innerHeight*0.42;
+cards.forEach(function(c){var r=c.getBoundingClientRect();c.classList.toggle('lit',on&&Math.abs(r.top-best)<8)})}
+function req(){if(!tick){tick=true;requestAnimationFrame(update)}}
+window.addEventListener('scroll',req,{passive:true});window.addEventListener('resize',req);update();
+})();
 
-          <div class="hero-bottom-right">
-            <p class="hero-bio" data-i18n="hero.bio">
-              +8 años de experiencia profesional en sistemas y operaciones, ahora aplicados al desarrollo web. Residiendo en Finlandia.
-            </p>
-            <div class="hero-cta-wrapper">
-              <a href="#contact" class="btn btn-primary" data-i18n="hero.btn_contact">INICIAR CONTACTO →</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== 02 // STACK & PROJECTS SECTION ===== -->
-    <section class="section" id="projects" aria-labelledby="projects-title">
-      <div class="container">
-        <!-- Section Header -->
-        <div class="section-meta">
-          <span class="section-index" data-i18n="projects.index">02 // STACK Y PROYECTOS</span>
-          <h2 class="section-heading" id="projects-title" data-i18n="projects.title">TECNOLOGÍAS Y TRABAJO</h2>
-          <p class="section-lead" data-i18n="projects.desc">
-            Herramientas, plataformas y tecnologías que uso y aprendo activamente para crear soluciones digitales modernas.
-          </p>
-        </div>
-
-        <!-- Featured Built Project: M4rKcal -->
-        <div class="featured-project">
-          <div class="project-subheader">
-            <span class="project-eyebrow" data-i18n="projects.built_eyebrow">PROYECTOS CONSTRUIDOS</span>
-            <p class="project-sublead" data-i18n="projects.built_lead">
-              Aplicaciones que he construido de principio a fin, desde la idea hasta el código funcionando.
-            </p>
-          </div>
-
-          <article class="project-card project-accordion" data-project-accordion>
-            <div class="project-card-body">
-              <div class="project-top">
-                <div class="project-title-group">
-                  <h3 class="project-title">M4rKcal</h3>
-                  <span class="project-badge" data-i18n="projects.m4rkcal_badge">Uso personal</span>
-                </div>
-                <button type="button" class="project-accordion-toggle" aria-expanded="false" aria-controls="m4rkcalCollapse" aria-label="Desplegar proyecto M4rKcal">
-                  <svg class="project-chevron" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <polyline points="6 9 12 15 18 9"></polyline>
-                  </svg>
-                </button>
-              </div>
-              <p class="project-desc" data-i18n="projects.m4rkcal_desc">
-                App nativa de iOS para seguimiento de calorías y proteína, con anillos de progreso animados, integración con Apple Watch vía HealthKit, escaneo de código de barras y sincronización de entrenamientos con Hevy. Construida con SwiftUI y SwiftData, arquitectura MVVM.
-              </p>
-              <div class="project-collapsible" id="m4rkcalCollapse" aria-hidden="true">
-                <div class="project-collapsible-inner">
-                  <div class="phone-stage" id="m4rkcalStage">
-                    <div class="phone-frame" data-full="dash">
-                      <div class="phone-screen"><div class="status-bar"><div class="notch"></div></div><div class="screen-image"><img src="/assets/projects/m4rkcal-01-dashboard.jpg" alt="M4rKcal — Dashboard" loading="lazy" width="480" height="988"></div></div>
-                    </div>
-                    <div class="phone-frame" data-full="watch">
-                      <div class="phone-screen"><div class="status-bar"><div class="notch"></div></div><div class="screen-image"><img src="/assets/projects/m4rkcal-02-watch.jpg" alt="M4rKcal — Apple Watch y Hevy" loading="lazy" width="480" height="988"></div></div>
-                    </div>
-                    <div class="phone-frame" data-full="hist">
-                      <div class="phone-screen"><div class="status-bar"><div class="notch"></div></div><div class="screen-image"><img src="/assets/projects/m4rkcal-03-historial.jpg" alt="M4rKcal — Historial" loading="lazy" width="480" height="988"></div></div>
-                    </div>
-                    <div class="phone-frame" data-full="food">
-                      <div class="phone-screen"><div class="status-bar"><div class="notch"></div></div><div class="screen-image"><img src="/assets/projects/m4rkcal-04-registro.jpg" alt="M4rKcal — Registro de comida" loading="lazy" width="480" height="988"></div></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <a href="https://github.com/M4rKitS/M4rKcal" target="_blank" rel="noopener noreferrer" class="btn-repo" data-i18n="projects.m4rkcal_cta">
-                Ver repositorio en GitHub →
-              </a>
-            </div>
-          </article>
-
-          <!-- Built Project: TBH Strategy -->
-          <article class="project-card">
-            <div class="project-card-body">
-              <div class="project-top">
-                <div class="project-title-group">
-                  <h3 class="project-title" data-i18n="projects.tbh_title">TBH Strategy</h3>
-                  <span class="project-badge" data-i18n="projects.tbh_badge">Cliente real</span>
-                </div>
-              </div>
-              <p class="project-desc" data-i18n="projects.tbh_desc_1">
-                TBH Strategy es la consultora de gestión de redes sociales de Tamara en Tralee, Co. Kerry: ayuda a pequeños negocios que son excelentes en lo suyo pero no tienen tiempo para sus redes, con estrategias hechas a medida y nunca copiadas — uno de sus clientes casi triplicó sus visualizaciones y consiguió un 176% más de alcance a cuentas nuevas en un solo mes.
-              </p>
-              <p class="project-desc" data-i18n="projects.tbh_desc_2">
-                Antes, tenía una web que había montado ella misma en Squarespace: cumplía su función, pero el diseño y la funcionalidad se quedaban cortos para la marca que quería transmitir. Me confió el proyecto por la dedicación y la profesionalidad con la que trabajo, así que lo rediseñé de cero para que reflejara exactamente esa cercanía: paleta en tonos verde salvia fiel a su identidad, un blog propio pensado para posicionar en Google, y un formulario de contacto que antes no tenía. También migré su dominio sin perder el correo corporativo ni la analítica activa, dejando la web rápida, adaptada a móvil, y con datos reales de tráfico desde el primer día.
-              </p>
-              <a href="https://www.tbhstrategy.com" target="_blank" rel="noopener noreferrer" class="btn-repo">
-                <span data-i18n="projects.tbh_cta">Visitar tbhstrategy.com</span>
-                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
-                </svg>
-              </a>
-            </div>
-          </article>
-        </div>
-
-        <!-- Filter Tabs -->
-        <div class="stack-filters" role="tablist" aria-label="Filtro de tecnologías">
-          <button class="filter-btn active" data-filter="all" role="tab" data-i18n="projects.tab_all">Todo el Stack</button>
-          <button class="filter-btn" data-filter="ai-tools" role="tab" data-i18n="projects.tab_ai_tools">IA y Diseño</button>
-          <button class="filter-btn" data-filter="code" role="tab" data-i18n="projects.tab_code">Programación</button>
-          <button class="filter-btn" data-filter="cloud" role="tab" data-i18n="projects.tab_cloud">Cloud y Datos</button>
-        </div>
-
-        <!-- Tech Blueprint Cards Grid -->
-        <div class="stack-grid">
-          <!-- Card 1: Google Antigravity -->
-          <article class="stack-card" data-category="ai-tools">
-            <div class="card-header">
-              <span class="card-num">01</span>
-              <span class="card-tag" data-i18n="projects.card_antigravity_tag">IA & Agentes</span>
-            </div>
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="32" height="32"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-            </div>
-            <h3 class="card-title" data-i18n="projects.card_antigravity_title">Google Antigravity</h3>
-            <p class="card-desc" data-i18n="projects.card_antigravity_desc">
-              Desarrollo asistido por agentes de IA, programación agéntica en parejas y automatización de flujos de código de alta eficiencia.
-            </p>
-            <div class="card-footer">
-              <code>[Agentic AI] [Pair Programming]</code>
-            </div>
-          </article>
-
-          <!-- Card 2: Google Stitch -->
-          <article class="stack-card" data-category="ai-tools">
-            <div class="card-header">
-              <span class="card-num">02</span>
-              <span class="card-tag" data-i18n="projects.card_stitch_tag">UI / Design Systems</span>
-            </div>
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="32" height="32"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-            </div>
-            <h3 class="card-title" data-i18n="projects.card_stitch_title">Google Stitch</h3>
-            <p class="card-desc" data-i18n="projects.card_stitch_desc">
-              Prototipado rápido de interfaces de usuario (UI/UX), generación de sistemas de diseño y arquitectura visual con IA.
-            </p>
-            <div class="card-footer">
-              <code>[UI Prototyping] [Design Tokens]</code>
-            </div>
-          </article>
-
-          <!-- Card 3: Python Programming -->
-          <article class="stack-card" data-category="code">
-            <div class="card-header">
-              <span class="card-num">03</span>
-              <span class="card-tag" data-i18n="projects.card_python_tag">Lógica & Scripting</span>
-            </div>
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="32" height="32"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-            </div>
-            <h3 class="card-title" data-i18n="projects.card_python_title">Programación con Python</h3>
-            <p class="card-desc" data-i18n="projects.card_python_desc">
-              Fundamentos sólidos de programación, scripts de automatización, lógica de control y procesamiento de datos.
-            </p>
-            <div class="card-footer">
-              <code>[Automation] [Algorithms] [Scripting]</code>
-            </div>
-          </article>
-
-          <!-- Card 4: Git & GitHub -->
-          <article class="stack-card" data-category="code">
-            <div class="card-header">
-              <span class="card-num">04</span>
-              <span class="card-tag" data-i18n="projects.card_git_tag">Control de Versiones</span>
-            </div>
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="32" height="32"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 15V9a6 6 0 0 0-6-6H6M6 9v6"/></svg>
-            </div>
-            <h3 class="card-title" data-i18n="projects.card_git_title">Git & GitHub</h3>
-            <p class="card-desc" data-i18n="projects.card_git_desc">
-              Flujos de trabajo con control de versiones, ramas, gestión de repositorios y despliegues colaborativos.
-            </p>
-            <div class="card-footer">
-              <code>[Git Workflows] [GitHub] [Branching]</code>
-            </div>
-          </article>
-
-          <!-- Card 5: Cloudflare -->
-          <article class="stack-card" data-category="cloud">
-            <div class="card-header">
-              <span class="card-num">05</span>
-              <span class="card-tag" data-i18n="projects.card_cloudflare_tag">Cloud & Hosting</span>
-            </div>
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="32" height="32"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
-            </div>
-            <h3 class="card-title" data-i18n="projects.card_cloudflare_title">Ecosistema Cloudflare</h3>
-            <p class="card-desc" data-i18n="projects.card_cloudflare_desc">
-              Despliegue y optimización en Cloudflare Pages, gestión de dominios, DNS y rendimiento en el Edge.
-            </p>
-            <div class="card-footer">
-              <code>[Cloudflare Pages] [Edge DNS] [SSL]</code>
-            </div>
-          </article>
-
-          <!-- Card 6: HTML5 & Modern CSS3 -->
-          <article class="stack-card" data-category="code">
-            <div class="card-header">
-              <span class="card-num">06</span>
-              <span class="card-tag" data-i18n="projects.card_web_tag">Arquitectura Web</span>
-            </div>
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="32" height="32"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-            </div>
-            <h3 class="card-title" data-i18n="projects.card_web_title">HTML5 & CSS3 Moderno</h3>
-            <p class="card-desc" data-i18n="projects.card_web_desc">
-              Estructuras web semánticas, diseño responsive avanzado con Grid/Flexbox, animaciones e interfaces accesibles.
-            </p>
-            <div class="card-footer">
-              <code>[Semantic HTML] [Modern CSS] [Responsive]</code>
-            </div>
-          </article>
-        </div>
-
-        <!-- Section CTA Link -->
-        <div class="section-action">
-          <a href="https://github.com/M4rKitS" target="_blank" rel="noopener noreferrer" class="action-link" data-i18n="projects.github_cta">
-            Explorar Repositorios en GitHub →
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== 03 // TRAJECTORY & EXPERIENCE SECTION ===== -->
-    <section class="section section-dark" id="experience" aria-labelledby="experience-title">
-      <div class="container">
-        <!-- Section Header -->
-        <div class="section-meta">
-          <span class="section-index" data-i18n="exp.index">03 // TRAYECTORIA</span>
-          <h2 class="section-heading" id="experience-title" data-i18n="exp.title">EXPERIENCIA Y FORMACIÓN</h2>
-          <p class="section-lead" data-i18n="exp.desc">
-            Una progresión continua que une rigor técnico, liderazgo operativo y desarrollo web moderno.
-          </p>
-        </div>
-
-        <!-- Terminal Log Timeline -->
-        <div class="timeline-log">
-          <!-- Item 1: ConquerBlocks Master -->
-          <div class="log-entry current">
-            <div class="log-marker">
-              <span class="marker-dot"></span>
-              <span class="marker-line"></span>
-            </div>
-            <div class="log-content">
-              <h3 class="log-title" data-i18n="exp.title1">Máster Full Stack Developer</h3>
-              <p class="log-org" data-i18n="exp.company1">ConquerBlocks Academy</p>
-              <p class="log-desc" data-i18n="exp.desc1">
-                Programa 100% práctico dividido en tres fases: lógica de programación desde cero, desarrollo full-stack completo (frontend, backend y bases de datos) con proyectos reales, y preparación específica para el mercado laboral. Impartido por mentores en activo del sector, con experiencia en empresas como Inditex o Indra, en formato híbrido de clases grabadas y sesiones en directo.
-              </p>
-            </div>
-          </div>
-          <!-- Item 2: Higher Vocational Diploma IT -->
-          <div class="log-entry">
-            <div class="log-marker">
-              <span class="marker-dot"></span>
-            </div>
-            <div class="log-content">
-              <h3 class="log-title" data-i18n="exp.title4">Técnico en Sistemas Microinformáticos y Redes</h3>
-              <p class="log-desc" data-i18n="exp.desc4">
-                Instalación y mantenimiento de equipos, configuración de redes locales, administración de sistemas operativos y resolución de incidencias: la base técnica que sigo aplicando casi veinte años después.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Certifications Credentials (Interactive Badges Grid) -->
-        <div class="certs-block">
-          <div class="certs-header">
-            <span class="certs-badge-tag" data-i18n="certs.verified_tag">[CREDENCIALES Y FORMACIÓN]</span>
-            <h3 class="certs-title" data-i18n="exp.certs_title">CERTIFICACIONES Y CREDENCIALES</h3>
-          </div>
-          
-          <div class="certs-accordion">
-            <button class="certs-accordion-btn" aria-expanded="false">
-              <span class="accordion-title">
-                <span data-i18n="certs.external_title">CERTIFICACIONES OFICIALES</span> <span class="accordion-count"></span>
-              </span>
-              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
-            </button>
-            <div class="certs-accordion-content">
-              <div class="certs-accordion-inner">
-                <div class="certs-grid-cards">
-            <!-- Cert 1: AWS -->
-            <div class="cert-card">
-              <div class="cert-card-top">
-                <span class="cert-code">[AWS-01]</span>
-                <span class="cert-verified-pill" data-i18n="certs.verified_pill">✓ VERIFICADO</span>
-              </div>
-              <div class="cert-card-body">
-                <h4 class="cert-card-title" data-i18n="certs.aws">AWS Educate: Generative AI</h4>
-                <p class="cert-card-org" data-i18n="certs.aws_org">Amazon Web Services</p>
-              </div>
-            </div>
-
-            <!-- Cert 2: AI Logistics -->
-            <div class="cert-card">
-              <div class="cert-card-top">
-                <span class="cert-code">[TRANS-AI-02]</span>
-                <span class="cert-verified-pill" data-i18n="certs.verified_pill">✓ VERIFICADO</span>
-              </div>
-              <div class="cert-card-body">
-                <h4 class="cert-card-title" data-i18n="certs.ai_log">IA y Automatización para Logística</h4>
-                <p class="cert-card-org" data-i18n="certs.ai_log_org">Academia de Sistemas Logísticos</p>
-              </div>
-            </div>
-
-            <!-- Cert 3: Sales -->
-            <div class="cert-card">
-              <div class="cert-card-top">
-                <span class="cert-code">[SALES-03]</span>
-                <span class="cert-verified-pill" data-i18n="certs.verified_pill">✓ VERIFICADO</span>
-              </div>
-              <div class="cert-card-body">
-                <h4 class="cert-card-title" data-i18n="certs.sales">Venta Consultiva y Negociación</h4>
-                <p class="cert-card-org" data-i18n="certs.sales_org">Programa de Habilidades Ejecutivas</p>
-              </div>
-            </div>
-
-            <!-- Cert 4: Vibe Coding (Moved from below) -->
-            <div class="cert-card">
-              <div class="cert-card-top">
-                <span class="cert-code">[VIBE-AI-04]</span>
-                <span class="cert-verified-pill" data-i18n="certs.verified_pill">✓ VERIFICADO</span>
-              </div>
-              <div class="cert-card-body">
-                <h4 class="cert-card-title" data-i18n="certs.vibe">IA, Vibe Coding y Automatización</h4>
-                <p class="cert-card-org" data-i18n="certs.vibe_org">Big School</p>
-              </div>
-            </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="certs-accordion">
-            <button class="certs-accordion-btn" aria-expanded="false">
-              <span class="accordion-title">
-                <span data-i18n="certs.modules_title">CERTIFICACIONES CONQUERBLOCKS</span> <span class="accordion-count"></span>
-              </span>
-              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
-            </button>
-            <div class="certs-accordion-content">
-              <div class="certs-accordion-inner">
-                <div class="certs-grid-cards">
-            <!-- Cert 5: Python (Moved here) -->
-            <div class="cert-card">
-              <div class="cert-card-top">
-                <span class="cert-code">[PY-DEV-05]</span>
-                <span class="cert-verified-pill" data-i18n="certs.verified_pill">✓ VERIFICADO</span>
-              </div>
-              <div class="cert-card-body">
-                <h4 class="cert-card-title" data-i18n="certs.python">Certificación en Python</h4>
-                <p class="cert-card-org" data-i18n="certs.python_org">ConquerBlocks Academy · Feb 2026</p>
-              </div>
-            </div>
-            
-            <!-- Cert 6: Git (New) -->
-            <div class="cert-card">
-              <div class="cert-card-top">
-                <span class="cert-code">[GIT-DEV-06]</span>
-                <span class="cert-verified-pill" data-i18n="certs.verified_pill">✓ VERIFICADO</span>
-              </div>
-              <div class="cert-card-body">
-                <h4 class="cert-card-title" data-i18n="certs.git">Git y GitHub</h4>
-                <p class="cert-card-org" data-i18n="certs.git_org">ConquerBlocks Academy · Jul 2026</p>
-              </div>
-            </div>
-
-            <!-- Cert 7: Linux (New) -->
-            <div class="cert-card">
-              <div class="cert-card-top">
-                <span class="cert-code">[LINUX-07]</span>
-                <span class="cert-verified-pill" data-i18n="certs.verified_pill">✓ VERIFICADO</span>
-              </div>
-              <div class="cert-card-body">
-                <h4 class="cert-card-title" data-i18n="certs.linux">Linux y la Terminal</h4>
-                <p class="cert-card-org" data-i18n="certs.linux_org">ConquerBlocks Academy · Feb 2025</p>
-              </div>
-            </div>
-          </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== 04 // ABOUT ME & STATS SECTION ===== -->
-    <section class="section" id="about" aria-labelledby="about-title">
-      <div class="container">
-        <!-- Section Header -->
-        <div class="section-meta">
-          <span class="section-index" data-i18n="about.index">04 // SOBRE MÍ</span>
-          <h2 class="section-heading" id="about-title" data-i18n="about.title">PERFIL Y OBJETIVOS</h2>
-        </div>
-
-        <div class="about-grid">
-          <!-- Left: Narrative Text & Stats -->
-          <div class="about-text-area">
-            <p class="about-lead-text" data-i18n="about.lead">
-              Entusiasta de la tecnología en transición hacia la ingeniería de software — con formación técnica desde 2006 y más de 8 años de disciplina operativa.
-            </p>
-            <p class="about-body-text" data-i18n="about.body">
-              Residiendo en Finlandia, estoy dedicado al 100% al Máster Full Stack en ConquerBlocks. Mi trayectoria profesional en logística, combinada con mi base técnica en sistemas informáticos, me aporta una visión orientada a la resolución metódica y eficaz de problemas.
-            </p>
-
-            <div class="about-metrics">
-              <div class="metric-card">
-                <span class="metric-val">+8</span>
-                <span class="metric-lbl" data-i18n="about.stat_exp">Años en Logística y Ops</span>
-              </div>
-              <div class="metric-card">
-                <span class="metric-val">100%</span>
-                <span class="metric-lbl" data-i18n="about.stat_focus">Máster Full Stack</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right: Languages Card (Cleaned without location) -->
-          <div class="about-side-area">
-            <div class="side-card">
-              <h3 class="side-card-title" data-i18n="about.langs_title">IDIOMAS</h3>
-              <div class="langs-list">
-                <div class="lang-row">
-                  <span class="lang-name" data-i18n="about.lang_es">Español</span>
-                  <span class="lang-badge native" data-i18n="about.lvl_native">Nativo</span>
-                </div>
-                <div class="lang-row">
-                  <span class="lang-name" data-i18n="about.lang_en">Inglés</span>
-                  <span class="lang-badge professional" data-i18n="about.lvl_prof">Profesional</span>
-                </div>
-                <div class="lang-row">
-                  <span class="lang-name" data-i18n="about.lang_fi">Finlandés</span>
-                  <span class="lang-badge learning" data-i18n="about.lvl_learning">En aprendizaje</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== 05 // CONTACT SECTION ===== -->
-    <section class="section section-dark" id="contact" aria-labelledby="contact-title">
-      <div class="container">
-        <!-- Section Header -->
-        <div class="section-meta">
-          <span class="section-index" data-i18n="contact.index">05 // CONTACTAR</span>
-          <h2 class="section-heading" id="contact-title" data-i18n="contact.title">¿HABLAMOS?</h2>
-          <p class="section-lead" data-i18n="contact.desc">
-            ¿Interesado en colaborar, conversar sobre tecnología o proyectos? 
-            Escríbeme por cualquiera de estos canales o dejame un mensaje.
-          </p>
-        </div>
-
-        <div class="contact-grid">
-          <!-- Direct Channels -->
-          <div class="contact-channels">
-            <!-- Email -->
-            <a href="mailto:contact@m4rkits.dev" class="channel-card">
-              <div class="channel-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              </div>
-              <div class="channel-info">
-                <span class="channel-label" data-i18n="contact.email_lbl">CORREO DIRECTO</span>
-                <span class="channel-val">contact@m4rkits.dev</span>
-              </div>
-              <span class="channel-arrow">→</span>
-            </a>
-
-            <!-- WhatsApp / Phone -->
-            <a href="https://wa.me/358413193036" target="_blank" rel="noopener noreferrer" class="channel-card">
-              <div class="channel-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.61 4.47 2 2 0 0 1 3.59 2.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.08 6.08l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.02z"/></svg>
-              </div>
-              <div class="channel-info">
-                <span class="channel-label" data-i18n="contact.phone_lbl">TELÉFONO / WHATSAPP</span>
-                <span class="channel-val">+358 413 193 036</span>
-              </div>
-              <span class="channel-arrow">→</span>
-            </a>
-
-            <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/mrodriguezhdz" target="_blank" rel="noopener noreferrer" class="channel-card">
-              <div class="channel-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-              </div>
-              <div class="channel-info">
-                <span class="channel-label" data-i18n="contact.linkedin_lbl">PERFIL LINKEDIN</span>
-                <span class="channel-val">linkedin.com/in/mrodriguezhdz</span>
-              </div>
-              <span class="channel-arrow">→</span>
-            </a>
-
-            <!-- GitHub -->
-            <a href="https://github.com/M4rKitS" target="_blank" rel="noopener noreferrer" class="channel-card">
-              <div class="channel-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-              </div>
-              <div class="channel-info">
-                <span class="channel-label" data-i18n="contact.github_lbl">REPOSITORIOS GITHUB</span>
-                <span class="channel-val">github.com/M4rKitS</span>
-              </div>
-              <span class="channel-arrow">→</span>
-            </a>
-          </div>
-
-          <!-- Minimalist Terminal Contact Form -->
-          <div class="contact-terminal">
-            <div class="terminal-bar">
-              <span class="dot dot-red"></span>
-              <span class="dot dot-yellow"></span>
-              <span class="dot dot-green"></span>
-              <span class="terminal-title">contact_session.sh</span>
-            </div>
-
-            <form class="terminal-form" id="contact-form" novalidate>
-              <div class="form-field">
-                <label for="contact-name" data-i18n="form.label_name">NOMBRE</label>
-                <input type="text" id="contact-name" name="name" data-i18n-placeholder="form.placeholder_name" placeholder="Nombre completo" required autocomplete="name" />
-              </div>
-
-              <div class="form-field">
-                <label for="contact-email" data-i18n="form.label_email">EMAIL</label>
-                <input type="email" id="contact-email" name="email" data-i18n-placeholder="form.placeholder_email" placeholder="tu.email@dominio.com" required autocomplete="email" />
-              </div>
-
-              <div class="form-field">
-                <label for="contact-subject" data-i18n="form.label_subject">ASUNTO</label>
-                <input type="text" id="contact-subject" name="subject" data-i18n-placeholder="form.placeholder_subject" placeholder="Asunto / Consulta de colaboración" />
-              </div>
-
-              <div class="form-field">
-                <label for="contact-message" data-i18n="form.label_message">MENSAJE</label>
-                <textarea id="contact-message" name="message" rows="5" data-i18n-placeholder="form.placeholder_msg" placeholder="Escribe tu mensaje aquí..." required></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-primary btn-submit" id="contact-submit">
-                <span class="btn-text" data-i18n="form.btn_send">ENVIAR MENSAJE</span>
-                <span class="btn-icon">→</span>
-              </button>
-
-              <div class="form-feedback" id="form-feedback" aria-live="polite"></div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ===== FLOATING WHATSAPP BUTTON (MONOCHROME & DRAGGABLE) ===== -->
-  <aside class="whatsapp-float-container" id="whatsapp-draggable" aria-label="WhatsApp Contact">
-    <a href="https://wa.me/358413193036" target="_blank" rel="noopener noreferrer" class="whatsapp-btn monochrome-wa" id="whatsapp-btn" aria-label="Contactar por WhatsApp">
-      <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
-        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.075-2.072-.497-1.611-.667-2.656-2.302-2.736-2.411-.08-.109-.648-.864-.648-1.648 0-.783.41-1.168.556-1.328.145-.16.317-.2.423-.2.106 0 .211.001.304.006.098.005.228-.038.357.272.132.318.45 1.096.49 1.176.04.08.066.173.013.28-.053.107-.08.173-.16.266-.08.093-.168.208-.24.28-.08.08-.163.167-.07.327.093.16.413.682.887 1.103.61.542 1.124.71 1.284.79.16.08.254.067.347-.04.094-.107.4-.467.507-.627.107-.16.213-.133.36-.08.146.053.927.437 1.087.517.16.08.267.12.307.187.04.067.04.387-.104.792z"/>
-        <path d="M12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.434 5.176L2 22l4.98-1.396A9.957 9.957 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.674 0-3.245-.483-4.577-1.318l-.328-.205-3.037.852.87-3.003-.223-.342A8.136 8.136 0 0 1 3.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/>
-      </svg>
-      <span class="whatsapp-tooltip" data-i18n="whatsapp.tooltip">Contactar por WhatsApp (Arrastrable)</span>
-    </a>
-  </aside>
-
-
-  <!-- ===== SITE FOOTER ===== -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="container footer-container">
-      <div class="footer-top">
-        <a href="#hero" class="footer-brand">
-          <span class="brand-text">M4rKitS</span><span class="brand-accent">.dev</span>
-        </a>
-        <p class="footer-tagline" data-i18n="footer.tagline">
-          Building my future.
-        </p>
-        <div class="footer-links">
-          <a href="https://github.com/M4rKitS" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/mrodriguezhdz" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://wa.me/358413193036" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-          <a href="mailto:contact@m4rkits.dev">Email</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p class="footer-copy">© <span id="current-year"></span> <span data-i18n="footer.copy">M4rKitS.dev | Todos los derechos reservados.</span></p>
-      </div>
-    </div>
-  </footer>
-
-  <div class="lightbox" id="m4rkcalLightbox">
-    <div class="lightbox-phone">
-      <div class="lightbox-screen">
-        <div class="status-bar"><div class="notch"></div></div>
-        <div class="screen-image"><img id="m4rkcalLightboxImg" src="" alt="Vista ampliada"></div>
-      </div>
-    </div>
-    <span class="close-hint">Haz clic en cualquier sitio para cerrar</span>
-  </div>
-
-  <!-- Scripts -->
-  <script src="translations.js?v=3.3"></script>
-  <script src="script.js?v=3.3"></script>
+(function(){
+var root=document.documentElement;
+function cur(){return root.getAttribute('data-theme')==='dark'?'dark':'light'}
+function tx(k){var D=window.PROP_D||{},l=window.PROP_L||'es';return (D[l]&&D[l][k])||''}
+function label(){var d=cur()==='dark';
+document.querySelectorAll('.th').forEach(function(b){var t=tx(d?'th_light':'th_dark');b.setAttribute('aria-pressed',d?'true':'false');if(t){b.setAttribute('aria-label',t);b.setAttribute('title',t)}var s=b.querySelector('.th-t');if(s){var u=tx(d?'th_l_light':'th_l_dark');if(u){s.textContent=u}}});
+var m=document.querySelector('meta[name=theme-color]');if(m){m.setAttribute('content',d?'#0A1226':'#DAE1EB')}}
+function set(t,anim){
+if(anim){root.classList.add('th-anim');setTimeout(function(){root.classList.remove('th-anim')},600)}
+if(t==='dark'){root.setAttribute('data-theme','dark')}else{root.removeAttribute('data-theme')}
+try{localStorage.setItem('prop_theme',t)}catch(e){}
+label()}
+document.querySelectorAll('.th').forEach(function(b){b.addEventListener('click',function(e){e.stopPropagation();set(cur()==='dark'?'light':'dark',true)})});
+document.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('.lang button')){setTimeout(label,80)}});
+label();
+})();
+</script>
 </body>
 </html>
