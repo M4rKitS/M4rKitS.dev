@@ -23,7 +23,8 @@ Everything is available in Spanish and in English, each with its own URL. No fra
 - **Legal pages** in both languages: legal notice, privacy policy and cookie policy.
 - **Contact form** with [EmailJS](https://www.emailjs.com/): a notification for me, an automatic reply for the visitor and a thank-you page.
 - **Accessible**: keyboard navigation, visible focus, labelled controls, reduced-motion support. Local Lighthouse audits give 100 for accessibility and for SEO.
-- **Light on the wire**: WebP images in several sizes, one shared stylesheet with long cache, no third-party scripts apart from Cloudflare's own analytics.
+- **Scroll animations** with [GSAP](https://gsap.com/) and ScrollTrigger, self-hosted and loaded after the page: staggered reveals, a progress bar and a marquee that reacts to scroll speed. They respect the reduced-motion preference and never hide content if JavaScript fails.
+- **Light on the wire**: WebP images in several sizes, one shared stylesheet with long cache, no third-party requests apart from Cloudflare's own analytics (GSAP is served from this site).
 
 ## Tech stack
 
@@ -32,6 +33,7 @@ Everything is available in Spanish and in English, each with its own URL. No fra
 | Structure | HTML5 |
 | Styling | CSS3 (custom properties, Grid, Flexbox) |
 | Behavior | Vanilla JavaScript |
+| Motion | [GSAP](https://gsap.com/) 3 + ScrollTrigger (self-hosted in `vendor/`) |
 | Forms | [EmailJS](https://www.emailjs.com/) |
 | Hosting | [Cloudflare Pages](https://pages.cloudflare.com/) |
 | Analytics | Cloudflare Web Analytics |
