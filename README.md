@@ -1,33 +1,37 @@
 # M4rKitS.dev
 
-> Personal portfolio & freelance brand site — built, optimized, and deployed from scratch.
+> Personal portfolio and freelance web development site, in Spanish and English.
 
-![M4rKitS.dev screenshot](./assets/readme-screenshot.png)
+![M4rKitS.dev screenshot](./assets/readme-screenshot.jpg)
 
-**Live site:** [m4rkits.dev](https://m4rkits.dev/)
+**Live site:** [m4rkits.dev](https://m4rkits.dev/) · [English](https://m4rkits.dev/en/)
 
 ## About
 
-This is the source code for my personal portfolio and freelance web development brand, M4rKitS.dev. It's a single-page site (multi-language: EN/ES/FI) that showcases my projects, experience, and services — built with a deliberate focus on performance, technical SEO, and a distinctive terminal-inspired design, rather than a templated look.
+This is the source of my personal site. It has two parts:
 
-No framework, no build step, no dependencies to install. Just clean HTML, CSS, and JavaScript, deployed on Cloudflare Pages.
+- **Portfolio** (`/`): who I am, what I have learned in the Full Stack master at Conquer Blocks, my certificates and where I am heading.
+- **Web development** (`/web-development/`): the website service I offer to small businesses, project examples and a contact form.
+
+Everything is available in Spanish and in English, each with its own URL. No framework and no dependencies to install: plain HTML, CSS and JavaScript, served as static files from Cloudflare Pages.
 
 ## Features
 
-- **Multi-language** — English, Spanish, and Finnish, switchable without a page reload
-- **Performance-tuned** — 91/100 mobile and 99/100 desktop on Google PageSpeed Insights
-- **Technical SEO done properly** — sitemap, canonical tags, Schema.org structured data (Person), llms.txt for AI/agent discoverability, verified on Google Search Console and Bing Webmaster Tools
-- **Accessible, animated project cards** — accordion-style expand/collapse with full keyboard support (aria-expanded, aria-controls) and smooth CSS Grid transitions
-- **Working contact form** — EmailJS-powered, with a dedicated thank-you page so submissions are measurable as real conversions in Cloudflare Web Analytics
-- **Dark, terminal-inspired UI** — custom design system (Bebas Neue / Inter / JetBrains Mono), not a generic template
+- **Bilingual with real URLs**: Spanish at `/`, English at `/en/`. Each page declares its `hreflang` alternates and a canonical address, and the sitemap lists both versions.
+- **Light and dark mode**, remembered in the browser.
+- **Privacy by design**: no advertising or tracking cookies, fonts served from the site itself, visit statistics with Cloudflare Web Analytics (cookieless), and external content (a project preview window) only loads when the visitor asks for it.
+- **Legal pages** in both languages: legal notice, privacy policy and cookie policy.
+- **Contact form** with [EmailJS](https://www.emailjs.com/): a notification for me, an automatic reply for the visitor and a thank-you page.
+- **Accessible**: keyboard navigation, visible focus, labelled controls, reduced-motion support. Local Lighthouse audits give 100 for accessibility and for SEO.
+- **Light on the wire**: WebP images in several sizes, one shared stylesheet with long cache, no third-party scripts apart from Cloudflare's own analytics.
 
 ## Tech stack
 
 | Layer | Technology |
 | --- | --- |
 | Structure | HTML5 |
-| Styling | CSS3 (custom properties, Grid, Flexbox — no framework) |
-| Behavior | Vanilla JavaScript (no build tools) |
+| Styling | CSS3 (custom properties, Grid, Flexbox) |
+| Behavior | Vanilla JavaScript |
 | Forms | [EmailJS](https://www.emailjs.com/) |
 | Hosting | [Cloudflare Pages](https://pages.cloudflare.com/) |
 | Analytics | Cloudflare Web Analytics |
@@ -36,24 +40,27 @@ No framework, no build step, no dependencies to install. Just clean HTML, CSS, a
 
 ```text
 .
-├── index.html        # Main portfolio page
-├── tbh.html          # Referral landing page (TBH Strategy partnership)
-├── gracias.html      # Post-contact-form thank-you page
-├── style.css         # All styling
-├── script.js         # All interactivity (i18n, forms, accordions, canvas background)
-├── translations.js   # EN / ES / FI translation strings
-├── sitemap.xml
-├── robots.txt
-└── llms.txt          # Structured summary for AI agents/crawlers
+├── index.html                 # Portfolio (Spanish)
+├── web-development/           # Web development page (Spanish)
+├── aviso-legal/ privacidad/ cookies/ gracias/
+├── en/                        # English version of every page
+├── css/                       # Shared stylesheet (content-hashed file name)
+├── img/ fonts/ vendor/        # Images, self-hosted fonts, EmailJS SDK
+├── sitemap.xml  robots.txt  llms.txt
+└── _headers  _redirects       # Cloudflare Pages configuration
 ```
+
+## How it is built
+
+The HTML pages are generated from a small local script and committed as static files, so the site itself needs no build step to deploy.
 
 ## Development workflow
 
-Built using an AI-agent-assisted development workflow (Google Antigravity + Claude), with every change scoped through a written prompt, reviewed, and tested in production before being called done. This isn't "vibe coding" — every feature ships with real QA: cross-browser checks, cache-busting version bumps, and manual verification on the live domain, not just localhost.
+I designed and built this site with the help of Claude (Anthropic's AI assistant, through Claude Code). The design decisions are mine, and I review and test every change. I am studying the Full Stack master at Conquer Blocks to understand and maintain the code behind it.
 
 ## Local development
 
-No build step required. Clone the repo and serve it with any static file server:
+No build step is needed to view the site. Clone the repo and serve it with any static file server:
 
 ```bash
 git clone https://github.com/M4rKitS/M4rKitS.dev.git
