@@ -20,6 +20,7 @@ Everything is available in Spanish and in English, each with its own URL. No fra
 - **Bilingual with real URLs**: Spanish at `/`, English at `/en/`. Each page declares its `hreflang` alternates and a canonical address, and the sitemap lists both versions.
 - **Light and dark mode**, remembered in the browser.
 - **Privacy by design**: no advertising or tracking cookies, fonts served from the site itself, visit statistics with Cloudflare Web Analytics (cookieless), and external content (a project preview window) only loads when the visitor asks for it.
+- **Certificate viewer**: each certificate with an image opens in a window styled like the project previews, with the technology logo in the title bar. The images (WebP) are only downloaded when one is opened.
 - **Legal pages** in both languages: legal notice, privacy policy and cookie policy.
 - **Contact form** with [EmailJS](https://www.emailjs.com/): a notification for me, an automatic reply for the visitor and a thank-you page.
 - **Accessible**: keyboard navigation, visible focus, labelled controls, reduced-motion support. Local Lighthouse audits give 100 for accessibility and for SEO.
