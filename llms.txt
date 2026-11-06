@@ -5,7 +5,7 @@
 The site has two sections, each available in Spanish and in English:
 
 - [Portfolio](https://m4rkits.dev/): his training (master modules, certificates) and where he is heading.
-- [Web development](https://m4rkits.dev/web-development/): the website service for small businesses, project examples and a contact form.
+- [Web development](https://m4rkits.dev/desarrollo-web/): the website service for small businesses, project examples and a contact form.
 - [Portfolio in English](https://m4rkits.dev/en/) and [web development in English](https://m4rkits.dev/en/web-development/).
 
 ## Links

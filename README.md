@@ -11,7 +11,7 @@
 This is the source of my personal site. It has two parts:
 
 - **Portfolio** (`/`): who I am, what I have learned in the Full Stack master at Conquer Blocks, my certificates and where I am heading.
-- **Web development** (`/web-development/`): the website service I offer to small businesses, project examples and a contact form.
+- **Web development** (`/desarrollo-web/`): the website service I offer to small businesses, project examples and a contact form.
 
 Everything is available in Spanish and in English, each with its own URL. No framework and no dependencies to install: plain HTML, CSS and JavaScript, served as static files from Cloudflare Pages.
 
@@ -44,7 +44,7 @@ Everything is available in Spanish and in English, each with its own URL. No fra
 ```text
 .
 ├── index.html                 # Portfolio (Spanish)
-├── web-development/           # Web development page (Spanish)
+├── desarrollo-web/            # Web development page (Spanish)
 ├── aviso-legal/ privacidad/ cookies/ gracias/
 ├── en/                        # English version of every page
 ├── css/                       # Shared stylesheet (content-hashed file name)
