@@ -226,7 +226,7 @@ html{scroll-padding-top:96px}
 .b3{position:relative;display:block;overflow:hidden;border-radius:20px;background:#fff;text-decoration:none;aspect-ratio:4/3;box-shadow:0 0 0 1px rgba(0,0,0,.06)}
 .b3 .mock-bar{padding:8px 11px}
 .b3 img{display:block;width:100%;height:calc(100% - 30px);object-fit:cover;object-position:top;border-radius:0}
-.b3 .go{position:absolute;left:12px;right:12px;bottom:12px;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:9px 10px 9px 15px;border-radius:99px;background:var(--ink);box-shadow:0 10px 24px -10px rgba(11,31,58,.7);color:#fff;font-size:.95rem;font-weight:500;transition:transform .25s,background .25s}
+.b3 .go{position:absolute;left:14px;right:14px;bottom:15px;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:6px 7px 6px 15px;border-radius:99px;background:var(--ink);box-shadow:0 10px 24px -10px rgba(11,31,58,.7);color:#fff;font-size:.95rem;font-weight:500;transition:transform .25s,background .25s}
 .b3 .go svg{width:30px;height:30px;padding:6px;border-radius:50%;background:#fff;color:var(--ink)}
 .b3:hover .go{background:var(--acc)}.b3:hover .go svg{color:var(--acc)}
 .b3:hover .go{transform:translateY(-3px)}
