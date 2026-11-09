@@ -66,13 +66,6 @@ JSONLD = {
         'sameAs': ['https://github.com/M4rKitS', 'https://www.linkedin.com/in/mrodriguezhdz', 'https://www.instagram.com/m4rkits.dev/']},
 }
 
-captured = {}
-
-
-def capture(n, title, fonts, css, body, extra_js='', show_sw=False, meta=None):
-    return dict(body=body, extra_js=extra_js, meta=meta)
-
-
 def absolutize(h):
     h = re.sub(r'(?<![\w/.\-])(img|fonts|vendor)/', r'/\1/', h)
     return h
@@ -289,7 +282,6 @@ def main(outdir):
     if os.path.exists(outdir):
         shutil.rmtree(outdir)
     os.makedirs(outdir)
-    d1.page = capture
     build_js(outdir)
     css = build_css()
     css_name = 'site.%s.css' % hashlib.sha1(css.encode('utf-8')).hexdigest()[:8]

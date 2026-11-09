@@ -171,7 +171,6 @@ EN['who_text2'] = 'My goal is to keep growing every day without setting limits f
 ES['g_text2'] = 'Mi meta sigue intacta: trabajar algún día en una big tech. Cada proyecto que saco adelante me acerca un paso más.'
 EN['g_text2'] = 'My goal is intact: to work at a big tech company one day. Every project I deliver brings me one step closer.'
 
-FONTS = 'family=Barlow:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500'
 
 CSS = """
 :root{--ink:#0B1F3A;--muted:#566579;--line:#E1E6EE;--card:#F8FAFC;--acc:#2457E6;--acc2:#38BDF8;--f:'Barlow',system-ui,sans-serif;--hd:'Barlow',system-ui,sans-serif;--s:'Fraunces',Georgia,serif;
@@ -1213,6 +1212,11 @@ def know_html():
 
 # El JavaScript vive en src/js/ (un módulo por función); cada página carga solo su archivo de entrada: home, web o basic.
 
+def page_data(body, entry, meta):
+    """Lo que site.py necesita de cada página: el marcado, el archivo JS de entrada (home, web o basic) y los metadatos."""
+    return dict(body=body, extra_js=entry, meta=meta)
+
+
 def faq():
     out = ['<div class="faq">']
     for i, m in enumerate(MODS):
@@ -1612,7 +1616,7 @@ def build_home():
 </div></dialog></section>
 """
     body = '<div class="frame">' + header('home') + '<main>' + main + '</main>' + footer('home') + '</div>'
-    return page(1, NAMES[0], FONTS, full_css(), body % values(), 'home', False, meta=dict(t='mt_home', d='md_home', url='https://m4rkits.dev/', img='https://m4rkits.dev/img/og-portfolio.png', alt='Marcos Rodríguez, desarrollador de software Full Stack'))
+    return page_data(body % values(), 'home', meta=dict(t='mt_home', d='md_home', img='https://m4rkits.dev/img/og-portfolio.png', alt='Marcos Rodríguez, desarrollador de software Full Stack'))
 
 
 def build_web():
@@ -1660,7 +1664,7 @@ def build_web():
 """
     body = '<div class="frame">' + header('web') + '<main>' + main + '</main>' + footer('web') + '</div>'
     body += '<script src="vendor/emailjs.min.js"></script>'
-    return page(1, NAMES[0] + ' (desarrollo web)', FONTS, full_css(), body % values(), 'web', False, meta=dict(t='mt_web', d='md_web', url='https://m4rkits.dev/web-development/', img='https://m4rkits.dev/img/og-web.png', alt='M4rKitS.dev, desarrollo web para pequeños negocios'))
+    return page_data(body % values(), 'web', meta=dict(t='mt_web', d='md_web', img='https://m4rkits.dev/img/og-web.png', alt='M4rKitS.dev, desarrollo web para pequeños negocios'))
 
 
 ONLY_LANG = None
@@ -1678,7 +1682,7 @@ def build_legal(kind):
     assert '%' not in blocks
     main = '<section class="lg"><div class="lg-w">' + blocks + '</div></section>'
     body = '<div class="frame">' + header('legal') + '<main>' + main + '</main>' + footer('legal') + '</div>'
-    return page(1, NAMES[0] + ' (' + kind + ')', FONTS, full_css(), body % values(), 'basic', False, meta=dict(t='mt_' + kind, d='md_' + kind, url='https://m4rkits.dev/' + LEGAL_FILES[kind], img='https://m4rkits.dev/img/og-portfolio.png', alt='M4rKitS.dev'))
+    return page_data(body % values(), 'basic', meta=dict(t='mt_' + kind, d='md_' + kind, img='https://m4rkits.dev/img/og-portfolio.png', alt='M4rKitS.dev'))
 
 
 def build_gracias():
@@ -1690,7 +1694,7 @@ def build_gracias():
           '<div class="lg-act"><a class="dk" href="' + HOME + '">Go to the portfolio</a><a class="og" href="' + WEBP + '"><span>Back to web development</span></a></div></div>')
     main = '<section class="lg"><div class="lg-w">' + (es if ONLY_LANG != 'en' else '') + (en if ONLY_LANG != 'es' else '') + '</div></section>'
     body = '<div class="frame">' + header('legal') + '<main>' + main + '</main>' + footer('legal') + '</div>'
-    return page(1, NAMES[0] + ' (gracias)', FONTS, full_css(), body % values(), 'basic', False, meta=dict(t='mt_gracias', d='md_gracias', url='https://m4rkits.dev/gracias/', img='https://m4rkits.dev/img/og-portfolio.png', alt='M4rKitS.dev'))
+    return page_data(body % values(), 'basic', meta=dict(t='mt_gracias', d='md_gracias', img='https://m4rkits.dev/img/og-portfolio.png', alt='M4rKitS.dev'))
 
 
 def build_notfound():
@@ -1700,7 +1704,7 @@ def build_notfound():
           '<div class="lg-act"><a class="dk" href="/en/">Go to the homepage</a><a class="og" href="/en/web-development/"><span>See web development</span></a></div></div>')
     main = '<section class="lg"><div class="lg-w">' + (es if ONLY_LANG != 'en' else '') + (en if ONLY_LANG != 'es' else '') + '</div></section>'
     body = '<div class="frame">' + header('legal') + '<main>' + main + '</main>' + footer('legal') + '</div>'
-    return page(1, NAMES[0] + ' (404)', FONTS, full_css(), body % values(), 'basic', False, meta=dict(t='mt_gracias', d='md_gracias', url='https://m4rkits.dev/404', img='https://m4rkits.dev/img/og-portfolio.png', alt='M4rKitS.dev'))
+    return page_data(body % values(), 'basic', meta=dict(t='mt_gracias', d='md_gracias', img='https://m4rkits.dev/img/og-portfolio.png', alt='M4rKitS.dev'))
 
 
 if __name__ == '__main__':

@@ -1,6 +1,5 @@
-# Base común de las propuestas v2: textos ES/EN, iconos y helpers.
+# Base común: textos ES/EN, iconos, imágenes optimizadas y helpers.
 import json
-import os as _os
 
 ES = {
  'n_home': 'Inicio', 'n_master': 'Máster', 'n_certs': 'Certificados', 'n_web': 'Desarrollo web',
@@ -242,9 +241,6 @@ def socials(cls='', size=20):
     return ''.join(out)
 
 
-FILES = ['1-aire.html', '2-amanecer.html', '3-espresso-y-ambar.html', '4-taller-en-naranja.html', '5-marcador-y-grano.html']
-NAMES = ['Aire', 'Amanecer', 'Espresso y ámbar', 'Taller en naranja', 'Marcador y grano']
-
 COMMON_CSS = """
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;overflow-x:clip}
@@ -256,10 +252,6 @@ button{font:inherit;color:inherit}
 summary{list-style:none;cursor:pointer}
 summary::-webkit-details-marker{display:none}
 :focus-visible{outline:3px solid currentColor;outline-offset:3px}
-.sw{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:9999;display:flex;align-items:center;gap:4px;padding:6px 8px;border-radius:99px;background:rgba(18,18,18,.9);color:#fff;font:600 12px/1 system-ui,-apple-system,sans-serif;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);box-shadow:0 10px 30px -10px rgba(0,0,0,.5)}
-.sw span{padding:0 8px 0 6px;color:#bbb;font-weight:500}
-.sw a{width:30px;height:30px;display:grid;place-items:center;border-radius:99px;text-decoration:none;color:#ddd;border:1px solid #444}
-.sw a[aria-current]{background:#fff;color:#111;border-color:#fff}
 .pgdiv{display:flex;align-items:center;gap:14px;max-width:1180px;margin:0 auto;padding:36px 20px;font:600 11px/1.2 system-ui,-apple-system,sans-serif;letter-spacing:.12em;text-transform:uppercase;opacity:.55}
 .pgdiv::before,.pgdiv::after{content:"";flex:1;border-top:1px dashed currentColor}
 .mock{margin:0;border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 30px 60px -30px rgba(0,0,0,.45);border:1px solid rgba(0,0,0,.08)}
@@ -315,102 +307,3 @@ def optimize_imgs(h):
             tag = tag.replace('src="%s"' % src, 'src="%s"' % _SWAP[src])
         return tag
     return _re.sub(r'<img [^>]*>', fix, h)
-
-
-def page(n, title, fonts, css, body, extra_js='', show_sw=True, meta=None):
-    if n == 1:
-        # Aire: tipografias servidas desde la propia web (sin Google)
-        fontlinks = ('<link rel="preload" href="fonts/barlow-normal-latin-400.woff2" as="font" type="font/woff2" crossorigin>\n'
-                     '<link rel="preload" href="fonts/barlow-normal-latin-600.woff2" as="font" type="font/woff2" crossorigin>\n'
-                     '<style>' + open(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), 'fonts.css'), encoding='utf-8').read().replace('url(', 'url(fonts/') + '</style>')
-    else:
-        fontlinks = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
-                     '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?%s&display=swap">' % fonts)
-    sw = ''.join('<a href="%s"%s>%d</a>' % (f, ' aria-current="page"' if i + 1 == n else '', i + 1)
-                 for i, f in enumerate(FILES))
-    js = '''
-(function(){
-var D=%s;
-var lang='es';
-var q=/[?&]lang=(es|en)/.exec(location.search);
-try{var s=q?q[1]:localStorage.getItem('prop_lang');if(s==='es'||s==='en'){lang=s}else if(!/^es/i.test(navigator.language||'')){lang='en'}}catch(e){}
-function apply(l){
-document.documentElement.lang=l;
-document.querySelectorAll('[data-t]').forEach(function(el){var v=D[l][el.getAttribute('data-t')];if(v!==undefined){el.innerHTML=v}});
-document.querySelectorAll('[data-tp]').forEach(function(el){var v=D[l][el.getAttribute('data-tp')];if(v!==undefined){el.setAttribute('placeholder',v)}});
-window.PROP_D=D;window.PROP_L=l;
-(function(){var h=document.documentElement,mt=h.getAttribute('data-mt'),md=h.getAttribute('data-md');
-function set(sel,attr,v){var e=document.querySelector(sel);if(e&&v){e.setAttribute(attr,v)}}
-if(mt&&D[l][mt]){document.title=D[l][mt];set('meta[property="og:title"]','content',D[l][mt]);set('meta[name="twitter:title"]','content',D[l][mt])}
-if(md&&D[l][md]){set('meta[name="description"]','content',D[l][md]);set('meta[property="og:description"]','content',D[l][md]);set('meta[name="twitter:description"]','content',D[l][md])}
-set('meta[property="og:locale"]','content',l==='en'?'en_GB':'es_ES')})();
-document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-l')===l?'true':'false')});
-try{localStorage.setItem('prop_lang',l)}catch(e){}
-}
-document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){apply(b.getAttribute('data-l'))})});
-apply(lang);
-})();
-''' % json.dumps({'es': ES, 'en': EN}, ensure_ascii=False)
-    import html as _h
-    if meta:
-        q = lambda k: _h.escape(ES[meta[k]], quote=True)
-        hattr = ' data-mt="%s" data-md="%s"' % (meta['t'], meta['d'])
-        url = meta['url']
-        img = meta['img']
-        hmeta = (
-            '<title>%s</title>\n'
-            '<meta name="description" content="%s">\n'
-            '<link rel="canonical" href="%s">\n'
-            '<meta property="og:type" content="website">\n'
-            '<meta property="og:site_name" content="M4rKitS.dev">\n'
-            '<meta property="og:title" content="%s">\n'
-            '<meta property="og:description" content="%s">\n'
-            '<meta property="og:url" content="%s">\n'
-            '<meta property="og:image" content="%s">\n'
-            '<meta property="og:image:width" content="1200">\n'
-            '<meta property="og:image:height" content="630">\n'
-            '<meta property="og:image:alt" content="%s">\n'
-            '<meta property="og:locale" content="es_ES">\n'
-            '<meta name="twitter:card" content="summary_large_image">\n'
-            '<meta name="twitter:title" content="%s">\n'
-            '<meta name="twitter:description" content="%s">\n'
-            '<meta name="twitter:image" content="%s">'
-        ) % (q('t'), q('d'), url, q('t'), q('d'), url, img, _h.escape(meta['alt'], quote=True), q('t'), q('d'), img)
-    else:
-        hattr = ''
-        hmeta = '<title>Propuesta %d de 5: %s | M4rKitS.dev</title>' % (n, title)
-    out = '''<!DOCTYPE html>
-<html lang="es"%s>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
-%s
-<link rel="icon" href="img/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="img/icon-192.png">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<meta name="theme-color" content="#DAE1EB">
-<script>try{if(localStorage.getItem('prop_theme')==='dark'){document.documentElement.setAttribute('data-theme','dark')}}catch(e){}</script>
-%s
-<style>%s%s</style>
-</head>
-<body>
-%s
-%s
-<script>%s%s</script>
-</body>
-</html>
-''' % (hattr, hmeta, fontlinks, COMMON_CSS, css, body, ('<nav class="sw" aria-label="Propuestas"><span>Propuesta</span>' + sw + '</nav>') if show_sw else '', js, extra_js)
-    return optimize_imgs(out) if n == 1 else out
-
-
-def mod_cards_data():
-    return [(m, m in CERT_MODS) for m in MODS]
-
-
-def marquee_items(glyph_html, cls=''):
-    items = ''.join('<b>%s</b><i aria-hidden="true">%s</i>' % (T(m), glyph_html) for m in MODS)
-    one = '<span>%s</span>' % items
-    return '<div class="marq-wrap %s" aria-hidden="true"><div class="marq">%s%s</div></div>' % (cls, one, one)

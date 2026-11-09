@@ -19,10 +19,6 @@ button{font:inherit;color:inherit}
 summary{list-style:none;cursor:pointer}
 summary::-webkit-details-marker{display:none}
 :focus-visible{outline:3px solid currentColor;outline-offset:3px}
-.sw{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:9999;display:flex;align-items:center;gap:4px;padding:6px 8px;border-radius:99px;background:rgba(18,18,18,.9);color:#fff;font:600 12px/1 system-ui,-apple-system,sans-serif;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);box-shadow:0 10px 30px -10px rgba(0,0,0,.5)}
-.sw span{padding:0 8px 0 6px;color:#bbb;font-weight:500}
-.sw a{width:30px;height:30px;display:grid;place-items:center;border-radius:99px;text-decoration:none;color:#ddd;border:1px solid #444}
-.sw a[aria-current]{background:#fff;color:#111;border-color:#fff}
 .pgdiv{display:flex;align-items:center;gap:14px;max-width:1180px;margin:0 auto;padding:36px 20px;font:600 11px/1.2 system-ui,-apple-system,sans-serif;letter-spacing:.12em;text-transform:uppercase;opacity:.55}
 .pgdiv::before,.pgdiv::after{content:"";flex:1;border-top:1px dashed currentColor}
 .mock{margin:0;border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 30px 60px -30px rgba(0,0,0,.45);border:1px solid rgba(0,0,0,.08)}
