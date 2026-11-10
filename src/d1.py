@@ -1202,7 +1202,7 @@ def know_html():
                       '<div><h4 class="wbh">%s</h4><ul class="wbl%s">%s</ul></div>'
                       '<div class="wbc" aria-hidden="true"><code>%s</code><u></u></div></section>'
                       % (i, i, '' if on else ' hidden', T(k + '_t'), T(k + '_d'), T(k + '_lead'),
-                         T('wb_learn'), learn, T('wb_tools'), ' many' if len(a['items']) > 5 else '', rows, code))
+                         T(k + '_ll' if (k + '_ll') in ES else 'wb_learn'), learn, T(k + '_tl' if (k + '_tl') in ES else 'wb_tools'), ' many' if len(a['items']) > 5 else '', rows, code))
     return ('<div class="wb" data-wb><div class="wb-bar" aria-hidden="true"><i></i><i></i><i></i><span>%s</span></div>'
             '<div class="wb-body"><div class="wb-tabs" role="tablist" aria-orientation="vertical">%s</div>'
             '<div class="wb-panels">%s</div></div></div>' % (T('wb_title'), ''.join(tabs), ''.join(panels)))

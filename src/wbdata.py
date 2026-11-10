@@ -48,7 +48,7 @@ AREAS = [
              ('logo:mcp', ('Model Context Protocol', 'Model Context Protocol'), ('Enchufar herramientas externas a los modelos de IA.', 'Plugging external tools into AI models.')),
              ('sk:pen', ('Google Stitch', 'Google Stitch'), ('Generar propuestas de interfaz y diseño a partir de una idea.', 'Generating interface and design proposals from an idea.')),
              ('sk:sliders', ('Open Agent Manager', 'Open Agent Manager'), ('Seguir y coordinar varios agentes desde un mismo sitio.', 'Tracking and coordinating several agents from one place.')),
-             ('sk:winai', ('Apps y webs con IA integrada', 'Apps and sites with built-in AI'), ('Dar a una web o una app funciones que usan IA.', 'Giving a site or an app features that use AI.')),
+             ('sk:winai', ('Apps y webs con IA integrada', 'Apps and sites with built-in AI'), ('Funciones de IA en webs y apps.', 'AI features in sites and apps.')),
              ('logo:chatgpt', ('OpenAI', 'OpenAI'), ('Probar sus modelos y herramientas en distintas tareas.', 'Trying its models and tools on different tasks.')),
          ]),
     dict(tab=('Publicar', 'Publish'), ext='yml', code='$ wrangler pages deploy',
@@ -102,6 +102,51 @@ MORE = [
 for _a, _m in zip(AREAS, MORE):
     _a.update(_m)
 
+# Pestaña de IA: va la primera. Presenta el trabajo como desarrollo asistido por agentes: especifico, superviso y valido,
+# apoyándome en los fundamentos que adquiero en el máster. Todo lo que aparece sale de lo que hago de verdad.
+_ia = [a for a in AREAS if a['tab'][0] == 'IA'][0]
+_ia['tab'] = ('IA y agentes', 'AI and agents')
+_ia['title'] = ('Desarrollo asistido por agentes de IA', 'AI-agent-assisted development')
+_ia['desc'] = ('Agentes de IA para acelerar el desarrollo y reducir la carga operativa, apoyados en los fundamentos del máster.',
+               'AI agents to speed up development and reduce operational workload, backed by the fundamentals of the master.')
+_ia['lead'] = (
+    'Mi flujo de trabajo es desarrollo asistido por agentes: defino el objetivo, oriento al agente con especificaciones precisas, reviso el código que genera y valido cada entregable antes de darlo por bueno. Esa supervisión se apoya en mis conocimientos y lenguajes de programación adquiridos, que me permiten leer y entender el resultado. Empecé con Google Antigravity y hoy trabajo con Claude Code.',
+    'My workflow is agent-assisted development: I set the goal, steer the agent with precise specifications, review the code it generates and validate every deliverable before accepting it. That oversight rests on the knowledge and programming languages I have acquired, which let me read and understand the result. I started with Google Antigravity and today I work with Claude Code.')
+_ia['learn_label'] = ('Metodología', 'Methodology')
+_ia['tools_label'] = ('Stack de IA', 'AI stack')
+_ia['learn'] = [
+    ('Flujo prompt-first con humano en el circuito (human-in-the-loop): defino el objetivo, el agente implementa y yo decido cuándo se avanza al siguiente paso.',
+     'Prompt-first workflow with a human in the loop: I define the goal, the agent implements and I decide when to move on to the next step.'),
+    ('Ingeniería de prompts: redacto especificaciones precisas con un asistente conversacional (Claude) antes de lanzar el agente de código.',
+     'Prompt engineering: I write precise specifications with a conversational assistant (Claude) before launching the coding agent.'),
+    ('Gestión del contexto: separo en chats distintos la estrategia y las decisiones de alto nivel de la generación de prompts de código.',
+     'Context management: I keep strategy and high-level decisions in separate chats from the generation of code prompts.'),
+    ('Revisión y validación: contrasto cada resultado con capturas y pruebas, itero en varias rondas y compruebo si el agente editó un archivo o lo regeneró desde cero, para no perder correcciones previas.',
+     'Review and validation: I check every result with screenshots and tests, iterate over several rounds and verify whether the agent edited a file or regenerated it from scratch, so earlier fixes are not lost.'),
+    ('Skills: amplío el agente con paquetes de instrucciones especializadas (diseño, animación con GSAP, SEO, vídeo con Remotion) y mantengo una propia con mi proceso de diseño, que aporto al inicio de cada prompt de diseño.',
+     'Skills: I extend the agent with specialised instruction packs (design, GSAP animation, SEO, Remotion video) and maintain my own with my design process, which I include at the start of every design prompt.'),
+    ('Entradas reales en lugar de descripciones: aporto logotipos, moodboards y capturas en vez de describir colores con texto.',
+     'Real inputs instead of descriptions: I provide logos, moodboards and screenshots rather than describing colours in words.'),
+    ('Seguridad y control del agente: claves de API fuera del código, confirmación previa de cada comando de terminal y ningún acceso a datos reales de producción.',
+     'Security and agent control: API keys kept out of the code, confirmation before every terminal command and no access to real production data.'),
+    ('Control de versiones desde el primer día: cada proyecto va a GitHub.',
+     'Version control from day one: every project goes to GitHub.'),
+]
+_ia['items'] = [
+    ('logo:claudecode', ('Claude Code', 'Claude Code'), ('Agente de código de mi flujo actual: implementa lo que especifico y yo reviso cada cambio.', 'Coding agent in my current workflow: it implements what I specify and I review every change.')),
+    ('logo:antigravity', ('Google Antigravity', 'Google Antigravity'), ('Primer agente de código que utilicé, en el módulo de IA del máster.', 'The first coding agent I used, in the master AI module.')),
+    ('sk:agent', ('Claude, asistente conversacional', 'Claude, conversational assistant'), ('Redacto y afino los prompts con él antes de ejecutarlos.', 'I write and refine prompts with it before running them.')),
+    ('sk:pen', ('Google Stitch', 'Google Stitch'), ('Prototipado de interfaces, conectado al agente mediante MCP.', 'Interface prototyping, connected to the agent through MCP.')),
+    ('logo:mcp', ('Model Context Protocol', 'Model Context Protocol'), ('Estándar para que un agente utilice herramientas externas.', 'Standard that lets an agent use external tools.')),
+    ('logo:chatgpt', ('ChatGPT', 'ChatGPT'), ('Rediseño de logotipo, favicon y firma de correo con la paleta del sitio.', 'Redesign of logo, favicon and email signature with the site palette.')),
+    ('sk:loop', ('Procesos automatizados', 'Automated processes'), ('Encadenar pasos repetitivos en flujos que se ejecutan solos.', 'Chaining repetitive steps into workflows that run by themselves.')),
+    ('logo:notebooklm', ('NotebookLM', 'NotebookLM'), ('Ordenar documentación y consultarla con ayuda de IA.', 'Organising documentation and querying it with AI help.')),
+    ('sk:sliders', ('Open Agent Manager', 'Open Agent Manager'), ('Seguir y coordinar varios agentes desde un mismo sitio.', 'Tracking and coordinating several agents from one place.')),
+    ('sk:winai', ('Apps y webs con IA integrada', 'Apps and sites with built-in AI'), ('Funciones de IA en webs y apps.', 'AI features in sites and apps.')),
+]
+AREAS.remove(_ia)
+AREAS.insert(0, _ia)
+
 KEYS_ES, KEYS_EN = {}, {}
 for ai, a in enumerate(AREAS):
     k = 'w%d' % ai
@@ -109,6 +154,9 @@ for ai, a in enumerate(AREAS):
     KEYS_ES[k + '_t'], KEYS_EN[k + '_t'] = a['title']
     KEYS_ES[k + '_d'], KEYS_EN[k + '_d'] = a['desc']
     KEYS_ES[k + '_lead'], KEYS_EN[k + '_lead'] = a['lead']
+    if 'learn_label' in a:
+        KEYS_ES[k + '_ll'], KEYS_EN[k + '_ll'] = a['learn_label']
+        KEYS_ES[k + '_tl'], KEYS_EN[k + '_tl'] = a['tools_label']
     for jj, lr in enumerate(a['learn']):
         KEYS_ES['%sl%d' % (k, jj)], KEYS_EN['%sl%d' % (k, jj)] = lr
     for ii, (_, name, desc) in enumerate(a['items']):
