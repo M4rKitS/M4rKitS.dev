@@ -489,8 +489,9 @@ html{scroll-padding-top:128px}
 .wb-panels{transition:height .45s cubic-bezier(.2,.7,.2,1);overflow:hidden}
 .wb-panels>section{align-self:start;gap:16px;padding:24px 28px 22px}
 .wb-panels header h3{font-size:clamp(1.45rem,2.6vw,1.9rem)}
-.wb-panels header p.wbs{font-size:1.06rem;margin-top:7px}
-.wb-panels header p.wbp{font-size:1rem;margin-top:8px}
+.wb-panels header p.wbs{font-size:1.06rem;line-height:1.45;margin-top:14px}
+.wb-panels header p.wbp{font-size:1rem;margin-top:18px}
+.wb-panels header{margin-bottom:6px}
 .wbh{margin-bottom:10px;font-size:.74rem}
 .wbk{gap:9px}
 .wbk li{padding:11px 15px;font-size:.96rem}
@@ -873,6 +874,8 @@ p{text-wrap:pretty}
 @media(prefers-reduced-motion:reduce){.cc.lit::after,.cc.lit .ck{animation:none}.cc.lit{transform:none}}
 /* menu superior un poco mas separado del borde */
 @media(max-width:959px){.hdr{top:28px}}
+/* márgenes laterales iguales en todas las secciones a partir de 760 px (antes cambiaban a 700, 860 y 900) */
+@media(min-width:760px){.three,.faq,.goal,.who,.pj,.wl,.certs{padding-left:32px;padding-right:32px}}
 /* certificados: diez en total (SOLID y Bases de datos es uno solo): 2 columnas en móvil y tablet, 5 en escritorio */
 /* movil: la tarjeta de plan que estas viendo se ilumina y las otras quedan opacas; extras en 2 x 2 */
 @media(hover:none){
