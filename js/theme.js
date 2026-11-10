@@ -1,5 +1,5 @@
 /* Modo claro y oscuro, recordado en localStorage (clave prop_theme). */
-import { tx } from './i18n.js?v=f7454baf';
+import { tx } from './i18n.js?v=a4715f7c';
 export function initTheme() {
   var root = document.documentElement;
   function cur() {

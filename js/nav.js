@@ -1,5 +1,5 @@
 /* Cabecera y navegación: menú móvil, aviso de sección activa y aterrizaje exacto en los enlaces #ancla. */
-import { tx } from './i18n.js?v=f7454baf';
+import { tx } from './i18n.js?v=a4715f7c';
 export function initNav() {
   var hdr = document.querySelector('.hdr'),
     spyFn = null;

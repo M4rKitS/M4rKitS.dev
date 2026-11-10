@@ -1,5 +1,5 @@
 /* Visor de certificados: al pulsar una tarjeta se abre una ventana con la imagen. */
-import { tx } from './i18n.js?v=f7454baf';
+import { tx } from './i18n.js?v=a4715f7c';
 export function initCerts() {
   var dlg = document.getElementById('cd');
   if (!dlg || typeof dlg.showModal !== 'function') {

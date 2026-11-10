@@ -1,5 +1,5 @@
 /* Vista previa de proyectos: ventana con aviso de consentimiento antes de cargar contenido externo. */
-import { tx, lang } from './i18n.js?v=f7454baf';
+import { tx, lang } from './i18n.js?v=a4715f7c';
 export function initProjects() {
   var wl = document.getElementById('wl');
   if (!wl) return;
