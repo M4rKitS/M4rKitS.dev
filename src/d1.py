@@ -380,18 +380,20 @@ html{scroll-padding-top:128px}
 .fl-i.ti img{width:54%;height:54%;object-fit:contain;border-radius:0}
 .fl-i.ti.sm img{width:58%;height:58%}
 /* seccion del master: cinta de logos y tarjetas */
-.mq{margin:34px auto 0;max-width:1220px;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent);mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent)}
-.mq-t{display:flex;gap:14px;width:max-content;animation:mq 26s linear infinite}
+/* Dos cintas que se mueven. El ancho de cada cinta es el de una tanda de 6 iconos (--g es la separación), así no se ve ningún
+   icono repetido; las otras dos copias solo sirven para que el bucle no tenga salto. */
+.mqs{--g:22px;--set:calc(6 * (84px + var(--g)));max-width:1160px;margin:34px auto 0;padding:0 20px;display:grid;justify-items:center}
+@media(min-width:760px){.mqs{padding:0 32px}}
+.mq{width:min(100%,var(--set));overflow:hidden;padding:6px 0 20px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 26px,#000 calc(100% - 26px),transparent);mask-image:linear-gradient(90deg,transparent,#000 26px,#000 calc(100% - 26px),transparent)}
+.mq-t{display:flex;width:max-content;animation:mq 14s linear infinite}
 .mq:hover .mq-t{animation-play-state:paused}
-.mq-s{display:flex;gap:14px}
-@keyframes mq{to{transform:translateX(calc(-33.3333% - 4.6667px))}}
+.mq-s{display:flex}
+.mq-s i{margin-right:var(--g)}
+@keyframes mq{to{transform:translateX(-33.3333%)}}
+.mq.rev .mq-t{animation-direction:reverse}
 .mq i{flex:none;width:84px;height:84px;border-radius:22px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;box-shadow:0 12px 24px -18px rgba(11,31,58,.45);color:var(--ink)}
 .mq i img{width:42px;height:42px;object-fit:contain}
-.mqs{max-width:1160px;margin:34px auto 0;padding:0 20px;display:grid;gap:14px}
-@media(min-width:760px){.mqs{padding:0 32px}}
-.mqs .mq{margin:0;max-width:none}
-.mq.rev .mq-t{animation-direction:reverse}
-.mq-tx{font-weight:700;font-size:1.05rem;letter-spacing:.02em;color:var(--acc)}
+@media(prefers-reduced-motion:reduce){.mq{-webkit-mask-image:none;mask-image:none;padding-bottom:6px}.mq-t{width:auto;justify-content:center;animation:none}.mq-s[aria-hidden]{display:none}.mq-s{flex-wrap:wrap;justify-content:center;gap:14px}.mq-s i{margin-right:0}}
 .mods{display:grid;gap:14px;grid-template-columns:1fr;margin-top:34px;align-items:start}
 @media(min-width:620px){.mods{grid-template-columns:1fr 1fr}}
 @media(min-width:1000px){.mods{grid-template-columns:repeat(4,1fr)}}
@@ -415,7 +417,6 @@ html{scroll-padding-top:128px}
 .mcta i{align-self:flex-end;display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:#fff;color:var(--ink)}
 .mcta:hover{background:var(--acc);border-color:var(--acc)}
 @media(max-width:619px){.mc summary{min-height:0;flex-direction:row;align-items:center;gap:14px;padding:16px}.mc summary>svg{margin:0 0 0 auto;align-self:center}.mn{display:none}.mt{flex:1}.mcta{min-height:0;flex-direction:row;align-items:center}.mcta b{font-size:2.4rem}.mcta i{margin-left:auto}.mc dl{padding:0 16px 16px}}
-@media(prefers-reduced-motion:reduce){.mq{-webkit-mask-image:none;mask-image:none}.mq-t{width:auto;flex-wrap:wrap;justify-content:center;animation:none}.mq-s[aria-hidden]{display:none}.mq-s{flex-wrap:wrap;justify-content:center}}
 .hdr{max-width:1200px}
 .soc{display:none;align-items:center;gap:2px;margin-right:6px}
 @media(min-width:1280px){.soc{display:flex}}
@@ -1071,7 +1072,6 @@ html[data-theme=dark] .bw-gate{background:#0F1A30}
 .lg-act .og span{padding:0 4px}
 @media(min-width:960px) and (max-width:1099px){.hw{gap:6px 14px}.hr{gap:12px}.hn a{padding:7px 8px}.lang button span{display:none}.lang button{padding:5px 8px}}
 /* la cinta deja sitio a la sombra de las fichas (el recorte del desplazamiento la cortaba) */
-.mq{padding:6px 0 28px;margin:-6px 0 -28px}
 button.cc{font:inherit;color:inherit;cursor:pointer;width:100%;-webkit-appearance:none;appearance:none;text-align:left}
 .cc-i{position:absolute;top:13px;right:13px;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:rgba(36,87,230,.09);color:var(--acc);transition:background .35s,color .35s}
 .cc .cc-i svg{width:14px;height:14px;align-self:auto;color:inherit}
@@ -1137,21 +1137,17 @@ def marquee_html():
     def L(n, t):
         return '<i title="%s">%s</i>' % (t, _logo(n).replace(' loading="lazy"', ''))
 
-    def X(txt):
-        return '<i title="%s"><b class="mq-tx">%s</b></i>' % (txt, txt)
 
-    row_a = [L('python', 'Python'), L('claudecode', 'Claude Code'), L('chatgpt', 'ChatGPT'), L('antigravity', 'Google Antigravity'), '<i title="SQL"><img src="img/icons/sql.png" alt="" width="256" height="256"></i>',
-             L('linux', 'Linux'), L('vscode', 'VS Code'), L('github', 'GitHub'), L('git', 'Git'), L('html5', 'HTML5'),
-             L('css3', 'CSS'), L('javascript', 'JavaScript')]
-    row_b = [L('react', 'React'), L('django', 'Django'), L('n8n', 'n8n'), L('wordpress', 'WordPress'),
-             L('streamlit', 'Streamlit'), L('java', 'Java'), L('nodejs', 'Node.js'), L('rust', 'Rust'), L('go', 'Go'),
-             L('astro', 'Astro'), L('angular', 'Angular'), L('vuejs', 'Vue.js')]
+    # Lo que uso hoy, repartido en dos cintas (6 iconos cada una; la segunda va en sentido contrario)
+    row_a = [L('python', 'Python'), L('claudecode', 'Claude Code'), L('chatgpt', 'ChatGPT'), L('antigravity', 'Google Antigravity'),
+             '<i title="SQL"><img src="img/icons/sql.png" alt="" width="256" height="256"></i>', L('linux', 'Linux')]
+    row_b = [L('vscode', 'VS Code'), L('github', 'GitHub'), L('git', 'Git'), L('html5', 'HTML5'), L('css3', 'CSS'), L('javascript', 'JavaScript')]
 
-    def row(items, cls):
+    def row(items, cls=''):
         one = ''.join(items)
         return ('<div class="mq%s"><div class="mq-t"><div class="mq-s">%s</div><div class="mq-s" aria-hidden="true">%s</div>'
                 '<div class="mq-s" aria-hidden="true">%s</div></div></div>' % (cls, one, one, one))
-    return '<div class="mqs" aria-label="Tecnologías">%s</div>' % row(row_a, '')
+    return '<div class="mqs" aria-label="Tecnologías">%s%s</div>' % (row(row_a), row(row_b, ' rev'))
 
 
 def know_html():
