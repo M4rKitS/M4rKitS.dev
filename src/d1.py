@@ -9,8 +9,6 @@ ES['c9'] = 'SOLID y Bases de datos'
 EN['c9'] = 'SOLID and Databases'
 ES['c10'] = 'ORMs en Python'
 EN['c10'] = 'ORMs in Python'
-ES['c_sub'] = 'Diez certificados, cada uno de un módulo o curso que he terminado.'
-EN['c_sub'] = 'Ten certificates, each from a module or course I have finished.'
 ES['pl_badge'] = 'Más completo'
 EN['pl_badge'] = 'Most complete'
 ES['p_kicker'] = 'Soluciones'
@@ -127,10 +125,6 @@ ES['mt_web'] = 'Desarrollo web para pequeños negocios | M4rKitS.dev'
 EN['mt_web'] = 'Web development for small businesses | M4rKitS.dev'
 ES['md_web'] = 'Diseño y desarrollo web para pequeños negocios: webs claras, rápidas y bien cuidadas, en español e inglés. Cuéntame tu proyecto y buscamos la solución.'
 EN['md_web'] = 'Web design and development for small businesses: clear, fast, carefully built websites in Spanish and English. Tell me about your project.'
-ES['mq_intro'] = 'Lenguajes, frameworks y herramientas.'
-EN['mq_intro'] = 'Languages, frameworks and tools.'
-ES['k_intro'] = 'De la terminal a la publicación.'
-EN['k_intro'] = 'From the terminal to publishing.'
 ES['m_open'] = 'Abrir menú'
 EN['m_open'] = 'Open menu'
 ES['m_close'] = 'Cerrar menú'
@@ -145,8 +139,6 @@ ES['th_l_light'] = 'Modo claro'
 EN['th_l_light'] = 'Light mode'
 ES['m_kicker'] = 'Mi stack'; EN['m_kicker'] = 'My stack'
 ES['mq_title'] = 'Con qué <em>trabajo</em>'; EN['mq_title'] = 'What I <em>work with</em>'
-ES['mq_intro'] = 'Lo que uso hoy, y seguirá creciendo.'
-EN['mq_intro'] = 'What I use today, and it keeps growing.'
 ES['k_title'] = 'Lo que he aprendido, <em>por áreas</em>'; EN['k_title'] = 'What I have learned, <em>by area</em>'
 ES['who_text'] = 'Soy español y, junto con mi familia, resido actualmente en Finlandia. Desde aquí sigo mi camino hacia convertirme en desarrollador de software. Ahora estoy estudiando el máster Full&nbsp;Stack en <a class="cb" href="https://www.conquerblocks.com/" target="_blank" rel="noopener noreferrer">Conquer Blocks</a>, donde cada módulo me enseña a entender y mantener lo que hay detrás de cada software.'
 EN['who_text'] = 'I am Spanish and, together with my family, I currently live in Finland. From here I keep working toward becoming a software developer. I am now studying the Full&nbsp;Stack master at <a class="cb" href="https://www.conquerblocks.com/" target="_blank" rel="noopener noreferrer">Conquer Blocks</a>, where each module teaches me to understand and maintain what sits behind every piece of software.'
@@ -1596,18 +1588,16 @@ def build_home():
 <div class="b4" aria-hidden="true"><div class="ed-bar"><i></i><i></i><i></i><span>marcos.js</span></div><pre><span class="l"><span class="k">const</span> <span class="p">marcos</span> <span class="o">=</span> {</span><span class="l">  city: <span class="s">"Vantaa"</span>,</span><span class="l">  langs: [<span class="s">"es"</span>, <span class="s">"en"</span>],</span><span class="l">  path: <span class="s">"full stack"</span>,</span><span class="l">  status: <span class="s">"learning"</span>,</span><span class="l">  next: <span class="s">"your project"</span><span class="cur"></span></span><span class="l">};</span></pre></div>
 </div></div>
 
-<section class="sec" id="master"><div class="wrap center"><h2 class="h2">%(mq_title)s</h2>
-<p class="one">%(mq_intro)s</p></div>
+<section class="sec" id="master"><div class="wrap center"><h2 class="h2">%(mq_title)s</h2></div>
 %(mq)s</section>
 
-<section class="sec" id="conocimientos"><div class="wrap center"><h2 class="h2">%(k_title)s</h2>
-<p class="one">%(k_intro)s</p></div>
+<section class="sec" id="conocimientos"><div class="wrap center"><h2 class="h2">%(k_title)s</h2></div>
 <div class="wrap">%(know)s</div></section>
 
 <section class="sec"><div class="gh"><h2 class="h2">%(g_title)s</h2></div>
 <div class="goal"><div class="ph"><img src="%(f3)s" alt="%(a3)s" width="1024" height="1536" loading="lazy"></div><div class="gc"><h3>%(g_card)s</h3><p>%(g_text)s</p><p>%(g_text2)s</p>""" + SIG + """</div></div></section>
 
-<section class="sec center" id="certificados"><div class="wrap"><h2 class="h2" style="margin-top:0">%(c_title)s</h2><p>%(c_sub)s</p></div><div class="certs">%(certs)s</div>
+<section class="sec center" id="certificados"><div class="wrap"><h2 class="h2" style="margin-top:0">%(c_title)s</h2></div><div class="certs">%(certs)s</div>
 <dialog class="bw cdlg" id="cd"><div class="bw-win" tabindex="-1" autofocus>
 <div class="bw-bar"><div class="bw-dots" aria-hidden="true"><i></i><i></i><i></i></div><h3 class="bw-url"><span class="cd-ico" id="cd-ico" aria-hidden="true"></span><span id="cd-tt"></span></h3>
 <a class="bw-ext" id="cd-ext" target="_blank" rel="noopener noreferrer"><span data-t="cert_open">Abrir imagen</span>%(ur)s</a>

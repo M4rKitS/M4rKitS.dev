@@ -162,8 +162,6 @@ for ai, a in enumerate(AREAS):
     for ii, (_, name, desc) in enumerate(a['items']):
         KEYS_ES['%si%d_t' % (k, ii)], KEYS_EN['%si%d_t' % (k, ii)] = name
         KEYS_ES['%si%d_d' % (k, ii)], KEYS_EN['%si%d_d' % (k, ii)] = desc
-KEYS_ES['k_intro'] = 'Mi recorrido técnico por el máster, de la terminal a la publicación.'
-KEYS_EN['k_intro'] = 'My technical path through the master, from the terminal to publishing.'
 KEYS_ES['wb_title'] = 'conocimientos'
 KEYS_EN['wb_title'] = 'knowledge'
 KEYS_ES['wb_learn'], KEYS_EN['wb_learn'] = 'Lo que he podido aprender', 'What I have been able to learn'
