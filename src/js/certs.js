@@ -28,6 +28,12 @@ export function initCerts() {
         }
         var t = document.createElement('i'),
           m = document.createElement('img');
+        m.onload = function () {
+          // logos apaisados (como el de AWS) ocupan una baldosa más ancha
+          if (m.naturalWidth / m.naturalHeight > 1.3) {
+            t.classList.add('wide');
+          }
+        };
         m.src = p;
         m.alt = '';
         m.width = 16;

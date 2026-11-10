@@ -1,5 +1,5 @@
 /* Visor de certificados: al pulsar una tarjeta se abre una ventana con la imagen. */
-import { tx } from './i18n.js?v=a4715f7c';
+import { tx } from './i18n.js?v=7dcf8642';
 export function initCerts() {
   var dlg = document.getElementById('cd');
   if (!dlg || typeof dlg.showModal !== 'function') {
@@ -28,6 +28,12 @@ export function initCerts() {
         }
         var t = document.createElement('i'),
           m = document.createElement('img');
+        m.onload = function () {
+          // logos apaisados (como el de AWS) ocupan una baldosa más ancha
+          if (m.naturalWidth / m.naturalHeight > 1.3) {
+            t.classList.add('wide');
+          }
+        };
         m.src = p;
         m.alt = '';
         m.width = 16;

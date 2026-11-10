@@ -1089,6 +1089,8 @@ button.cc:focus-visible{outline:3px solid var(--acc2);outline-offset:3px}
 .cd-ico{display:flex;gap:5px;flex:none}
 .cd-ico i{width:24px;height:24px;border-radius:7px;background:#fff;box-shadow:0 0 0 1px rgba(11,31,58,.12);display:grid;place-items:center}
 .cd-ico img{width:15px;height:15px;object-fit:contain}
+.cd-ico i.wide{width:44px}
+.cd-ico i.wide img{width:32px;height:20px}
 .gb:focus-visible,.dk:focus-visible,.og:focus-visible,a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid var(--acc2);outline-offset:3px}
 """
 
@@ -1320,7 +1322,7 @@ def plan_art(n):
 
 
 CERT_IMG = {1: 'aws', 2: 'ia-logistica', 3: 'pseudocodigo', 4: 'linux', 5: 'git', 6: 'python', 7: 'python-avanzado', 8: 'sql', 9: 'solid', 10: 'orm'}
-CERT_IC = {'pseudocodigo': ['pseudocodigo.svg'], 'linux': ['linux.svg'], 'git': ['git.svg', 'github.svg'], 'python': ['python.svg'], 'sql': ['sql.png'], 'solid': ['basedatos.svg'], 'python-avanzado': ['python.svg'], 'orm': ['python.svg', 'basedatos.svg'], 'ia-logistica': ['ia.svg', 'logistica.svg'], 'aws': ['ia.svg']}
+CERT_IC = {'pseudocodigo': ['pseudocodigo.svg'], 'linux': ['linux.svg'], 'git': ['git.svg', 'github.svg'], 'python': ['python.svg'], 'sql': ['sql.png'], 'solid': ['basedatos.svg'], 'python-avanzado': ['python.svg'], 'orm': ['python.svg', 'basedatos.svg'], 'ia-logistica': ['ia.svg', 'logistica.svg'], 'aws': ['aws.png']}
 _CK = '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.8 12.4l3 3 5.5-6"/></svg>'
 _EXPAND = '<i class="cc-i" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-7 7M10 20H4v-6M4 20l7-7"/></svg></i>'
 
