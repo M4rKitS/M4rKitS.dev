@@ -210,9 +210,9 @@ def static_files(outdir, css_name, pages):
         es_u, en_u = SITE + URLS[k][0], SITE + URLS[k][1]
         for loc in (es_u, en_u):
             pr = '1.0' if k == 'home' and loc == es_u else ('0.9' if k == 'home' else ('0.8' if k == 'web' else '0.3'))
-            xml.append('  <url><loc>%s</loc><lastmod>2026-11-05</lastmod><priority>%s</priority>'
+            xml.append('  <url><loc>%s</loc><lastmod>%s</lastmod><priority>%s</priority>'
                        '<xhtml:link rel="alternate" hreflang="es" href="%s"/><xhtml:link rel="alternate" hreflang="en" href="%s"/>'
-                       '<xhtml:link rel="alternate" hreflang="x-default" href="%s"/></url>' % (loc, pr, es_u, en_u, es_u))
+                       '<xhtml:link rel="alternate" hreflang="x-default" href="%s"/></url>' % (loc, LASTMOD.get(k, LASTMOD_DEFAULT), pr, es_u, en_u, es_u))
     xml.append('</urlset>')
     open(outdir + '/sitemap.xml', 'w', encoding='utf-8').write('\n'.join(xml) + '\n')
     open(outdir + '/robots.txt', 'w', encoding='utf-8').write('User-agent: *\nAllow: /\nDisallow: /cdn-cgi/\n\nSitemap: https://m4rkits.dev/sitemap.xml\n')
@@ -265,6 +265,10 @@ HEADERS = """/*
 /vendor/*
   Cache-Control: public, max-age=2592000
 """
+
+# Fecha de la última modificación de cada página (formato AAAA-MM-DD). Se actualiza al cambiar el contenido de esa página.
+LASTMOD_DEFAULT = '2026-11-05'
+LASTMOD = {'home': '2026-11-10', 'web': '2026-11-10'}
 
 REDIRECTS = """https://m4rkits.pages.dev/* https://m4rkits.dev/:splat 301
 /index.html / 301
