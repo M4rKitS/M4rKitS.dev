@@ -1,5 +1,5 @@
 /* Selector ES/EN: marca el idioma activo y lleva a la misma página en el otro idioma. */
-import { lang } from './i18n.js?v=7e053824';
+import { lang } from './i18n.js?v=a4715f7c';
 
 export function initLangSwitch() {
   document.querySelectorAll('.lang button').forEach(function (b) {
