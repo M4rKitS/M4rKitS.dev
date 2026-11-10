@@ -1,7 +1,7 @@
 /* Capa de movimiento con GSAP + ScrollTrigger (alojados en /vendor, sin CDN).
    Se carga cuando la página ya ha terminado de cargar, para no retrasar la primera pintura.
-   La entrada del hero se hace en CSS; aquí van la barra de progreso, las apariciones en cascada
-   y la cinta de tecnologías, que se acelera con la velocidad del scroll.
+   La entrada del hero se hace en CSS; aquí van la barra de progreso (solo en pantallas anchas)
+   y las apariciones en cascada. Las cintas de tecnologías van a su ritmo, sin depender del scroll.
    Todo se desactiva con prefers-reduced-motion. */
 
 function startMotion() {
@@ -12,21 +12,18 @@ function startMotion() {
   var mm = gsap.matchMedia();
   mm.add('(prefers-reduced-motion: no-preference)', function () {
     var cleanups = [];
-    /* 1. barra de progreso */
-    var bar = document.createElement('div');
-    bar.className = 'sp';
-    bar.setAttribute('aria-hidden', 'true');
-    document.body.appendChild(bar);
-    gsap.to(bar, {
-      scaleX: 1,
-      ease: 'none',
-      scrollTrigger: {
-        trigger: document.documentElement,
-        start: 'top top',
-        end: 'bottom bottom',
-        scrub: 0.25,
-      },
-    });
+    /* 1. barra de progreso (solo en pantallas anchas: en el móvil no se muestra) */
+    if (window.matchMedia('(min-width: 760px)').matches) {
+      var bar = document.createElement('div');
+      bar.className = 'sp';
+      bar.setAttribute('aria-hidden', 'true');
+      document.body.appendChild(bar);
+      gsap.to(bar, {
+        scaleX: 1,
+        ease: 'none',
+        scrollTrigger: { trigger: document.documentElement, start: 'top top', end: 'bottom bottom', scrub: 0.25 },
+      });
+    }
     /* 2. aparición en cascada al hacer scroll */
     function run(els) {
       els.forEach(function (e) {
@@ -70,32 +67,6 @@ function startMotion() {
     batchIn('.wk', 40, 0.14);
     batchIn('.who > *,.goal > *', 36, 0.14);
     batchIn('.ctab', 0, 0.1);
-    /* 3. la cinta de tecnologías se acelera con la velocidad del scroll */
-    var mq = document.querySelector('.mq-t');
-    if (mq && mq.getAnimations) {
-      var an = mq.getAnimations()[0];
-      if (an) {
-        var target = 1,
-          rate = 1;
-        ScrollTrigger.create({
-          start: 0,
-          end: 'max',
-          onUpdate: function (self) {
-            target = 1 + Math.min(5, Math.abs(self.getVelocity()) / 700);
-          },
-        });
-        var tick = function () {
-          target += (1 - target) * 0.05;
-          rate += (target - rate) * 0.12;
-          an.playbackRate = rate;
-        };
-        gsap.ticker.add(tick);
-        cleanups.push(function () {
-          gsap.ticker.remove(tick);
-          an.playbackRate = 1;
-        });
-      }
-    }
     /* tipografías y carga: recalcular posiciones */
     if (document.fonts && document.fonts.ready) {
       document.fonts.ready.then(function () {
@@ -109,7 +80,9 @@ function startMotion() {
       cleanups.forEach(function (f) {
         f();
       });
-      bar.remove();
+      if (bar) {
+        bar.remove();
+      }
     };
   });
 }

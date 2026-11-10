@@ -3,6 +3,7 @@
 El resto (GSAP + ScrollTrigger) vive en js/motion.js."""
 
 MOTION_CSS = """.sp{position:fixed;left:0;top:0;width:100%;height:3px;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,#1B46C8,#38BDF8);z-index:90;pointer-events:none}
+@media(max-width:759px){.sp{display:none}}
 @keyframes hin{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:no-preference){
 .hero .pl{animation:hin .6s cubic-bezier(.2,.7,.2,1) backwards}
