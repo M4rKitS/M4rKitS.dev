@@ -162,8 +162,8 @@ ES['cert_open'] = 'Abrir imagen'; EN['cert_open'] = 'Open image'
 ES['lg_upd'] = 'Última actualización'; EN['lg_upd'] = 'Last updated'
 ES['who_text2'] = 'Mi meta es seguir creciendo cada día sin ponerme límites.'
 EN['who_text2'] = 'My goal is to keep growing every day without setting limits for myself.'
-ES['g_text2'] = 'Mi meta sigue intacta: trabajar algún día en una big tech. Cada proyecto que saco adelante me acerca un paso más.'
-EN['g_text2'] = 'My goal is intact: to work at a big tech company one day. Every project I deliver brings me one step closer.'
+ES['g_text2'] = 'La informática me atrae desde niño y el máster me está dando el método para convertir esa afición en un oficio. Aspiro a vivir de la tecnología sin renunciar a lo que más me importa, que es disfrutar de mi tiempo en familia. Por eso busco trabajar en remoto, con la libertad de dar lo mejor de mí: un trabajo hecho con pasión y cuidado en cada detalle, y soluciones digitales útiles para quien las necesite, esté donde esté.'
+EN['g_text2'] = 'Computing has drawn me in since I was a boy, and the master is giving me the method to turn that passion into a profession. I aim to make a living from technology without giving up what matters most to me: enjoying my time with my family. That is why I look for remote work, with the freedom to give my best: work done with passion and attention to every detail, and useful digital solutions for whoever needs them, wherever they are.'
 
 
 CSS = """
