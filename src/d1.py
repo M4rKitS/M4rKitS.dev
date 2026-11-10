@@ -384,9 +384,8 @@ html{scroll-padding-top:128px}
    asoma por un borde, su copia queda fuera y no se ve ningún icono repetido. Las otras dos copias solo sirven para que el bucle no tenga salto. */
 .mqs{--g:22px;--set:calc(6 * (84px + var(--g)));max-width:1160px;margin:34px auto 0;padding:0 20px;display:grid;justify-items:center}
 @media(min-width:760px){.mqs{padding:0 32px}}
-.mq{width:min(100%,calc(var(--set) - 86px));overflow:hidden;padding:6px 0 20px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 26px,#000 calc(100% - 26px),transparent);mask-image:linear-gradient(90deg,transparent,#000 26px,#000 calc(100% - 26px),transparent)}
+.mq{pointer-events:none;width:min(100%,calc(var(--set) - 86px));overflow:hidden;padding:6px 0 20px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 26px,#000 calc(100% - 26px),transparent);mask-image:linear-gradient(90deg,transparent,#000 26px,#000 calc(100% - 26px),transparent)}
 .mq-t{display:flex;width:max-content;animation:mq 14s linear infinite}
-.mq:hover .mq-t{animation-play-state:paused}
 .mq-s{display:flex}
 .mq-s i{margin-right:var(--g)}
 @keyframes mq{to{transform:translateX(-33.3333%)}}
