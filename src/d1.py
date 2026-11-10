@@ -7,8 +7,10 @@ from wbdata import AREAS
 
 ES['c9'] = 'SOLID y Bases de datos'
 EN['c9'] = 'SOLID and Databases'
-ES['c_sub'] = 'Nueve certificados, cada uno de un módulo o curso que he terminado.'
-EN['c_sub'] = 'Nine certificates, each from a module or course I have finished.'
+ES['c10'] = 'ORMs en Python'
+EN['c10'] = 'ORMs in Python'
+ES['c_sub'] = 'Diez certificados, cada uno de un módulo o curso que he terminado.'
+EN['c_sub'] = 'Ten certificates, each from a module or course I have finished.'
 ES['pl_badge'] = 'Más completo'
 EN['pl_badge'] = 'Most complete'
 ES['p_kicker'] = 'Soluciones'
@@ -557,7 +559,7 @@ em.shine{animation:shine 1.9s cubic-bezier(.45,.05,.3,1) 1}
 html[lang=en] .cap-es,html:not([lang=en]) .cap-en{display:none}
 /* certificados: rejilla compacta */
 .certs{max-width:1160px;margin:34px auto 0;padding:0 20px;display:grid;gap:10px;grid-template-columns:repeat(2,1fr)}
-@media(min-width:700px){.certs{grid-template-columns:repeat(3,1fr);padding:0 32px}}
+@media(min-width:700px){.certs{padding:0 32px}}
 @media(min-width:1040px){.certs{grid-template-columns:repeat(5,1fr)}}
 .cc{position:relative;display:grid;grid-template-columns:1fr auto;grid-template-rows:auto auto;gap:8px 10px;align-content:start;padding:14px 16px 16px;background:#fff;border:1px solid var(--line);border-radius:18px;text-align:left;box-shadow:0 8px 18px -16px rgba(11,31,58,.4);transition:transform .2s,border-color .2s}
 .cc:hover{transform:translateY(-2px);border-color:#C5D2EC}
@@ -878,9 +880,7 @@ p{text-wrap:pretty}
 @media(prefers-reduced-motion:reduce){.cc.lit::after,.cc.lit .ck{animation:none}.cc.lit{transform:none}}
 /* menu superior un poco mas separado del borde */
 @media(max-width:959px){.hdr{top:28px}}
-/* certificados: nueve en total, SOLID y Bases de datos es uno solo */
-@media(min-width:700px){.certs{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:699px){.certs .cc:last-child{grid-column:1/-1}}
+/* certificados: diez en total (SOLID y Bases de datos es uno solo): 2 columnas en móvil y tablet, 5 en escritorio */
 /* movil: la tarjeta de plan que estas viendo se ilumina y las otras quedan opacas; extras en 2 x 2 */
 @media(hover:none){
 .plans.focus .plc{transition:opacity .45s,filter .45s,transform .55s cubic-bezier(.2,.7,.2,1),box-shadow .45s}
@@ -1327,8 +1327,8 @@ def plan_art(n):
             + defs % (n, stops) + '<rect width="320" height="190" fill="url(#bg%d)"/>' % n + body + '</svg>')
 
 
-CERT_IMG = {3: 'pseudocodigo', 4: 'linux', 5: 'git', 6: 'python', 8: 'sql', 9: 'solid'}
-CERT_IC = {'pseudocodigo': ['pseudocodigo.svg'], 'linux': ['linux.svg'], 'git': ['git.svg', 'github.svg'], 'python': ['python.svg'], 'sql': ['sql.png'], 'solid': ['basedatos.svg']}
+CERT_IMG = {3: 'pseudocodigo', 4: 'linux', 5: 'git', 6: 'python', 7: 'python-avanzado', 8: 'sql', 9: 'solid', 10: 'orm'}
+CERT_IC = {'pseudocodigo': ['pseudocodigo.svg'], 'linux': ['linux.svg'], 'git': ['git.svg', 'github.svg'], 'python': ['python.svg'], 'sql': ['sql.png'], 'solid': ['basedatos.svg'], 'python-avanzado': ['python.svg'], 'orm': ['python.svg', 'basedatos.svg']}
 _CK = '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path class="ck" pathLength="1" d="M7.8 12.4l3 3 5.5-6"/></svg>'
 _EXPAND = '<i class="cc-i" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-7 7M10 20H4v-6M4 20l7-7"/></svg></i>'
 
@@ -1359,7 +1359,7 @@ def values():
         gh=GH, mail=MAIL, tel=TEL, wa=WA, wa_q=_quote(ES['cf_wa_text'], safe=''), icmail=ic('mail', 18), icphone=ic('phone', 18), icpin=ic('pin', 18),
         faq=faq(), plans=plans,
         ex=''.join('<span>%s</span>' % T('ex%d' % i) for i in range(1, 5)),
-        certs=''.join(cert_card(k) for k in range(1, 10)),
+        certs=''.join(cert_card(k) for k in range(1, 11)),
         tags=''.join('<li>%s</li>' % T('tag%d' % i) for i in (1, 2, 3)),
         webp=WEBP, home=HOME))
     d.update(DEVICO)
