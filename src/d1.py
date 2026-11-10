@@ -380,11 +380,11 @@ html{scroll-padding-top:128px}
 .fl-i.ti img{width:54%;height:54%;object-fit:contain;border-radius:0}
 .fl-i.ti.sm img{width:58%;height:58%}
 /* seccion del master: cinta de logos y tarjetas */
-/* Dos cintas que se mueven. El ancho de cada cinta es el de una tanda de 6 iconos (--g es la separación), así no se ve ningún
-   icono repetido; las otras dos copias solo sirven para que el bucle no tenga salto. */
+/* Dos cintas que se mueven. Cada cinta mide una tanda de 6 iconos menos un icono (--g es la separación): así, cuando un icono
+   asoma por un borde, su copia queda fuera y no se ve ningún icono repetido. Las otras dos copias solo sirven para que el bucle no tenga salto. */
 .mqs{--g:22px;--set:calc(6 * (84px + var(--g)));max-width:1160px;margin:34px auto 0;padding:0 20px;display:grid;justify-items:center}
 @media(min-width:760px){.mqs{padding:0 32px}}
-.mq{width:min(100%,var(--set));overflow:hidden;padding:6px 0 20px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 26px,#000 calc(100% - 26px),transparent);mask-image:linear-gradient(90deg,transparent,#000 26px,#000 calc(100% - 26px),transparent)}
+.mq{width:min(100%,calc(var(--set) - 86px));overflow:hidden;padding:6px 0 20px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 26px,#000 calc(100% - 26px),transparent);mask-image:linear-gradient(90deg,transparent,#000 26px,#000 calc(100% - 26px),transparent)}
 .mq-t{display:flex;width:max-content;animation:mq 14s linear infinite}
 .mq:hover .mq-t{animation-play-state:paused}
 .mq-s{display:flex}

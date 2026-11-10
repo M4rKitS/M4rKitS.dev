@@ -1,5 +1,5 @@
 /* Formulario de contacto: validación, envío con EmailJS y enlace de WhatsApp con el mensaje del idioma y del plan. */
-import { tx, lang, cfg } from './i18n.js?v=a4715f7c';
+import { tx, lang, cfg } from './i18n.js?v=7e053824';
 export function initContactForm() {
   var f = document.getElementById('contact-form');
   if (!f) return;
