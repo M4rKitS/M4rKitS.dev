@@ -390,6 +390,7 @@ html{scroll-padding-top:128px}
 .mq-s i{margin-right:var(--g)}
 @keyframes mq{to{transform:translateX(-33.3333%)}}
 .mq.rev .mq-t{animation-direction:reverse}
+.mq.n7 .mq-t{animation-duration:16.3333s}
 .mq i{flex:none;width:84px;height:84px;border-radius:22px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;box-shadow:0 12px 24px -18px rgba(11,31,58,.45);color:var(--ink)}
 .mq i img{width:42px;height:42px;object-fit:contain}
 @media(prefers-reduced-motion:reduce){.mq{-webkit-mask-image:none;mask-image:none;padding-bottom:6px}.mq-t{width:auto;justify-content:center;animation:none}.mq-s[aria-hidden]{display:none}.mq-s{flex-wrap:wrap;justify-content:center;gap:14px}.mq-s i{margin-right:0}}
@@ -1145,11 +1146,13 @@ def marquee_html():
 
     # Lo que uso hoy, repartido en dos cintas (6 iconos cada una; la segunda va en sentido contrario)
     row_a = [L('python', 'Python'), L('claudecode', 'Claude Code'), L('chatgpt', 'ChatGPT'), L('antigravity', 'Google Antigravity'),
-             '<i title="SQL"><img src="img/icons/sql.png" alt="" width="256" height="256"></i>', L('linux', 'Linux')]
+             L('n8n', 'n8n'), '<i title="SQL"><img src="img/icons/sql.png" alt="" width="256" height="256"></i>', L('linux', 'Linux')]
     row_b = [L('vscode', 'VS Code'), L('github', 'GitHub'), L('git', 'Git'), L('html5', 'HTML5'), L('css3', 'CSS'), L('javascript', 'JavaScript')]
 
     def row(items, cls=''):
         one = ''.join(items)
+        if len(items) != 6:  # fila con otro numero de iconos: su tanda mide distinto, se ajusta la duracion
+            cls += ' n%d' % len(items)
         return ('<div class="mq%s"><div class="mq-t"><div class="mq-s">%s</div><div class="mq-s" aria-hidden="true">%s</div>'
                 '<div class="mq-s" aria-hidden="true">%s</div></div></div>' % (cls, one, one, one))
     return '<div class="mqs" aria-label="Tecnologías">%s%s</div>' % (row(row_a), row(row_b, ' rev'))
