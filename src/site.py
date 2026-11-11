@@ -54,7 +54,7 @@ JSONLD = {
             'url': SITE + '/', 'email': 'contact@m4rkits.dev',
             'address': {'@type': 'PostalAddress', 'addressLocality': 'Vantaa', 'addressCountry': 'FI'},
             'knowsLanguage': ['es', 'en'],
-            'knowsAbout': ['Python', 'SQL', 'Git', 'GitHub', 'Linux', 'Web development', 'AI agents and automation'],
+            'knowsAbout': ['Python', 'SQL', 'Git', 'GitHub', 'Linux', 'Web development', 'AI agents and automation', 'n8n'],
             'sameAs': ['https://github.com/M4rKitS', 'https://www.linkedin.com/in/mrodriguezhdz', 'https://www.instagram.com/m4rkits.dev/']}},
     'web': lambda lang: {
         '@context': 'https://schema.org', '@type': 'ProfessionalService', 'name': 'M4rKitS.dev',
