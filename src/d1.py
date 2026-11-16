@@ -1610,7 +1610,7 @@ def build_home():
 </div></dialog></section>
 """
     body = '<div class="frame">' + header('home') + '<main>' + main + '</main>' + footer('home') + '</div>'
-    return page_data(body % values(), 'home', meta=dict(t='mt_home', d='md_home', img='https://m4rkits.dev/img/og-portfolio.png', alt='Marcos Rodríguez, desarrollador de software Full Stack'))
+    return page_data(body % values(), 'home', meta=dict(t='mt_home', d='md_home', img='https://m4rkits.dev/img/og-portfolio.png?v=2', alt='Marcos Rodríguez, desarrollador de software Full Stack'))
 
 
 def build_web():
@@ -1676,7 +1676,7 @@ def build_legal(kind):
     assert '%' not in blocks
     main = '<section class="lg"><div class="lg-w">' + blocks + '</div></section>'
     body = '<div class="frame">' + header('legal') + '<main>' + main + '</main>' + footer('legal') + '</div>'
-    return page_data(body % values(), 'basic', meta=dict(t='mt_' + kind, d='md_' + kind, img='https://m4rkits.dev/img/og-portfolio.png', alt='M4rKitS.dev'))
+    return page_data(body % values(), 'basic', meta=dict(t='mt_' + kind, d='md_' + kind, img='https://m4rkits.dev/img/og-portfolio.png?v=2', alt='M4rKitS.dev'))
 
 
 def build_gracias():
@@ -1688,7 +1688,7 @@ def build_gracias():
           '<div class="lg-act"><a class="dk" href="' + HOME + '">Go to the portfolio</a><a class="og" href="' + WEBP + '"><span>Back to web development</span></a></div></div>')
     main = '<section class="lg"><div class="lg-w">' + (es if ONLY_LANG != 'en' else '') + (en if ONLY_LANG != 'es' else '') + '</div></section>'
     body = '<div class="frame">' + header('legal') + '<main>' + main + '</main>' + footer('legal') + '</div>'
-    return page_data(body % values(), 'basic', meta=dict(t='mt_gracias', d='md_gracias', img='https://m4rkits.dev/img/og-portfolio.png', alt='M4rKitS.dev'))
+    return page_data(body % values(), 'basic', meta=dict(t='mt_gracias', d='md_gracias', img='https://m4rkits.dev/img/og-portfolio.png?v=2', alt='M4rKitS.dev'))
 
 
 def build_notfound():
@@ -1698,7 +1698,7 @@ def build_notfound():
           '<div class="lg-act"><a class="dk" href="/en/">Go to the homepage</a><a class="og" href="/en/web-development/"><span>See web development</span></a></div></div>')
     main = '<section class="lg"><div class="lg-w">' + (es if ONLY_LANG != 'en' else '') + (en if ONLY_LANG != 'es' else '') + '</div></section>'
     body = '<div class="frame">' + header('legal') + '<main>' + main + '</main>' + footer('legal') + '</div>'
-    return page_data(body % values(), 'basic', meta=dict(t='mt_gracias', d='md_gracias', img='https://m4rkits.dev/img/og-portfolio.png', alt='M4rKitS.dev'))
+    return page_data(body % values(), 'basic', meta=dict(t='mt_gracias', d='md_gracias', img='https://m4rkits.dev/img/og-portfolio.png?v=2', alt='M4rKitS.dev'))
 
 
 if __name__ == '__main__':
