@@ -50,7 +50,7 @@ JSONLD = {
         '@context': 'https://schema.org', '@type': 'ProfilePage', 'url': SITE + URLS['home'][lang == 'en'], 'inLanguage': lang,
         'mainEntity': {
             '@type': 'Person', 'name': 'Marcos Rodríguez', 'alternateName': 'M4rKitS',
-            'jobTitle': 'Full Stack software developer (in training)' if lang == 'en' else 'Desarrollador de software Full Stack en formación',
+            'jobTitle': 'Full Stack Developer' if lang == 'en' else 'Desarrollador de software Full Stack',
             'url': SITE + '/', 'email': 'contact@m4rkits.dev',
             'address': {'@type': 'PostalAddress', 'addressLocality': 'Vantaa', 'addressCountry': 'FI'},
             'knowsLanguage': ['es', 'en'],
@@ -224,7 +224,7 @@ def static_files(outdir, css_name, pages):
 
 LLMS = """# M4rKitS.dev
 
-> Marcos Rodríguez (M4rKitS) is a Full Stack software developer in training based in Vantaa, Finland. He studies the Full Stack master at Conquer Blocks and builds clear, fast websites for small businesses in Spanish and English.
+> Marcos Rodríguez (M4rKitS) is a Full Stack Developer based in Vantaa, Finland. He is studying the Full Stack master at Conquer Blocks and builds clear, fast websites for small businesses in Spanish and English.
 
 The site has two sections, each available in Spanish and in English:
 
